@@ -1,6 +1,6 @@
 {
-  "name": "Ionic Conference",
-  "short_name": "Ionic Conf",
+  "name": "Braille",
+  "short_name": "Braille",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
