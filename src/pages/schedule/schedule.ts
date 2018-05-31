@@ -12,6 +12,7 @@ import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
+import { SinaisBraillePage } from '../sinais-braille/sinais-braille';
 
 @Component({
   selector: 'page-schedule',
@@ -91,6 +92,12 @@ export class SchedulePage {
       alert.present();
     }
 
+    
+
+  }
+
+  paginaSinais(){
+    this.navCtrl.push(SinaisBraillePage);
   }
 
   removeFavorite(slidingItem: ItemSliding, sessionData: any, title: string) {

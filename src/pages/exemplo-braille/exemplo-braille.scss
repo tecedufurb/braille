@@ -1,0 +1,25 @@
+page-exemplo-braille {
+    .imagemcentro{
+        border-radius: 10px;
+        width: 10%;
+        height: 40%;
+        margin: 2px;
+        display: block;
+    
+    }
+    .textoPalavra{
+    text-align: center;
+    font-family: 'Courier New';
+    //font-weight: 900; 
+    font-size: 400%;
+    width: max-content; 
+    display:  table-row;
+    } 
+
+    .simboloBraille{
+        border-radius: 10px;
+        width: 8%;
+        height: 40%;
+        margin: 2px;
+    }
+}

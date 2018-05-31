@@ -13,6 +13,7 @@ import { SchedulePage } from '../pages/schedule/schedule';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
+import { LoginPage } from '../pages/login/login';
 
 export interface PageInterface {
   title: string;
@@ -38,7 +39,8 @@ export class ConferenceApp {
   // the login page disables the left menu
   appPages: PageInterface[] = [
     { title: 'Principal', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
-    { title: 'Sobre', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }
+    { title: 'Sobre', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' },
+    { title: 'Login', name: 'LoginPage', component: LoginPage, icon: 'log-in' }
   ];
   rootPage: any;
 
@@ -56,8 +58,9 @@ export class ConferenceApp {
     this.storage.get('hasSeenTutorial')
       .then((hasSeenTutorial) => {
         if (hasSeenTutorial) {
-          this.rootPage = TabsPage;
+          this.rootPage = LoginPage;
         } else {
+
           this.rootPage = TutorialPage;
         }
         this.platformReady()

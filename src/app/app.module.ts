@@ -8,6 +8,9 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { IonicStorageModule } from '@ionic/storage';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule} from 'angularfire2/database';
+import { AngularFireAuthModule} from 'angularfire2/auth';
 
 import { ConferenceApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
@@ -17,6 +20,20 @@ import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
+import { LoginPageModule } from '../pages/login/login.module';
+import { AutenticacaoProvider } from '../providers/autenticacao/autenticacao';
+import { CriarContaPageModule } from '../pages/criar-conta/criar-conta.module';
+import { SinaisBraillePageModule } from '../pages/sinais-braille/sinais-braille.module';
+import { ExemploBraillePageModule } from '../pages/exemplo-braille/exemplo-braille.module';
+
+const autenticacaoFirebase = {
+  apiKey: "AIzaSyC_ZnM2X7xmXzONJMlpJhVaWg3mxFDGPs4",
+  authDomain: "tagarela-braille.firebaseapp.com",
+  databaseURL: "https://tagarela-braille.firebaseio.com",
+  projectId: "tagarela-braille",
+  storageBucket: "tagarela-braille.appspot.com",
+  messagingSenderId: "1019835797721"
+};
 
 
 @NgModule({
@@ -26,7 +43,7 @@ import { UserData } from '../providers/user-data';
     SchedulePage,
     SessionDetailPage,
     TabsPage,
-    TutorialPage,
+    TutorialPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +57,15 @@ import { UserData } from '../providers/user-data';
         { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
       ]
     }),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(autenticacaoFirebase),
+    AngularFireAuthModule,
+    LoginPageModule,
+    CriarContaPageModule,
+    SinaisBraillePageModule,
+    ExemploBraillePageModule
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -49,14 +74,15 @@ import { UserData } from '../providers/user-data';
     SchedulePage,
     SessionDetailPage,
     TabsPage,
-    TutorialPage,
+    TutorialPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     ConferenceData,
     UserData,
     InAppBrowser,
-    SplashScreen
+    SplashScreen,
+    AutenticacaoProvider
   ]
 })
 export class AppModule { }
