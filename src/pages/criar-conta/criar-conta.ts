@@ -2,9 +2,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import {FormBuilder, FormGroup, Validators } from '@angular/forms';
-//import { usuario } from '../../providers/autenticacao/usuario';
 import { AutenticacaoProvider } from '../../providers/autenticacao/autenticacao';
-import { TabsPage } from '../tabs-page/tabs-page';
+import { SchedulePage } from '../schedule/schedule';
 
 @IonicPage()
 @Component({
@@ -42,7 +41,7 @@ export class CriarContaPage {
           toast.setMessage('Usuário criado com sucesso.'); 
           toast.present();
 
-          this.navCtrl.setRoot(TabsPage);
+          this.navCtrl.setRoot(SchedulePage);
         })
         .catch((error: any) => {
           if (error.code  == 'auth/email-already-in-use') {

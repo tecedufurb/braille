@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { NavController } from 'ionic-angular';
+//import { NgForm } from '@angular/forms';
+import { NavController, MenuController } from 'ionic-angular';
 import { UserData } from '../../providers/user-data';
 import { UserOptions } from '../../interfaces/user-options';
-import { TabsPage } from '../tabs-page/tabs-page';
 import { CriarContaPage } from '../criar-conta/criar-conta';
+import { SchedulePage } from '../schedule/schedule';
 
 
 @Component({
@@ -15,15 +15,30 @@ export class LoginPage {
   login: UserOptions = { username: '', password: '' };
   
 
-  constructor(public navCtrl: NavController, public userData: UserData) { }
+  constructor(
+    public navCtrl: NavController, 
+    public userData: UserData,
+    private menuCtrl: MenuController,
+  ) { 
 
-  onLogin(form: NgForm) {
+  }
+
+  //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
+  ionViewWillEnter(): void  {
+    this.menuCtrl.enable(false, 'loggedOutMenu');
+  }
+
+  ionViewWillLeave(): void {
+    this.menuCtrl.enable(true, 'loggedOutMenu');
+  }
+
+  onLogin() {
     //this.submitted = true;
 
-    if (form.valid) {
+   // if (form.valid) {
       this.userData.login(this.login.username);
-      this.navCtrl.push(TabsPage);
-    }
+      this.navCtrl.push(SchedulePage); 
+   // }
   }
 
   criarContaUsuario() {
