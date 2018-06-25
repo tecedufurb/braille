@@ -24,5 +24,8 @@ export class AutenticacaoProvider {
     return this.AngularFireAuth.auth.createUserWithEmailAndPassword(usuario.email,usuario.password);
   }
 
+  logar(usuario: usuario): Promise<boolean> {
+    return this.AngularFireAuth.auth.signInWithEmailAndPassword(usuario.email, usuario.password);
+  }
 
 }

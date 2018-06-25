@@ -9,26 +9,20 @@
 		<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">
 	</div>
 
-	<form #loginForm="ngForm" novalidate>
-		<ion-list no-lines>
-			<ion-item>
-				<ion-label stacked color="primary">Email</ion-label>
-				<ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"
-				 required>
-				</ion-input>
-			</ion-item>
-			<p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>
-				Username is required
-			</p>
+	<form [formGroup]="form" novalidate>
+		<ion-list>
 
 			<ion-item>
-				<ion-label stacked color="primary">Password</ion-label>
-				<ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>
-				</ion-input>
+				<ion-label stacked>E-mail</ion-label>
+				<ion-input type="text" name="email" formControlName="email" required></ion-input>
+			</ion-item>  
+
+
+			<ion-item>
+				<ion-label stacked>Senha</ion-label>
+				<ion-input type="password" name="password" formControlName="password" required></ion-input>
 			</ion-item>
-			<p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>
-				Password is required
-			</p>
+ 
 		</ion-list>
 
 		<ion-row responsive-sm>

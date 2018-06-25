@@ -4,6 +4,7 @@ import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import {FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AutenticacaoProvider } from '../../providers/autenticacao/autenticacao';
 import { SchedulePage } from '../schedule/schedule';
+import { UserData } from '../../providers/user-data';
 
 @IonicPage()
 @Component({
@@ -11,8 +12,6 @@ import { SchedulePage } from '../schedule/schedule';
   templateUrl: 'criar-conta.html',
 })
 export class CriarContaPage {
-  //usuario: usuario = new usuario();
-  //@ViewChild('form') form: NgForm;
   form: FormGroup;
   
  
@@ -20,7 +19,8 @@ export class CriarContaPage {
     public navCtrl: NavController,
     private toastCtrl: ToastController,
     private authService: AutenticacaoProvider,
-    private formBuilder: FormBuilder) {
+    private formBuilder: FormBuilder,
+    private userData: UserData) {
         this.form  = this.formBuilder.group({
           email: [null, [Validators.required, Validators.email]],
           password: [null, [Validators.required, Validators.minLength(6)]]
@@ -37,10 +37,9 @@ export class CriarContaPage {
 
       this.authService.criarUsuario(usuario)
         .then((usuario: any) => {
-          console.log(usuario);
           toast.setMessage('Usuário criado com sucesso.'); 
           toast.present();
-
+          this.userData.login(usuario.email);
           this.navCtrl.setRoot(SchedulePage);
         })
         .catch((error: any) => {

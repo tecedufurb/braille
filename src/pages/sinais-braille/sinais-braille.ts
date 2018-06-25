@@ -81,7 +81,7 @@ export class SinaisBraillePage {
       this.series = [
       {sinal: 'â', imagem: '../../assets/img/sinais-braille/a-circunflexo-braille.png'},
       {sinal: 'ê', imagem: '../../assets/img/sinais-braille/e-circunflexo-braille.png'},
-      {sinal: '146', imagem: '../../assets/img/sinais-braille/146-braille.png'},
+      {sinal: ' ', imagem: '../../assets/img/sinais-braille/146-braille.png'},
       {sinal: 'ô', imagem: '../../assets/img/sinais-braille/o-circunflexo-braille.png'},
       {sinal: '@', imagem: '../../assets/img/sinais-braille/arroba-braille.png'},
       {sinal: 'à', imagem: '../../assets/img/sinais-braille/a-crase-braille.png'},
@@ -95,7 +95,7 @@ export class SinaisBraillePage {
       {sinal: ',', imagem: '../../assets/img/sinais-braille/virgula-braille.png'},
       {sinal: ';', imagem: '../../assets/img/sinais-braille/ponto-e-virgula-braille.png'},
       {sinal: ':', imagem: '../../assets/img/sinais-braille/dois-pontos-braille.png'},
-      {sinal: '/', imagem: '../../assets/img/sinais-braille/divisao-braille.png'},
+      {sinal: '÷', imagem: '../../assets/img/sinais-braille/divisao-braille.png'},
       {sinal: '?', imagem: '../../assets/img/sinais-braille/interrogacao-braille.png'},
       {sinal: '+', imagem: '../../assets/img/sinais-braille/adicao-braille.png'},
       {sinal: '=', imagem: '../../assets/img/sinais-braille/igual-braille.png'},
