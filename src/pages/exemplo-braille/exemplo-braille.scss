@@ -7,14 +7,23 @@ page-exemplo-braille {
         display: block;
     
     }
-    .textoPalavra{
+    .texto{
     text-align: center;
     font-family: 'Courier New';
     //font-weight: 900; 
+    font-size: 250%;
+    width: max-content; 
+    display: flex;
+    } 
+
+    .palavra{
+        text-align: center;
+       font-family: 'Courier New';
+    //font-weight: 900; 
     font-size: 400%;
     width: max-content; 
-    display:  table-row;
-    } 
+    display: flex;
+    }
 
     .simboloBraille{
         border-radius: 10px;

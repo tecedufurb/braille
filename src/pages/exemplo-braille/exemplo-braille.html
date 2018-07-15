@@ -13,9 +13,10 @@
 </ion-header>
 
 <ion-content padding> 
-<div style="text-align: -webkit-center;"><h1 class="textoPalavra" >{{letra}}</h1></div>
-<div style="text-align: center;"><img style="height: 50%; width: 70%;" src={{imagem}}></div>
-<div style="display: flex; align-items: flex-end; justify-content: center; font-size: 90%;"><h1 class="textoPalavra">{{palavra}}</h1></div>
+<div style="text-align: -webkit-center;"><h1 class="texto" >{{letra}}</h1></div>
+<div style="text-align: center;"><img style="max-width: 150; max-height: 150px"  src={{imagem}}></div>
+<div style="display: flex; align-items: flex-end; justify-content: center;  font-weight: 900"><h1 class="texto">{{texto}}</h1></div>
+<div style="display: flex; align-items: flex-end; justify-content: center;" ><h1 class="palavra">{{palavra}}</h1></div>
 <div style="text-align: center;"><img class="simboloBraille" *ngFor="let braille of simbolos" src={{braille}}></div>
 
 </ion-content>

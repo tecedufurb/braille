@@ -12,13 +12,14 @@ export class ExemploBraillePage {
   imagem: String;
   palavra: String;
   letra: string;
+  texto: String;
   simbolos = new Array();
+  simbSpeciais = ['nº', 'pi']
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.letra = navParams.get('letra');
-
     this.mostrarExemplo(palavraBraille.letrasSmall.findIndex(obj => obj.letra === this.letra));
-    this.simbolosBraille();
+    this.simbolosBraille(this.palavra);
     ;
   }
 
@@ -29,22 +30,83 @@ export class ExemploBraillePage {
   mostrarExemplo(posicao: number) {
     this.palavra = palavraBraille.exemplosImagem[posicao].palavra;
     this.imagem = palavraBraille.exemplosImagem[posicao].imagem;
+    this.texto = palavraBraille.exemplosImagem[posicao].texto;
   }
 
-  simbolosBraille() {
+  simbolosBraille(palavra: String) {
     var i;
     for (i = 0; i < this.palavra.length; i++) {
-      if (this.imagem != ' '){
-        if (this.letra == this.palavra[i]) {
-          this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === this.palavra[i]).imgMarcado);
+      //Se for numero então jogar o simbolo de numero antes...
+      if (!isNaN(Number(this.palavra[i])) && (this.palavra[i] != ' ')) {
+        if (i == 0) {
+          ///Se a letra for nº então mostrar destacada
+          if (this.letra == 'nº')
+            this.simbolos.push('../assets/img/sinais-braille-small/shift-n-d.png');
+          else
+            this.simbolos.push('../assets/img/sinais-braille-small/shift-n.png');
         } else {
-          this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === this.palavra[i]).img);
+          if (this.palavra[i - 1] == ' ') {
+            ///Se a letra for nº então mostrar destacada
+            if (this.letra == 'nº')
+              this.simbolos.push('../assets/img/sinais-braille-small/shift-n-d.png');
+            else
+              this.simbolos.push('../assets/img/sinais-braille-small/shift-n.png');
+          }
         }
       }
+      if (this.letra == 'SE4') {
+        this.letra = 'Simbolo especial';
+        this.simbolos.push('../assets/img/sinais-braille-small/SE4.png');
+        this.simbolos.push('../assets/img/sinais-braille-small/p.png');
+      }
+      if (this.letra == 'SE45') {
+        this.letra = 'Simbolo especial';
+        this.simbolos.push('../assets/img/sinais-braille-small/SE45-d.png');
+        this.simbolos.push('../assets/img/sinais-braille-small/a.png');
+      }
+      if (this.letra == 'SE5') {
+        this.letra = 'Simbolo especial';
+        this.simbolos.push('../assets/img/sinais-braille-small/SE5-d.png');
+      }
+      if (this.letra == 'SE6') {
+        this.letra = 'Simbolo especial';
+      }
+      // if (this.imagem != ' ') {
+     /* if (this.isMaiuscula(palavra[i])) {
+        if ((i > 0) && (this.apenasMaiuscula(palavra))) {
+          this.simbolos.push('../../assets/img/sinais-braille/sinal-maiusculo-braille.png');
+          this.simbolos.push('../../assets/img/sinais-braille/sinal-maiusculo-braille.png');
+        }else{
+          this.simbolos.push('../../assets/img/sinais-braille/sinal-maiusculo-braille.png');
+        }
+        palavra.toLowerCase(); 
+      }*/
+      if (this.letra == palavra[i]) {
+        this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === palavra[i]).imgMarcado);
+      } else {
+        this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === palavra[i]).img);
+        //   }
+      }
     }
-
-
   }
+
+
+
+  isMaiuscula(letra: String): boolean {
+    return (letra.charCodeAt(0) >= 65 && letra.charCodeAt(0) <= 90)
+  }
+
+  apenasMaiuscula(palavra: String): boolean {
+    let retorno = true;
+    var i;
+    for (i = 0; i < this.palavra.length; i++) {
+      if (palavra.charCodeAt(i) >= 65 && palavra.charCodeAt(i) <= 90) {
+        return false;
+      }
+    }
+    return retorno;
+  }
+
 
 
 

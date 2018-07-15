@@ -81,14 +81,14 @@ export class SinaisBraillePage {
       this.series = [
       {sinal: 'â', imagem: '../../assets/img/sinais-braille/a-circunflexo-braille.png'},
       {sinal: 'ê', imagem: '../../assets/img/sinais-braille/e-circunflexo-braille.png'},
-      {sinal: ' ', imagem: '../../assets/img/sinais-braille/146-braille.png'},
+      {sinal: ' ', imagem: '../../assets/img/sinais-braille/SE146-braille.png'},
       {sinal: 'ô', imagem: '../../assets/img/sinais-braille/o-circunflexo-braille.png'},
       {sinal: '@', imagem: '../../assets/img/sinais-braille/arroba-braille.png'},
       {sinal: 'à', imagem: '../../assets/img/sinais-braille/a-crase-braille.png'},
       {sinal: 'ï', imagem: '../../assets/img/sinais-braille/i-trema-braille.png'},
       {sinal: 'ü', imagem: '../../assets/img/sinais-braille/u-trema-braille.png'},
       {sinal: 'õ', imagem: '../../assets/img/sinais-braille/o-til-braille.png'},
-      {sinal: 'w', imagem: '../../assets/img/sinais-braille/w-braille.png'}];
+      {sinal: 'w', imagem: '../../assets/img/sinais-braille/w-braille.png'}]; 
         this.serieDeSinais = serieAtual;
     }else if(serieAtual == 5){
       this.series= [
@@ -97,9 +97,11 @@ export class SinaisBraillePage {
       {sinal: ':', imagem: '../../assets/img/sinais-braille/dois-pontos-braille.png'},
       {sinal: '÷', imagem: '../../assets/img/sinais-braille/divisao-braille.png'},
       {sinal: '?', imagem: '../../assets/img/sinais-braille/interrogacao-braille.png'},
+      {sinal: '!', imagem: '../../assets/img/sinais-braille/exclamacao-braille.png'},
       {sinal: '+', imagem: '../../assets/img/sinais-braille/adicao-braille.png'},
       {sinal: '=', imagem: '../../assets/img/sinais-braille/igual-braille.png'},
-      {sinal: '*', imagem: '../../assets/img/sinais-braille/multiplicacao-braille.png'},
+      {sinal: '×', imagem: '../../assets/img/sinais-braille/multiplicacao-braille.png'},
+      {sinal: '"', imagem: '../../assets/img/sinais-braille/aspas-braille.png'},
       {sinal: '*', imagem: '../../assets/img/sinais-braille/asterisco-braille.png'},
       {sinal: 'º', imagem: '../../assets/img/sinais-braille/grau-braille.png'}];
         this.serieDeSinais = serieAtual;
@@ -108,19 +110,19 @@ export class SinaisBraillePage {
       {sinal: 'í', imagem: '../../assets/img/sinais-braille/i-agudo-braille.png'},
       {sinal: 'ã', imagem: '../../assets/img/sinais-braille/a-til-braille.png'},
       {sinal: 'ó', imagem: '../../assets/img/sinais-braille/o-agudo-braille.png'},
-      {sinal: 'Nº', imagem:  '../../assets/img/sinais-braille/sinal-numerico-braille.png'},
+      {sinal: 'nº', imagem:  '../../assets/img/sinais-braille/sinal-numerico-braille.png'},
       {sinal: '.', imagem: '../../assets/img/sinais-braille/ponto-final-braille.png'},
       {sinal: '-', imagem: '../../assets/img/sinais-braille/hifen-braille.png'}];
         this.serieDeSinais = serieAtual;
     }else if(serieAtual == 7){
       this.series= [
-      {sinal: '4', imagem:'../../assets/img/sinais-braille/4-braille.png'},
-      {sinal: '45', imagem:'../../assets/img/sinais-braille/45-braille.png'},
+      {sinal: 'SE4', imagem:'../../assets/img/sinais-braille/SE4-braille.png'},
+      {sinal: 'SE45', imagem:'../../assets/img/sinais-braille/SE45-braille.png'},
       {sinal: 'pipe', imagem:'../../assets/img/sinais-braille/pipe-braille.png'},
-      {sinal: '5', imagem:'../../assets/img/sinais-braille/5-braille.png'},
-      {sinal: 'Maiusculo', imagem:'../../assets/img/sinais-braille/sinal-maiusculo-braille.png'},
+      {sinal: 'SE5', imagem:'../../assets/img/sinais-braille/SE5-braille.png'},
+      {sinal: '↑', imagem:'../../assets/img/sinais-braille/sinal-maiusculo-braille.png'},
       {sinal: '$', imagem:'../../assets/img/sinais-braille/cifrao-braille.png'},
-      {sinal: '6', imagem:'../../assets/img/sinais-braille/6-braille.png'}];
+      {sinal: 'SE6', imagem:'../../assets/img/sinais-braille/SE6-braille.png'}];
         this.serieDeSinais = 7;
     }
 

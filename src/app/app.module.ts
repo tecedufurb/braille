@@ -64,7 +64,7 @@ const autenticacaoFirebase = {
     LoginPageModule,
     CriarContaPageModule,
     SinaisBraillePageModule,
-    ExemploBraillePageModule
+    ExemploBraillePageModule,
     
   ],
   bootstrap: [IonicApp],
