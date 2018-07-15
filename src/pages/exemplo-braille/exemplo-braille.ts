@@ -14,12 +14,11 @@ export class ExemploBraillePage {
   letra: string;
   texto: String;
   simbolos = new Array();
-  simbSpeciais = ['nº', 'pi']
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.letra = navParams.get('letra');
     this.mostrarExemplo(palavraBraille.letrasSmall.findIndex(obj => obj.letra === this.letra));
-    this.simbolosBraille(this.palavra);
+    this.simbolosBraille();
     ;
   }
 
@@ -33,8 +32,9 @@ export class ExemploBraillePage {
     this.texto = palavraBraille.exemplosImagem[posicao].texto;
   }
 
-  simbolosBraille(palavra: String) {
+  simbolosBraille() {
     var i;
+    var qtdMai = 0;
     for (i = 0; i < this.palavra.length; i++) {
       //Se for numero então jogar o simbolo de numero antes...
       if (!isNaN(Number(this.palavra[i])) && (this.palavra[i] != ' ')) {
@@ -72,19 +72,19 @@ export class ExemploBraillePage {
         this.letra = 'Simbolo especial';
       }
       // if (this.imagem != ' ') {
-     /* if (this.isMaiuscula(palavra[i])) {
-        if ((i > 0) && (this.apenasMaiuscula(palavra))) {
-          this.simbolos.push('../../assets/img/sinais-braille/sinal-maiusculo-braille.png');
-          this.simbolos.push('../../assets/img/sinais-braille/sinal-maiusculo-braille.png');
-        }else{
-          this.simbolos.push('../../assets/img/sinais-braille/sinal-maiusculo-braille.png');
-        }
-        palavra.toLowerCase(); 
-      }*/
-      if (this.letra == palavra[i]) {
-        this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === palavra[i]).imgMarcado);
+      if (this.isMaiuscula(this.palavra[i]) && qtdMai < 2) {
+        if (this.letra == 'maiuscula')
+           this.simbolos.splice(0,0,'../assets/img/sinais-braille-small/shift-d.png')
+        else
+           this.simbolos.splice(0,0,'../assets/img/sinais-braille-small/shift.png')
+        qtdMai++;
+      }
+      if (this.letra == this.palavra[i]) {
+        console.log(this.palavra[i].toLowerCase());//this.palavra[i]
+        //let procurar = ;
+        this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === this.palavra[i].toLowerCase()).imgMarcado);
       } else {
-        this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === palavra[i]).img);
+        this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === this.palavra[i].toLowerCase()).img);
         //   }
       }
     }

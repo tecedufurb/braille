@@ -67,7 +67,7 @@ export class palavraBraille {
       {palavra:' ', imagem:' ',texto:'Este sinal não possui representação em tinta e é utilizado em questões específicas da Grafia Braille para a Língua Portuguesa.'},
       {palavra:'google.com', imagem:' ',texto:'Este sinal não possui representação em tinta e é utilizado em questões específicas da Grafia Braille para a Língua Portuguesa. Deve ser escrito imediatamente antes e após endereços de sites e e-mails, sem espaços.'},
       {palavra:'Braille', imagem:' ',texto:''},
-      {palavra:'r$ 10,00', imagem:'../assets/img/palavras-braille/cifrao.png',texto:''},
+      {palavra:'R$ 10,00', imagem:'../assets/img/palavras-braille/cifrao.png',texto:''},
       {palavra:' ', imagem:' ',texto:'Este sinal só possui valor representativo na Grafia Braille para a Língua Portuguesa combinado com outro sinal.'},
     ];
   static letrasSmall = [ 
@@ -133,7 +133,7 @@ export class palavraBraille {
       {letra:'SE45', img:'../assets/img/sinais-braille-small/SE45.png', imgMarcado:'../assets/img/sinais-braille-small/SE45-d.png'},
       {letra:'pipe', img:'../assets/img/sinais-braille-small/pipe-braille.png', imgMarcado:'../assets/img/sinais-braille-small/pipe-braille.png'},
       {letra:'SE5', img:'../assets/img/sinais-braille-small/SE5-d.png', imgMarcado:'../assets/img/sinais-braille-small/SE5-d.png'},
-      {letra:'↑', img:'../assets/img/sinais-braille-small/45.png', imgMarcado:'../assets/img/sinais-braille-small/45-d.png'},
+      {letra:'maiuscula', img:'', imgMarcado:''},
       {letra:'$', img:'../assets/img/sinais-braille-small/cifrao.png', imgMarcado:'../assets/img/sinais-braille-small/cifrao-d.png'},
       {letra:'SE6', img:' ', imgMarcado:''},
       {letra:' ', img:'../assets/img/sinais-braille-small/espaco.png', imgMarcado:'../assets/img/sinais-braille-small/espaco.png'},//espaço

@@ -120,7 +120,7 @@ export class SinaisBraillePage {
       {sinal: 'SE45', imagem:'../../assets/img/sinais-braille/SE45-braille.png'},
       {sinal: 'pipe', imagem:'../../assets/img/sinais-braille/pipe-braille.png'},
       {sinal: 'SE5', imagem:'../../assets/img/sinais-braille/SE5-braille.png'},
-      {sinal: '↑', imagem:'../../assets/img/sinais-braille/sinal-maiusculo-braille.png'},
+      {sinal: 'maiuscula', imagem:'../../assets/img/sinais-braille/sinal-maiusculo-braille.png'},
       {sinal: '$', imagem:'../../assets/img/sinais-braille/cifrao-braille.png'},
       {sinal: 'SE6', imagem:'../../assets/img/sinais-braille/SE6-braille.png'}];
         this.serieDeSinais = 7;
