@@ -71,12 +71,19 @@ export class ExemploBraillePage {
       if (this.letra == 'SE6') {
         this.letra = 'Simbolo especial';
       }
-      // if (this.imagem != ' ') {
+      if (this.letra == 'SE456') {
+        this.letra = 'Simbolo especial';
+        this.simbolos.push('../assets/img/sinais-braille-small/shift-n.png');
+        this.simbolos.push('../assets/img/sinais-braille-small/e.png');
+        this.simbolos.push('../assets/img/sinais-braille-small/SE456-d.png');
+        this.simbolos.push('../assets/img/sinais-braille-small/grau.png');
+      }
+      // if (this.imagem != ' ') {  
       if (this.isMaiuscula(this.palavra[i]) && qtdMai < 2) {
-        if (this.letra == 'maiuscula')
-           this.simbolos.splice(0,0,'../assets/img/sinais-braille-small/shift-d.png')
+        if (this.letra == 'maiuscula') 
+          this.simbolos.splice(0, 0, '../assets/img/sinais-braille-small/shift-d.png')
         else
-           this.simbolos.splice(0,0,'../assets/img/sinais-braille-small/shift.png')
+          this.simbolos.splice(0, 0, '../assets/img/sinais-braille-small/shift.png')
         qtdMai++;
       }
       if (this.letra == this.palavra[i]) {

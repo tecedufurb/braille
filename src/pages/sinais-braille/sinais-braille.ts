@@ -118,7 +118,7 @@ export class SinaisBraillePage {
       this.series= [
       {sinal: 'SE4', imagem:'../../assets/img/sinais-braille/SE4-braille.png'},
       {sinal: 'SE45', imagem:'../../assets/img/sinais-braille/SE45-braille.png'},
-      {sinal: 'pipe', imagem:'../../assets/img/sinais-braille/pipe-braille.png'},
+      {sinal: 'SE456', imagem:'../../assets/img/sinais-braille/SE456-braille.png'},
       {sinal: 'SE5', imagem:'../../assets/img/sinais-braille/SE5-braille.png'},
       {sinal: 'maiuscula', imagem:'../../assets/img/sinais-braille/sinal-maiusculo-braille.png'},
       {sinal: '$', imagem:'../../assets/img/sinais-braille/cifrao-braille.png'},
