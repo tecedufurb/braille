@@ -13,6 +13,7 @@ import { UserData } from '../../providers/user-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { SinaisBraillePage } from '../sinais-braille/sinais-braille';
+import { ConsultaBraillePage } from '../consulta-braille/consulta-braille';
 
 @Component({
   selector: 'page-schedule',
@@ -158,5 +159,9 @@ export class SchedulePage {
         toast.present();
       }, 1000);
     });
+  }
+
+  paginaConsulta(){
+    this.navCtrl.push(ConsultaBraillePage);
   }
 }
