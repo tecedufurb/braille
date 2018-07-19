@@ -90,7 +90,7 @@ export class SinaisBraillePage {
       {sinal: 'õ', imagem: './assets/img/sinais-braille/o-til-braille.png'},
       {sinal: 'w', imagem: './assets/img/sinais-braille/w-braille.png'}]; 
         this.serieDeSinais = serieAtual;
-    }else if(serieAtual == 5){
+    }else if(serieAtual == 5){ 
       this.series= [
       {sinal: ',', imagem: './assets/img/sinais-braille/virgula-braille.png'},
       {sinal: ';', imagem: './assets/img/sinais-braille/ponto-e-virgula-braille.png'},
