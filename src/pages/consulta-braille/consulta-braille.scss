@@ -16,4 +16,14 @@ page-consulta-braille {
     float: left;
     height: 440px;
     border: 0px;}
+
+    .textoPalavra{
+        text-align: center;
+        font-size: -webkit-xxx-large;
+        position: fixed;
+        top: 70%;
+        left: 0px;
+        size: 100%;
+        width: 100%;
+    }
 }
