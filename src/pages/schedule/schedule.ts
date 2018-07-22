@@ -14,11 +14,12 @@ import { UserData } from '../../providers/user-data';
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { SinaisBraillePage } from '../sinais-braille/sinais-braille';
 import { ConsultaBraillePage } from '../consulta-braille/consulta-braille';
+import { PraticaBraillePage } from '../pratica-braille/pratica-braille';
 
 @Component({
   selector: 'page-schedule',
   templateUrl: 'schedule.html'
-})
+}) 
 export class SchedulePage {
   // the list is a child of the schedule page
   // @ViewChild('scheduleList') gets a reference to the list
@@ -163,5 +164,9 @@ export class SchedulePage {
 
   paginaConsulta(){
     this.navCtrl.push(ConsultaBraillePage);
+  }
+
+  paginaPratica(){
+    this.navCtrl.push(PraticaBraillePage);
   }
 }

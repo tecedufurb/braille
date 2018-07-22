@@ -1,0 +1,38 @@
+<!--
+  Generated template for the PraticaBraillePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Prática Braille</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div>
+    <div class="cell-braille">
+      <img class="ImagemExemplo" src={{imagem}}>
+    </div>
+    <div class="cell-braille">
+      <a id="c1p1" (click)="marcar('c1p1')" class="btn-large point-braille"></a>
+      <a id="c1p4" (click)="marcar('c1p4')" class="btn-large point-braille"></a>
+      <a id="c1p2" (click)="marcar('c1p2')" class="btn-large point-braille"></a>
+      <a id="c1p5" (click)="marcar('c1p5')" class="btn-large point-braille"></a>
+      <a id="c1p3" (click)="marcar('c1p3')" class="btn-large point-braille"></a>
+      <a id="c1p6" (click)="marcar('c1p6')" class="btn-large point-braille"></a>
+    </div>
+    <div>
+      <h1 style="text-align: center; font-size: 70px;">{{palavra}}</h1>
+    </div>
+    <div>
+      <img *ngFor="let imgBraille of simbolos" style="text-align: center;" src={{imgBraille}}> </div>
+    <button (click)='proximo()' style="top: 40%;" ion-button full>Próximo</button>
+  </div>
+
+</ion-content>

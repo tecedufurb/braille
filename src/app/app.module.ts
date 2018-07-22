@@ -26,6 +26,7 @@ import { CriarContaPageModule } from '../pages/criar-conta/criar-conta.module';
 import { SinaisBraillePageModule } from '../pages/sinais-braille/sinais-braille.module';
 import { ExemploBraillePageModule } from '../pages/exemplo-braille/exemplo-braille.module';
 import { ConsultaBraillePageModule } from '../pages/consulta-braille/consulta-braille.module';
+import { PraticaBraillePageModule } from '../pages/pratica-braille/pratica-braille.module';
 
 const autenticacaoFirebase = {
   apiKey: "AIzaSyC_ZnM2X7xmXzONJMlpJhVaWg3mxFDGPs4",
@@ -66,7 +67,8 @@ const autenticacaoFirebase = {
     CriarContaPageModule,
     SinaisBraillePageModule,
     ExemploBraillePageModule,
-    ConsultaBraillePageModule
+    ConsultaBraillePageModule,
+    PraticaBraillePageModule
     
   ],
   bootstrap: [IonicApp],

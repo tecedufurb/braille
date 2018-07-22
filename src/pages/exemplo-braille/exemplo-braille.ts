@@ -23,7 +23,7 @@ export class ExemploBraillePage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ExemploBraillePage');
+    
   }
 
   mostrarExemplo(posicao: number) {
