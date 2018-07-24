@@ -14,29 +14,24 @@
 
 
 <ion-content padding>
-
-  <div style="height: 100%; top: 10%">
-    <div style="height: 50%; top: 10%">
-      <div style="float: left; width: 45%;margin-left: 3%;height: 100%;">
-        <img src={{imagem}}>
-      </div>
-      <div class="cell-braille" style="height: 100%;">
-        <a id="c1p1" (click)="marcar('c1p1')" class="btn-large point-braille"></a>
-        <a id="c1p4" (click)="marcar('c1p4')" class="btn-large point-braille"></a>
-        <a id="c1p2" (click)="marcar('c1p2')" class="btn-large point-braille"></a>
-        <a id="c1p5" (click)="marcar('c1p5')" class="btn-large point-braille"></a>
-        <a id="c1p3" (click)="marcar('c1p3')" class="btn-large point-braille"></a>
-        <a id="c1p6" (click)="marcar('c1p6')" class="btn-large point-braille"></a>
-      </div> 
-    </div>
-    <div style="display: -webkit-inline-box; width: 100%; justify-content: center; display: flex;">
-      <h1 style="text-align: center; font-size: 50px; font-family: 'Courier New';">{{palavra}}</h1>
-    </div>
-    <div style="text-align: center;">
-      <img *ngFor="let imgBraille of simbolos" style="max-width: 30px;" src={{imgBraille}}>
-    </div>
-    <button (click)='validar()' ion-button full>OK</button>
-    <button (click)='pular()' ion-button full>Pular</button>
+  <div style="float: left; width: 45%;margin-left: 3%;height: 50%;">
+    <img src={{imagem}}>
   </div>
+  <div class="cell-braille" style="height: 50%;">
+    <a id="c1p1" (click)="marcar('c1p1')" class="btn-large point-braille"></a>
+    <a id="c1p4" (click)="marcar('c1p4')" class="btn-large point-braille"></a>
+    <a id="c1p2" (click)="marcar('c1p2')" class="btn-large point-braille"></a>
+    <a id="c1p5" (click)="marcar('c1p5')" class="btn-large point-braille"></a>
+    <a id="c1p3" (click)="marcar('c1p3')" class="btn-large point-braille"></a>
+    <a id="c1p6" (click)="marcar('c1p6')" class="btn-large point-braille"></a>
+  </div>
+  <div style="display: -webkit-inline-box; width: 100%; justify-content: center; display: flex;">
+    <h1 style="text-align: center; font-size: 50px; font-family: 'Courier New';">{{palavra}}</h1>
+  </div>
+  <div style="text-align: center;">
+    <img *ngFor="let imgBraille of simbolos" style="max-width: 30px;" src={{imgBraille}}>
+  </div>
+  <button (click)='validar()' ion-button full>OK</button>
+  <button (click)='pular()' ion-button full>Pular</button>
 
 </ion-content>

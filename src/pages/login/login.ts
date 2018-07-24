@@ -36,7 +36,7 @@ export class LoginPage {
 
   //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
   ionViewWillEnter(): void {
-    //this.menuCtrl.enable(false, 'loggedOutMenu');
+    this.menuCtrl.enable(false, 'loggedOutMenu');
   }
 
   ionViewWillLeave(): void {
