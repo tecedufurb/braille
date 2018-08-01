@@ -8,9 +8,12 @@
         "url": "https://github.com/ionic-team/ionic-conference-app.git"
     },
     "scripts": {
-        "build": "ionic build",
-        "serve": "ionic build",
-        "start": "npm run serve"
+        "build": "ionic-app-scripts build",
+        "clean": "ionic-app-scripts clean",
+        "lint": "ionic-app-scripts lint",
+        "ionic:build": "npm run build",
+        "ionic:serve": "npm run serve",
+        "ionic:lint": "npm run lint"
     },
     "dependencies": {
         "@angular/common": "5.0.0",

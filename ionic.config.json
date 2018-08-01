@@ -1,8 +1,6 @@
 {
-  "name": "conference",
-  "app_id": "",
-  "type": "ionic-angular",
+  "name": "braille",
   "integrations": {
-    "cordova": {}
-  }
+},
+  "type": "ionic-angular"
 }
