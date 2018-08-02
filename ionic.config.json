@@ -1,6 +1,7 @@
 {
   "name": "braille",
   "integrations": {
-},
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

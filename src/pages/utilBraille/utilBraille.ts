@@ -12,12 +12,11 @@ export class Utils {
 
     }
 
-    public showMensagem(message, pos, classCss) {
+    public showMensagem(message, pos = "button", tempo = 3000) {
         let toast = this.toastCtrl.create({
             message: message,
-            duration: 3000,
-            position: pos,
-            cssClass: classCss,
+            duration: tempo,
+            position: pos
         });
         toast.present();
     }

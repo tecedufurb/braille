@@ -1,10 +1,11 @@
 
 import { Component } from '@angular/core';
-import { IonicPage, NavController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController, MenuController } from 'ionic-angular';
 import {FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AutenticacaoProvider } from '../../providers/autenticacao/autenticacao';
 import { SchedulePage } from '../schedule/schedule';
 import { UserData } from '../../providers/user-data';
+import { TabsPage } from '../tabs-page/tabs-page';
 
 @IonicPage()
 @Component({
@@ -20,6 +21,7 @@ export class CriarContaPage {
     private toastCtrl: ToastController,
     private authService: AutenticacaoProvider,
     private formBuilder: FormBuilder,
+    private menuCtrl: MenuController,
     private userData: UserData) {
         this.form  = this.formBuilder.group({
           email: [null, [Validators.required, Validators.email]],
@@ -27,6 +29,15 @@ export class CriarContaPage {
     
         });
       
+  }
+
+  //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
+  ionViewWillEnter(): void {
+    this.menuCtrl.enable(false, 'loggedOutMenu');
+  }
+
+  ionViewWillLeave(): void {
+    this.menuCtrl.enable(true, 'loggedOutMenu');
   }
 
   criarConta() {
@@ -40,7 +51,7 @@ export class CriarContaPage {
           toast.setMessage('Usuário criado com sucesso.'); 
           toast.present();
           this.userData.login(usuario.email);
-          this.navCtrl.setRoot(SchedulePage);
+          this.navCtrl.setRoot(TabsPage);
         })
         .catch((error: any) => {
           if (error.code  == 'auth/email-already-in-use') {

@@ -40,13 +40,14 @@ export class PraticaBraillePage {
 
   selecionarPalavra(): number {
     return Math.floor(Math.random() * this.elegivel.length);
-
   }
 
   sortearPalavra() {
     let num = this.selecionarPalavra();
-    this.elegivel.slice(num, 1);
     this.posi = this.elegivel[num];
+    console.log(this.elegivel.splice(num, 1)); 
+    console.log(this.elegivel);
+    console.log(num)
     this.palavra = palavraBraille.exemplosImagem[this.posi].palavra;
     this.imagem = palavraBraille.exemplosImagem[this.posi].imagem;
     this.letrasEsc = this.sortearletrasEsconder();
@@ -129,10 +130,12 @@ export class PraticaBraillePage {
     }
 
     if (this.letrasEsc.length == 0) {
-      this.nivel++;
-      if (this.nivel = 10) {
+      if (this.nivel == 10) {
         this.nivel = 1;
+      } else {
+        this.nivel++;
       }
+
       this.sortearPalavra();
     }
 
