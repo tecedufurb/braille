@@ -7,7 +7,8 @@ An educational app to teach the braille writing system to sighted people.
 
 ## For developers
 
-Braille is being developed using [Ionic Framework](https://ionicframework.com) by a research group at [University of Blumenau](http://www.furb.br).
+Braille is being developed using [Ionic Framework](https://ionicframework.com) by the research group on Systems Development Technologies Applied to Education - [TecEdu](http://tecedu.inf.furb.br),
+from the Department of Systems and Computation of the Regional [University of Blumenau](http://www.furb.br).
 
 ### How to build & run it on any Linux distro :penguin:
 
