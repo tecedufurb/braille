@@ -32,5 +32,5 @@ export class Utils {
             duration: tempo
         });
         loading.present();
-    }
+    }    
 }

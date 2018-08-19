@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 
-import { AlertController, App, FabContainer, ItemSliding, List, ModalController, NavController, ToastController, LoadingController, Refresher } from 'ionic-angular';
+import { AlertController, App, FabContainer, ItemSliding, List, ModalController, NavController, ToastController, LoadingController, Refresher, MenuController } from 'ionic-angular';
 
 /*
   To learn how to use third party libs in an
@@ -44,11 +44,16 @@ export class SchedulePage {
     public toastCtrl: ToastController,
     public confData: ConferenceData,
     public user: UserData,
-  ) {}
+    public menu: MenuController,
+  ) {
+
+    
+  }
 
   ionViewDidLoad() {
     this.app.setTitle('Schedule');
     this.updateSchedule();
+    this.menu.enable(true, 'loggedOutMenu');
   }
 
   updateSchedule() {

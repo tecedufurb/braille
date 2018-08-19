@@ -4,8 +4,8 @@ import { MenuController, NavController, Slides } from 'ionic-angular';
 
 import { Storage } from '@ionic/storage';
 
-//import { TabsPage } from '../tabs-page/tabs-page';
 import { LoginPage } from '../login/login';
+import { TabsPage } from '../tabs-page/tabs-page';
 
 @Component({
   selector: 'page-tutorial',
@@ -15,7 +15,7 @@ import { LoginPage } from '../login/login';
 export class TutorialPage {
   showSkip = true;
 
-	@ViewChild('slides') slides: Slides;
+  @ViewChild('slides') slides: Slides;
 
   constructor(
     public navCtrl: NavController,
@@ -24,9 +24,18 @@ export class TutorialPage {
   ) { }
 
   startApp() {
-    this.navCtrl.push(LoginPage).then(() => {
-      this.storage.set('hasSeenTutorial', 'true');
-    })
+
+    this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
+      if (hasLoggedIn) {
+        this.navCtrl.setRoot(TabsPage).then(() => {
+          this.storage.set('hasSeenTutorial', 'true');  
+        })
+      } else {
+        this.navCtrl.setRoot(LoginPage)
+        this.storage.set('hasSeenTutorial', 'true');
+      }
+    });
+
   }
 
   onSlideChangeStart(slider: Slides) {
@@ -44,7 +53,7 @@ export class TutorialPage {
 
   ionViewDidLeave() {
     // enable the root left menu when leaving the tutorial page
-    this.menu.enable(true);
+    //this.menu.enable(true);
   }
 
 }

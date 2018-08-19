@@ -24,7 +24,7 @@ export class LoginPage {
   constructor(
     public navCtrl: NavController,
     public userData: UserData,
-    private menuCtrl: MenuController,
+    private menu: MenuController,
     private formBuilder: FormBuilder,
     private authService: AutenticacaoProvider,
     public util: Utils
@@ -39,11 +39,7 @@ export class LoginPage {
 
   //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
   ionViewWillEnter(): void {
-    this.menuCtrl.enable(false, 'loggedOutMenu');
-  }
-
-  ionViewWillLeave(): void {
-    this.menuCtrl.enable(true, 'loggedOutMenu');
+    this.menu.enable(false, 'loggedOutMenu');
   }
 
   onLogin() {

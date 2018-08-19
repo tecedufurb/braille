@@ -58,9 +58,14 @@ export class ConferenceApp {
     this.storage.get('hasSeenTutorial')
       .then((hasSeenTutorial) => {
         if (hasSeenTutorial) {
-          this.rootPage = LoginPage;
+          //this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
+          ///  if (hasLoggedIn) {
+          //    this.rootPage = SchedulePage;
+          //  } else {
+              this.rootPage = LoginPage;
+          //  }
+         // });
         } else {
-
           this.rootPage = TutorialPage;
         }
         this.platformReady()
