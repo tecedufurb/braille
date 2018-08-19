@@ -3,15 +3,15 @@ import { Component } from '@angular/core';
 import { NavParams } from 'ionic-angular';
 
 import { AboutPage } from '../about/about';
-import { SchedulePage } from '../schedule/schedule';
 import { Utils } from '../utilBraille/utilBraille';
+import { PrincipalPage } from '../Principal/Principal';
 
 @Component({
   templateUrl: 'tabs-page.html'
 })
 export class TabsPage {
   // set the root pages for each tab
-  tab1Root: any = SchedulePage;
+  tab1Root: any = PrincipalPage;
   tab2Root: any = AboutPage;
   mySelectedIndex: number;
 

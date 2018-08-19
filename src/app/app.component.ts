@@ -1,16 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
-
 import { Events, MenuController, Nav, Platform } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { Storage } from '@ionic/storage';
-
-import { AboutPage } from '../pages/about/about';
-
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
-import { SchedulePage } from '../pages/schedule/schedule';
-
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { LoginPage } from '../pages/login/login';
@@ -38,9 +31,9 @@ export class ConferenceApp {
   // the left menu only works after login
   // the login page disables the left menu
   appPages: PageInterface[] = [
-    { title: 'Principal', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
-    { title: 'Sobre', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' },
-    { title: 'Login', name: 'LoginPage', component: LoginPage, icon: 'log-in' }
+    { title: 'Principal', name: 'TabsPage', component: TabsPage, tabComponent: TabsPage, index: 0, icon: 'calendar' },
+    { title: 'Sobre', name: 'TabsPage', component: TabsPage, tabComponent: TabsPage, index: 1, icon: 'information-circle' },
+    { title: 'Sair', name: 'Login', component: LoginPage, logsOut: true, icon: 'log-in' },
   ];
   rootPage: any;
 
@@ -58,17 +51,17 @@ export class ConferenceApp {
     this.storage.get('hasSeenTutorial')
       .then((hasSeenTutorial) => {
         if (hasSeenTutorial) {
-          //this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
-          ///  if (hasLoggedIn) {
-          //    this.rootPage = SchedulePage;
-          //  } else {
+          this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
+            if (hasLoggedIn) {
+              this.rootPage = TabsPage;
+            } else {
               this.rootPage = LoginPage;
-          //  }
-         // });
+            }
+          });
         } else {
           this.rootPage = TutorialPage;
         }
-        this.platformReady()
+        this.platformReady() 
       });
 
     // load the conference data
@@ -96,6 +89,7 @@ export class ConferenceApp {
     // If we are already on tabs just change the selected tab
     // don't setRoot again, this maintains the history stack of the
     // tabs even if changing them from the menu
+
     if (this.nav.getActiveChildNavs().length && page.index != undefined) {
       this.nav.getActiveChildNavs()[0].select(page.index);
     } else {
@@ -109,6 +103,7 @@ export class ConferenceApp {
       // Give the menu time to close before changing to logged out
       this.userData.logout();
     }
+
   }
 
   openTutorial() {

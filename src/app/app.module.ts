@@ -14,8 +14,6 @@ import { AngularFireAuthModule} from 'angularfire2/auth';
 
 import { ConferenceApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
-import { SchedulePage } from '../pages/schedule/schedule';
-import { SessionDetailPage } from '../pages/session-detail/session-detail';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { ConferenceData } from '../providers/conference-data';
@@ -27,6 +25,8 @@ import { SinaisBraillePageModule } from '../pages/sinais-braille/sinais-braille.
 import { ExemploBraillePageModule } from '../pages/exemplo-braille/exemplo-braille.module';
 import { ConsultaBraillePageModule } from '../pages/consulta-braille/consulta-braille.module';
 import { PraticaBraillePageModule } from '../pages/pratica-braille/pratica-braille.module';
+import { LoginPage } from '../pages/login/login';
+import { PrincipalPage } from '../pages/Principal/Principal';
 
 const autenticacaoFirebase = {
   apiKey: "AIzaSyC_ZnM2X7xmXzONJMlpJhVaWg3mxFDGPs4",
@@ -42,8 +42,7 @@ const autenticacaoFirebase = {
   declarations: [
     ConferenceApp,
     AboutPage,
-    SchedulePage,
-    SessionDetailPage,
+    PrincipalPage,
     TabsPage,
     TutorialPage
   ],
@@ -53,10 +52,10 @@ const autenticacaoFirebase = {
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
-        { component: SchedulePage, name: 'Schedule', segment: 'schedule' },
-        { component: SessionDetailPage, name: 'SessionDetail', segment: 'sessionDetail/:sessionId' },
-        { component: AboutPage, name: 'About', segment: 'about' },
-        { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
+        { component: PrincipalPage, name: 'Principal', segment: 'principal' },
+        { component: LoginPage, name: 'Login', segment: 'LoginPage' },
+        { component: AboutPage, name: 'AboutPage', segment: 'about' },
+        { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' }
       ]
     }),
     IonicStorageModule.forRoot(),
@@ -75,8 +74,7 @@ const autenticacaoFirebase = {
   entryComponents: [
     ConferenceApp,
     AboutPage,
-    SchedulePage,
-    SessionDetailPage,
+    PrincipalPage,
     TabsPage,
     TutorialPage
   ],
