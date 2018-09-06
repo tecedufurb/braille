@@ -6,6 +6,7 @@
 *.tmp
 *.tmp.*
 log.txt
+www
 
 # NPM (Node Package Manager) files
 npm-debug.log*
