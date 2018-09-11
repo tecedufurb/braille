@@ -1,0 +1,24 @@
+page-home {
+
+    .container {
+     height: 100vh;
+    // background: #6C7A89;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center
+    }
+    .box {
+     width: 300px; 
+     height: 300px;
+     position: absolute;
+    }
+
+    .fonteTexto{
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 40px;
+    }
+}

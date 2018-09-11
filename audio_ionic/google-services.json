@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1019835797721",
+    "firebase_url": "https://tagarela-braille.firebaseio.com",
+    "project_id": "tagarela-braille",
+    "storage_bucket": "tagarela-braille.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019835797721:android:fbc9486196c1c5e3",
+        "android_client_info": {
+          "package_name": "com.tagarela.ionicaudio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019835797721-i9afdrm3oj7nbu56fog2tnb40b0m40nf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6XbP0kafdYfS9DnFvRBnRC28Eu9HsObc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
