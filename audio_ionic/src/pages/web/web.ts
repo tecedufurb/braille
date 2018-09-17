@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase  } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { audio } from '../audio'
 
@@ -43,7 +43,6 @@ export class WebPage {
 
   adicionarLista(item: any) {
     this.natAudio.play(item.nota);
-    console.log(item.nota);
     this.listaSelecionadas.push(item);
   }
 
@@ -62,14 +61,7 @@ export class WebPage {
           toast.setMessage("Erro ao gravar lista:" + ERRO);
           ok = false;
         });
-        this.fireBase.list('ultimo/').set(num,Date.now())
-        .then(function () {
-          toast.setMessage("Gravdo com sucesso!");
-        })
-        .catch(function (ERRO) {
-          toast.setMessage("Erro ao gravar lista:" + ERRO);
-          ok = false;
-        });
+      
     } else {
       toast.setMessage("A lista esta vazia");
     }

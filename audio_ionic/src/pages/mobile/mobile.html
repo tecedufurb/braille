@@ -16,7 +16,7 @@
 <ion-content padding>
   <button ion-button color="light" round style="width: 45%;" (click)="selecionarLista('1')">1</button>
   <button ion-button color="light" round style="width: 45%;" (click)="selecionarLista('2')">2</button>
-  <button ion-item *ngFor="let item of listaNotas">
-   <!-- {{ item.nota }}  -->
+  <button ion-item *ngFor="let notas of listaNotas | async ">
+  {{ notas.nota }}  
   </button>
 </ion-content>
