@@ -4872,10 +4872,6 @@ textarea::-webkit-input-placeholder {
   padding-left: 2px;
 }
 
-textarea:-ms-input-placeholder {
-  padding-left: 2px;
-}
-
 textarea::-ms-input-placeholder {
   padding-left: 2px;
 }
@@ -40067,6 +40063,19 @@ page-user .list {
   margin-bottom: 0;
 }
 
+page-maquina-braille .maquina {
+  height: 45%;
+}
+
+page-maquina-braille .ponto-braille {
+  width: 29%;
+  height: 50px;
+  margin: 2%;
+  background: transparent;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
 page-pratica-braille .ImagemExemplo {
   margin: 0px;
   float: left;
@@ -40076,9 +40085,13 @@ page-pratica-braille .ImagemExemplo {
 
 page-sinais-braille .imagem-btn {
   border-radius: 10px;
-  width: 25%;
+  width: 80px;
   height: 40%;
   margin: 2px;
+}
+
+page-sinais-braille .botao {
+  bottom: -102px;
 }
 
 .tabbar {

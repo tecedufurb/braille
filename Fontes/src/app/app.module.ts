@@ -27,6 +27,8 @@ import { ConsultaBraillePageModule } from '../pages/consulta-braille/consulta-br
 import { PraticaBraillePageModule } from '../pages/pratica-braille/pratica-braille.module';
 import { LoginPage } from '../pages/login/login';
 import { PrincipalPage } from '../pages/Principal/Principal';
+import { MaquinaBraillePageModule } from '../pages/maquina-braille/maquina-braille.module';
+
 
 const autenticacaoFirebase = {
   apiKey: "AIzaSyC_ZnM2X7xmXzONJMlpJhVaWg3mxFDGPs4",
@@ -67,7 +69,8 @@ const autenticacaoFirebase = {
     SinaisBraillePageModule,
     ExemploBraillePageModule,
     ConsultaBraillePageModule,
-    PraticaBraillePageModule
+    PraticaBraillePageModule,
+    MaquinaBraillePageModule
     
   ],
   bootstrap: [IonicApp],

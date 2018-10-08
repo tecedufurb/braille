@@ -6,6 +6,7 @@ import { SinaisBraillePage } from '../sinais-braille/sinais-braille';
 import { ConsultaBraillePage } from '../consulta-braille/consulta-braille';
 import { PraticaBraillePage } from '../pratica-braille/pratica-braille';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { MaquinaBraillePage } from '../maquina-braille/maquina-braille';
 
 @Component({
   selector: 'page-schedule',
@@ -48,16 +49,9 @@ export class PrincipalPage {
     this.navCtrl.push(PraticaBraillePage);
   }
 
-  testeFire() {
-   /* this.fire.list('teste/').valueChanges({
-      nome: 'LEO',
-      teste: 'ok'
-    })
-      .then(function () {
-        console.log("Gravdo com sucesso!");
-      })
-      .catch(function (error) {
-        console.error("Error ao gravar:", error);
-      })*/
+  paginaMaquinaBraille(){
+    this.navCtrl.push(MaquinaBraillePage);
   }
+
+ 
 }

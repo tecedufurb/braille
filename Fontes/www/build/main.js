@@ -438,7 +438,7 @@ webpackEmptyAsyncContext.id = 219;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -457,7 +457,7 @@ var AboutPage = (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Sobre</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="about-header">\n    <img src="assets/img/ica-slidebox-img-1.png" alt="ionic logo">\n  </div>\n  <div padding class="about-info" style="text-align:center;">\n    <h4><b>BRAILLE</b> App</h4>\n  \n    <p style="text-align: center;">\n      Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).\n    </p>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Sobre</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div class="about-header">\n\n    <img src="assets/img/ica-slidebox-img-1.png" alt="ionic logo">\n\n  </div>\n\n  <div padding class="about-info" style="text-align:center;">\n\n    <h4><b>BRAILLE</b> App</h4>\n\n  \n\n    <p style="text-align: center;">\n\n      Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).\n\n    </p>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\about\about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* PopoverController */]])
     ], AboutPage);
@@ -474,13 +474,14 @@ var AboutPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrincipalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_conference_data__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_data__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sinais_braille_sinais_braille__ = __webpack_require__(370);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__consulta_braille_consulta_braille__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pratica_braille_pratica_braille__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2_database__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__maquina_braille_maquina_braille__ = __webpack_require__(375);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -490,6 +491,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -524,17 +526,8 @@ var PrincipalPage = (function () {
     PrincipalPage.prototype.paginaPratica = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__pratica_braille_pratica_braille__["a" /* PraticaBraillePage */]);
     };
-    PrincipalPage.prototype.testeFire = function () {
-        /* this.fire.list('teste/').valueChanges({
-           nome: 'LEO',
-           teste: 'ok'
-         })
-           .then(function () {
-             console.log("Gravdo com sucesso!");
-           })
-           .catch(function (error) {
-             console.error("Error ao gravar:", error);
-           })*/
+    PrincipalPage.prototype.paginaMaquinaBraille = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_8__maquina_braille_maquina_braille__["a" /* MaquinaBraillePage */]);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('scheduleList', { read: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* List */] }),
@@ -542,7 +535,7 @@ var PrincipalPage = (function () {
     ], PrincipalPage.prototype, "scheduleList", void 0);
     PrincipalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-schedule',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/Principal/Principal.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Braille app</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n  <div style="text-align: center;">\n    <br>\n    <div>\n      <h1>Tagarela:\n        <b>BRAILLE</b>\n      </h1>\n      <img src="./assets/img/ica-slidebox-img-1.png" style="height:20%;width:20%">\n    </div>\n    \n    <button (click)=\'paginaSinais()\' ion-button full>\n      Sinais\n    </button>\n    <button (click)=\'paginaConsulta()\' ion-button full>\n      Consulta\n    </button>\n    <button (click)=\'paginaPratica()\' ion-button full>\n      Prática\n    </button>\n    <button ion-button full>\n      Máquina Braille\n    </button>\n\n  <!--  <button (click)=\'testeFire()\' ion-button full>\n      TESTE FIREBASE\n    </button>-->\n  </div>\n\n</ion-content>'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/Principal/Principal.html"*/
+            selector: 'page-schedule',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\Principal\Principal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Braille app</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n  <div style="text-align: center;">\n\n    <br>\n\n    <div>\n\n      <h1>Tagarela:\n\n        <b>BRAILLE</b>\n\n      </h1>\n\n      <img src="./assets/img/ica-slidebox-img-1.png" style="height:20%;width:20%">\n\n    </div>\n\n    \n\n    <button (click)=\'paginaSinais()\' ion-button full>\n\n      Sinais\n\n    </button>\n\n    <button (click)=\'paginaConsulta()\' ion-button full>\n\n      Consulta\n\n    </button>\n\n    <button (click)=\'paginaPratica()\' ion-button full>\n\n      Prática\n\n    </button>\n\n    <button (click)=\'paginaMaquinaBraille()\' ion-button full>\n\n      Máquina Braille\n\n    </button>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\Principal\Principal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */],
@@ -568,7 +561,7 @@ var PrincipalPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SinaisBraillePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo_braille_exemplo_braille__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -706,7 +699,7 @@ var SinaisBraillePage = (function () {
     };
     SinaisBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sinais-braille',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/sinais-braille/sinais-braille.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Sinais Braille</ion-title>\n  </ion-navbar> \n\n</ion-header>\n\n\n<ion-content padding> \n\n  <h1 style="text-align: center;">{{serieDeSinais}}º Série de sinais</h1>\n\n <div style="padding: 10px; margin: 20px auto; text-align: center;">\n    <div>\n      <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series"><img src={{simbolo.imagem}}></button>\n    </div>\n  </div>\n <button ion-button style="float: left;" (click)="serie(serieDeSinais-1)">Anterior</button> \n <button ion-button style="float: right;" (click)="serie(serieDeSinais+1)">Próximo</button>\n</ion-content>\n'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/sinais-braille/sinais-braille.html"*/,
+            selector: 'page-sinais-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Sinais Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n  <h1 style="text-align: center;">{{serieDeSinais}}º Série de sinais</h1>\n\n\n\n    <div style="max-height: 260px; height: 240px; text-align: center; ">\n\n      <div >\n\n        <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series">\n\n        <img src={{simbolo.imagem}}></button>\n\n      </div>\n\n    </div>\n\n \n\n  <button ion-button style="float: left;" class="botao" (click)="serie(serieDeSinais-1)">Anterior</button>\n\n  <button ion-button style="float: right;" class="botao" (click)="serie(serieDeSinais+1)">Próximo</button>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], SinaisBraillePage);
@@ -723,7 +716,7 @@ var SinaisBraillePage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExemploBraillePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__ = __webpack_require__(159);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -836,7 +829,7 @@ var ExemploBraillePage = (function () {
     };
     ExemploBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-exemplo-braille',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/exemplo-braille/exemplo-braille.html"*/'<!--\n  Generated template for the ExemploBraillePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title style="text-align: center;">Exemplo "{{letra}}"</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding> \n<div style="text-align: -webkit-center;"><h1 class="texto" >{{letra}}</h1></div>\n<div style="text-align: center;"><img style="max-width: 150; max-height: 150px"  src={{imagem}}></div>\n<div style="display: flex; align-items: flex-end; justify-content: center;  font-weight: 900"><h1 class="texto">{{texto}}</h1></div>\n<div style="display: flex; align-items: flex-end; justify-content: center;" ><h1 class="palavra">{{palavra}}</h1></div>\n<div style="text-align: center;"><img class="simboloBraille" *ngFor="let braille of simbolos" src={{braille}}></div>\n\n</ion-content>\n'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/exemplo-braille/exemplo-braille.html"*/,
+            selector: 'page-exemplo-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\exemplo-braille\exemplo-braille.html"*/'<!--\n\n  Generated template for the ExemploBraillePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title style="text-align: center;">Exemplo "{{letra}}"</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding> \n\n<div style="text-align: -webkit-center;"><h1 class="texto" >{{letra}}</h1></div>\n\n<div style="text-align: center;"><img style="max-width: 150; max-height: 150px"  src={{imagem}}></div>\n\n<div style="display: flex; align-items: flex-end; justify-content: center;  font-weight: 900"><h1 class="texto">{{texto}}</h1></div>\n\n<div style="display: flex; align-items: flex-end; justify-content: center;" ><h1 class="palavra">{{palavra}}</h1></div>\n\n<div style="text-align: center;"><img class="simboloBraille" *ngFor="let braille of simbolos" src={{braille}}></div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\exemplo-braille\exemplo-braille.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], ExemploBraillePage);
@@ -853,7 +846,7 @@ var ExemploBraillePage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConsultaBraillePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__ = __webpack_require__(159);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1010,7 +1003,7 @@ var ConsultaBraillePage = (function () {
     };
     ConsultaBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-consulta-braille',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/consulta-braille/consulta-braille.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Consulta sinais braille</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div>\n    <div class="cell-braille">\n      <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille"></a>\n      <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille"></a>\n      <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille"></a>\n      <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille"></a>\n      <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille"></a>\n      <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille"></a>\n    </div>\n    <div class="cell-braille">\n      <a id="c2p1" (click)="marcar(\'c2p1\')" class="btn-large point-braille"></a>\n      <a id="c2p4" (click)="marcar(\'c2p4\')" class="btn-large point-braille"></a>\n      <a id="c2p2" (click)="marcar(\'c2p2\')" class="btn-large point-braille"></a>\n      <a id="c2p5" (click)="marcar(\'c2p5\')" class="btn-large point-braille"></a>\n      <a id="c2p3" (click)="marcar(\'c2p3\')" class="btn-large point-braille"></a>\n      <a id="c2p6" (click)="marcar(\'c2p6\')" class="btn-large point-braille"></a>\n    </div>\n  </div>\n  <div class="textoPalavra">\n    <h1 style="font-weight: bold; font-size: 40px;">{{texto}}</h1>\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/consulta-braille/consulta-braille.html"*/,
+            selector: 'page-consulta-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\consulta-braille\consulta-braille.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Consulta sinais braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div>\n\n    <div class="cell-braille">\n\n      <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille"></a>\n\n      <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille"></a>\n\n      <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille"></a>\n\n      <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille"></a>\n\n      <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille"></a>\n\n      <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille"></a>\n\n    </div>\n\n    <div class="cell-braille">\n\n      <a id="c2p1" (click)="marcar(\'c2p1\')" class="btn-large point-braille"></a>\n\n      <a id="c2p4" (click)="marcar(\'c2p4\')" class="btn-large point-braille"></a>\n\n      <a id="c2p2" (click)="marcar(\'c2p2\')" class="btn-large point-braille"></a>\n\n      <a id="c2p5" (click)="marcar(\'c2p5\')" class="btn-large point-braille"></a>\n\n      <a id="c2p3" (click)="marcar(\'c2p3\')" class="btn-large point-braille"></a>\n\n      <a id="c2p6" (click)="marcar(\'c2p6\')" class="btn-large point-braille"></a>\n\n    </div>\n\n  </div>\n\n  <div class="textoPalavra">\n\n    <h1 style="font-weight: bold; font-size: 40px;">{{texto}}</h1>\n\n  </div>\n\n\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\consulta-braille\consulta-braille.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], ConsultaBraillePage);
@@ -1027,7 +1020,7 @@ var ConsultaBraillePage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PraticaBraillePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utilBraille_utilBraille__ = __webpack_require__(374);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1055,6 +1048,9 @@ var PraticaBraillePage = (function () {
         this.pAtualC1 = '000000';
     }
     PraticaBraillePage.prototype.ionViewDidLoad = function () {
+        this.iniciarPalavras();
+    };
+    PraticaBraillePage.prototype.iniciarPalavras = function () {
         this.palavra = "";
         this.elegivel = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 38, 52, 53, 54];
         this.nivel = 1;
@@ -1064,15 +1060,20 @@ var PraticaBraillePage = (function () {
         return Math.floor(Math.random() * this.elegivel.length);
     };
     PraticaBraillePage.prototype.sortearPalavra = function () {
-        var num = this.selecionarPalavra();
-        this.posi = this.elegivel[num];
-        console.log(this.elegivel.splice(num, 1));
-        console.log(this.elegivel);
-        console.log(num);
-        this.palavra = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[this.posi].palavra;
-        this.imagem = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[this.posi].imagem;
-        this.letrasEsc = this.sortearletrasEsconder();
-        this.montarSimbolos();
+        if (this.elegivel.length > 0) {
+            var num = this.selecionarPalavra();
+            this.posi = this.elegivel[num];
+            console.log(this.elegivel.splice(num, 1));
+            console.log(this.elegivel);
+            console.log(num);
+            this.palavra = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[this.posi].palavra;
+            this.imagem = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[this.posi].imagem;
+            this.letrasEsc = this.sortearletrasEsconder();
+            this.montarSimbolos();
+        }
+        else {
+            this.iniciarPalavras();
+        }
     };
     PraticaBraillePage.prototype.sortearletrasEsconder = function () {
         var sorteados = new Array();
@@ -1201,7 +1202,7 @@ var PraticaBraillePage = (function () {
     };
     PraticaBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pratica-braille',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/pratica-braille/pratica-braille.html"*/'<!--\n  Generated template for the PraticaBraillePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Prática Braille</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div>\n    <div style="float: left; width: 45%;margin-left: 3%;height: 50%;">\n      <img src={{imagem}}>\n    </div>\n    <div class="cell-braille" style="height: 50%;">\n      <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille"></a>\n      <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille"></a>\n      <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille"></a>\n      <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille"></a>\n      <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille"></a>\n      <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille"></a>\n    </div>\n    <div style="display: -webkit-inline-box; width: 100%; justify-content: center; display: flex;">\n      <h1 style="text-align: center; font-size: 50px; font-family: \'Courier New\';">{{palavra}}</h1>\n    </div>\n    <div style="text-align: center;">\n      <img *ngFor="let imgBraille of simbolos" style="max-width: 30px;" src={{imgBraille}}>\n    </div>\n    <button (click)=\'validar()\' ion-button full>OK</button>\n    <button (click)=\'pular()\' ion-button full>Pular</button>\n  </div>\n</ion-content>'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/pratica-braille/pratica-braille.html"*/,
+            selector: 'page-pratica-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/'<!--\n\n  Generated template for the PraticaBraillePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prática Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div>\n\n    <div style="float: left; width: 45%;margin-left: 3%;height: 50%;">\n\n      <img style=" height: 240px;" src={{imagem}}>\n\n    </div>\n\n    <div class="cell-braille" style="height: 50%;">\n\n      <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille"></a>\n\n      <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille"></a>\n\n      <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille"></a>\n\n      <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille"></a>\n\n      <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille"></a>\n\n      <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille"></a>\n\n    </div>\n\n    <div style="display: -webkit-inline-box; width: 100%; justify-content: center; display: flex;">\n\n      <h1 style="text-align: center; font-size: 50px; font-family: \'Courier New\';">{{palavra}}</h1>\n\n    </div>\n\n    <div style="text-align: center;">\n\n      <img *ngFor="let imgBraille of simbolos" style="max-width: 30px;" src={{imgBraille}}>\n\n    </div>\n\n    <button (click)=\'validar()\' ion-button full>OK</button>\n\n    <button (click)=\'pular()\' ion-button full>Pular</button>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_3__utilBraille_utilBraille__["a" /* Utils */]
             ]
@@ -1223,7 +1224,7 @@ var PraticaBraillePage = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Utils; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1278,9 +1279,109 @@ var Utils = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaquinaBraillePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the MaquinaBraillePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MaquinaBraillePage = (function () {
+    function MaquinaBraillePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.pAtualC1 = '000000';
+    }
+    MaquinaBraillePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MaquinaBraillePage');
+    };
+    MaquinaBraillePage.prototype.marcar = function (posicao) {
+        if (document.getElementById(posicao).style.backgroundColor === "black") {
+            document.getElementById(posicao).style.backgroundColor = "transparent";
+        }
+        else {
+            document.getElementById(posicao).style.backgroundColor = "black";
+        }
+        this.pAtualC1 = "";
+        if (document.getElementById('c1p1').style.backgroundColor === "black") {
+            this.pAtualC1 = this.pAtualC1 + '1';
+        }
+        else {
+            this.pAtualC1 = this.pAtualC1 + '0';
+        }
+        if (document.getElementById('c1p2').style.backgroundColor === "black") {
+            this.pAtualC1 = this.pAtualC1 + '1';
+        }
+        else {
+            this.pAtualC1 = this.pAtualC1 + '0';
+        }
+        if (document.getElementById('c1p3').style.backgroundColor === "black") {
+            this.pAtualC1 = this.pAtualC1 + '1';
+        }
+        else {
+            this.pAtualC1 = this.pAtualC1 + '0';
+        }
+        if (document.getElementById('c1p4').style.backgroundColor === "black") {
+            this.pAtualC1 = this.pAtualC1 + '1';
+        }
+        else {
+            this.pAtualC1 = this.pAtualC1 + '0';
+        }
+        if (document.getElementById('c1p5').style.backgroundColor === "black") {
+            this.pAtualC1 = this.pAtualC1 + '1';
+        }
+        else {
+            this.pAtualC1 = this.pAtualC1 + '0';
+        }
+        if (document.getElementById('c1p6').style.backgroundColor === "black") {
+            this.pAtualC1 = this.pAtualC1 + '1';
+        }
+        else {
+            this.pAtualC1 = this.pAtualC1 + '0';
+        }
+    };
+    MaquinaBraillePage.prototype.limpaMarcacao = function () {
+        document.getElementById('c1p1').style.backgroundColor = "transparent";
+        document.getElementById('c1p2').style.backgroundColor = "transparent";
+        document.getElementById('c1p3').style.backgroundColor = "transparent";
+        document.getElementById('c1p4').style.backgroundColor = "transparent";
+        document.getElementById('c1p5').style.backgroundColor = "transparent";
+        document.getElementById('c1p6').style.backgroundColor = "transparent";
+        this.pAtualC1 = "";
+    };
+    MaquinaBraillePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-maquina-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\maquina-braille\maquina-braille.html"*/'<!--\n  Generated template for the MaquinaBraillePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Máquina braille</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div style="height: 86%;"></div>\n  <div style="text-align: center">\n    <div class="cell-braille " style="width: 40%;">\n      <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large ponto-braille" style="float: left;"></a>\n      <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large ponto-braille" style="float: left;"></a>\n      <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large ponto-braille" style="float: left;"></a>\n    </div>\n    <button ion-button style="width: 18%;">OK</button>\n    <div class="cell-braille " style="width: 40%; float: right;">\n      <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large ponto-braille" style="float: right;"></a>\n      <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large ponto-braille" style="float: right;"></a>\n      <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large ponto-braille" style="float: right;"></a>\n    </div>\n  </div>\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\maquina-braille\maquina-braille.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], MaquinaBraillePage);
+    return MaquinaBraillePage;
+}());
+
+//# sourceMappingURL=maquina-braille.js.map
+
+/***/ }),
+
+/***/ 376:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TutorialPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_page_tabs_page__ = __webpack_require__(66);
@@ -1339,7 +1440,7 @@ var TutorialPage = (function () {
     ], TutorialPage.prototype, "slides", void 0);
     TutorialPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tutorial',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/tutorial/tutorial.html"*/'<ion-header no-border>\n  <ion-navbar>\n    <ion-buttons end *ngIf="showSkip">\n      <button ion-button (click)="startApp()" color="primary">Pular</button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-bounce>\n  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>\n\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>\n      <h2 class="slide-title">\n        Bem-vindo ao <b>BRAILLE</b>\n      </h2>\n      <p>\n        <b>Toque ou deslize</b> para continuar.\n      </p>\n    </ion-slide>\n\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>\n      <h2 class="slide-title" >Aprenda</h2>\n      <p><b>Construa</b> palavras e frases com o simulador de Máquina Braille.</p>\n    </ion-slide>\n\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image"/>\n      <h2 class="slide-title">Pratique</h2>\n      <p>Faça exercícios e meça o seu progresso.</p>\n    </ion-slide>\n\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>\n      <h2 class="slide-title">Vamos começar?</h2>\n      <button ion-button icon-end large clear (click)="startApp()">\n        Continuar\n        <ion-icon name="arrow-forward"></ion-icon>\n      </button>\n    </ion-slide>\n\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/tutorial/tutorial.html"*/
+            selector: 'page-tutorial',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\tutorial\tutorial.html"*/'<ion-header no-border>\n\n  <ion-navbar>\n\n    <ion-buttons end *ngIf="showSkip">\n\n      <button ion-button (click)="startApp()" color="primary">Pular</button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content no-bounce>\n\n  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>\n\n\n\n    <ion-slide>\n\n      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>\n\n      <h2 class="slide-title">\n\n        Bem-vindo ao <b>BRAILLE</b>\n\n      </h2>\n\n      <p>\n\n        <b>Toque ou deslize</b> para continuar.\n\n      </p>\n\n    </ion-slide>\n\n\n\n    <ion-slide>\n\n      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>\n\n      <h2 class="slide-title" >Aprenda</h2>\n\n      <p><b>Construa</b> palavras e frases com o simulador de Máquina Braille.</p>\n\n    </ion-slide>\n\n\n\n    <ion-slide>\n\n      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image"/>\n\n      <h2 class="slide-title">Pratique</h2>\n\n      <p>Faça exercícios e meça o seu progresso.</p>\n\n    </ion-slide>\n\n\n\n    <ion-slide>\n\n      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>\n\n      <h2 class="slide-title">Vamos começar?</h2>\n\n      <button ion-button icon-end large clear (click)="startApp()">\n\n        Continuar\n\n        <ion-icon name="arrow-forward"></ion-icon>\n\n      </button>\n\n    </ion-slide>\n\n\n\n  </ion-slides>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\tutorial\tutorial.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
@@ -1352,13 +1453,13 @@ var TutorialPage = (function () {
 
 /***/ }),
 
-/***/ 376:
+/***/ 377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriarContaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_autenticacao_autenticacao__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_user_data__ = __webpack_require__(46);
@@ -1432,7 +1533,7 @@ var CriarContaPage = (function () {
     };
     CriarContaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-criar-conta',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/criar-conta/criar-conta.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>\n      Criar nova conta\n    </ion-title>\n  </ion-navbar>\n</ion-header> \n\n\n<ion-content padding>\n  <form [formGroup]="form" novalidate>\n    <ion-list>\n			 \n      <ion-item>\n        <ion-label stacked>E-mail</ion-label>\n        <ion-input type="text" name="email" formControlName="email" required></ion-input>\n			</ion-item>\n     \n\n      <ion-item>\n        <ion-label stacked>Senha</ion-label>\n        <ion-input type="password" name="password" formControlName="password" required></ion-input> 	\n			</ion-item> \n\n    </ion-list>\n\n    <button ion-button block color="primary" [disabled]="form.invalid" (click)="criarConta()">\n      Criar conta\n    </button>\n  </form>\n\n</ion-content>\n\n '/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/criar-conta/criar-conta.html"*/,
+            selector: 'page-criar-conta',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\criar-conta\criar-conta.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Criar nova conta\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header> \n\n\n\n\n\n<ion-content padding>\n\n  <form [formGroup]="form" novalidate>\n\n    <ion-list>\n\n			 \n\n      <ion-item>\n\n        <ion-label stacked>E-mail</ion-label>\n\n        <ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n			</ion-item>\n\n     \n\n\n\n      <ion-item>\n\n        <ion-label stacked>Senha</ion-label>\n\n        <ion-input type="password" name="password" formControlName="password" required></ion-input> 	\n\n			</ion-item> \n\n\n\n    </ion-list>\n\n\n\n    <button ion-button block color="primary" [disabled]="form.invalid" (click)="criarConta()">\n\n      Criar conta\n\n    </button>\n\n  </form>\n\n\n\n</ion-content>\n\n\n\n '/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\criar-conta\criar-conta.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ToastController */],
@@ -1448,13 +1549,13 @@ var CriarContaPage = (function () {
 
 /***/ }),
 
-/***/ 377:
+/***/ 378:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(383);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1462,7 +1563,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 382:
+/***/ 383:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1470,34 +1571,36 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(419);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(420);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_database__ = __webpack_require__(359);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angularfire2_auth__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(718);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(719);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_about_about__ = __webpack_require__(368);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_page_tabs_page__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_tutorial_tutorial__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_tutorial_tutorial__ = __webpack_require__(376);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_conference_data__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login_module__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login_module__ = __webpack_require__(720);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_autenticacao_autenticacao__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_criar_conta_criar_conta_module__ = __webpack_require__(720);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_sinais_braille_sinais_braille_module__ = __webpack_require__(721);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_exemplo_braille_exemplo_braille_module__ = __webpack_require__(722);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_consulta_braille_consulta_braille_module__ = __webpack_require__(723);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_pratica_braille_pratica_braille_module__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_criar_conta_criar_conta_module__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_sinais_braille_sinais_braille_module__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_exemplo_braille_exemplo_braille_module__ = __webpack_require__(723);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_consulta_braille_consulta_braille_module__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_pratica_braille_pratica_braille_module__ = __webpack_require__(725);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_login_login__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_Principal_Principal__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_maquina_braille_maquina_braille_module__ = __webpack_require__(726);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1564,7 +1667,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_19__pages_sinais_braille_sinais_braille_module__["a" /* SinaisBraillePageModule */],
                 __WEBPACK_IMPORTED_MODULE_20__pages_exemplo_braille_exemplo_braille_module__["a" /* ExemploBraillePageModule */],
                 __WEBPACK_IMPORTED_MODULE_21__pages_consulta_braille_consulta_braille_module__["a" /* ConsultaBraillePageModule */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_pratica_braille_pratica_braille_module__["a" /* PraticaBraillePageModule */]
+                __WEBPACK_IMPORTED_MODULE_22__pages_pratica_braille_pratica_braille_module__["a" /* PraticaBraillePageModule */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_maquina_braille_maquina_braille_module__["a" /* MaquinaBraillePageModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicApp */]],
             entryComponents: [
@@ -1597,7 +1701,7 @@ var AppModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserData; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(81);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1692,7 +1796,7 @@ var UserData = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about__ = __webpack_require__(368);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Principal_Principal__ = __webpack_require__(369);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1719,7 +1823,7 @@ var TabsPage = (function () {
         this.Util.LoadingMensagem('', 'Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).', 1000);
     };
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/tabs-page/tabs-page.html"*/'<ion-tabs [selectedIndex]="mySelectedIndex" name="conference">\n  <ion-tab [root]="tab1Root" tabTitle="Principal" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Sobre" tabIcon="information-circle"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/tabs-page/tabs-page.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\tabs-page\tabs-page.html"*/'<ion-tabs [selectedIndex]="mySelectedIndex" name="conference">\n\n  <ion-tab [root]="tab1Root" tabTitle="Principal" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Sobre" tabIcon="information-circle"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\tabs-page\tabs-page.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], TabsPage);
@@ -1730,17 +1834,17 @@ var TabsPage = (function () {
 
 /***/ }),
 
-/***/ 718:
+/***/ 719:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConferenceApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_page_tabs_page__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tutorial_tutorial__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tutorial_tutorial__ = __webpack_require__(376);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_conference_data__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_user_data__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(90);
@@ -1877,7 +1981,7 @@ var ConferenceApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */])
     ], ConferenceApp.prototype, "nav", void 0);
     ConferenceApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/app/app.template.html"*/'<ion-split-pane>\n\n  <ion-menu id="loggedOutMenu" [content]="content">\n\n    <ion-header>\n      <ion-toolbar>\n        <ion-title>Menu</ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content class="outer-content">\n\n      <ion-list>\n        <ion-list-header>\n          Navegue\n        </ion-list-header>\n        <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">\n          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>\n          {{p.title}}\n        </button>\n      </ion-list>\n\n      <ion-list>\n        <ion-list-header>\n          Tutorial\n        </ion-list-header>\n        <button ion-item menuClose (click)="openTutorial()">\n          <ion-icon item-start name="help-circle"></ion-icon>\n          Abrir Tutorial\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <!-- main navigation -->\n  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>\n\n</ion-split-pane>\n'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/app/app.template.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/'<ion-split-pane>\n\n\n\n  <ion-menu id="loggedOutMenu" [content]="content">\n\n\n\n    <ion-header>\n\n      <ion-toolbar>\n\n        <ion-title>Menu</ion-title>\n\n      </ion-toolbar>\n\n    </ion-header>\n\n\n\n    <ion-content class="outer-content">\n\n\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Navegue\n\n        </ion-list-header>\n\n        <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">\n\n          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>\n\n          {{p.title}}\n\n        </button>\n\n      </ion-list>\n\n\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Tutorial\n\n        </ion-list-header>\n\n        <button ion-item menuClose (click)="openTutorial()">\n\n          <ion-icon item-start name="help-circle"></ion-icon>\n\n          Abrir Tutorial\n\n        </button>\n\n      </ion-list>\n\n    </ion-content>\n\n\n\n  </ion-menu>\n\n  <!-- main navigation -->\n\n  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>\n\n\n\n</ion-split-pane>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */],
             __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* UserData */],
@@ -1894,13 +1998,13 @@ var ConferenceApp = (function () {
 
 /***/ }),
 
-/***/ 719:
+/***/ 720:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1931,14 +2035,14 @@ var LoginPageModule = (function () {
 
 /***/ }),
 
-/***/ 720:
+/***/ 721:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriarContaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__criar_conta__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__criar_conta__ = __webpack_require__(377);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1968,13 +2072,13 @@ var CriarContaPageModule = (function () {
 
 /***/ }),
 
-/***/ 721:
+/***/ 722:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SinaisBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sinais_braille__ = __webpack_require__(370);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2005,13 +2109,13 @@ var SinaisBraillePageModule = (function () {
 
 /***/ }),
 
-/***/ 722:
+/***/ 723:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExemploBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo_braille__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2042,13 +2146,13 @@ var ExemploBraillePageModule = (function () {
 
 /***/ }),
 
-/***/ 723:
+/***/ 724:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConsultaBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__consulta_braille__ = __webpack_require__(372);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2079,13 +2183,13 @@ var ConsultaBraillePageModule = (function () {
 
 /***/ }),
 
-/***/ 724:
+/***/ 725:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PraticaBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pratica_braille__ = __webpack_require__(373);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2116,15 +2220,52 @@ var PraticaBraillePageModule = (function () {
 
 /***/ }),
 
+/***/ 726:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaquinaBraillePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__maquina_braille__ = __webpack_require__(375);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var MaquinaBraillePageModule = (function () {
+    function MaquinaBraillePageModule() {
+    }
+    MaquinaBraillePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__maquina_braille__["a" /* MaquinaBraillePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__maquina_braille__["a" /* MaquinaBraillePage */]),
+            ],
+        })
+    ], MaquinaBraillePageModule);
+    return MaquinaBraillePageModule;
+}());
+
+//# sourceMappingURL=maquina-braille.module.js.map
+
+/***/ }),
+
 /***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__criar_conta_criar_conta__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__criar_conta_criar_conta__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_autenticacao_autenticacao__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utilBraille_utilBraille__ = __webpack_require__(374);
@@ -2195,7 +2336,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-user',template:/*ion-inline-start:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/login/login.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Login</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content>\n	<div class="logo">\n		<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">\n	</div>\n\n	<form [formGroup]="form" novalidate>\n		<ion-list>\n\n			<ion-item>\n				<ion-label stacked>E-mail</ion-label>\n				<ion-input type="text" name="email" formControlName="email" required></ion-input>\n			</ion-item>  \n\n\n			<ion-item>\n				<ion-label stacked>Senha</ion-label>\n				<ion-input type="password" name="password" formControlName="password" required></ion-input>\n			</ion-item>\n \n		</ion-list>\n\n		<ion-row responsive-sm>\n			<ion-col>\n				<button ion-button (click)="onLogin()" type="submit" block>Login</button>\n				<button (click)="criarContaUsuario()" ion-button block>Criar conta</button>\n			</ion-col>\n		</ion-row>\n	</form>\n\n</ion-content>'/*ion-inline-end:"/Volumes/HD_APOIO/GIT/Projetos/tecedu/braille/Fontes/src/pages/login/login.html"*/,
+            selector: 'page-user',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/'<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>Login</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<div class="logo">\n\n		<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">\n\n	</div>\n\n\n\n	<form [formGroup]="form" novalidate>\n\n		<ion-list>\n\n\n\n			<ion-item>\n\n				<ion-label stacked>E-mail</ion-label>\n\n				<ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n			</ion-item>  \n\n\n\n\n\n			<ion-item>\n\n				<ion-label stacked>Senha</ion-label>\n\n				<ion-input type="password" name="password" formControlName="password" required></ion-input>\n\n			</ion-item>\n\n \n\n		</ion-list>\n\n\n\n		<ion-row responsive-sm>\n\n			<ion-col>\n\n				<button ion-button (click)="onLogin()" type="submit" block>Login</button>\n\n				<button (click)="criarContaUsuario()" ion-button block>Criar conta</button>\n\n			</ion-col>\n\n		</ion-row>\n\n	</form>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_6__utilBraille_utilBraille__["a" /* Utils */]
             ]
@@ -2214,5 +2355,5 @@ var LoginPage = (function () {
 
 /***/ })
 
-},[377]);
+},[378]);
 //# sourceMappingURL=main.js.map

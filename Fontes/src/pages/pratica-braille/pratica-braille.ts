@@ -32,6 +32,10 @@ export class PraticaBraillePage {
   }
 
   ionViewDidLoad() {
+    this.iniciarPalavras();
+  }
+
+  iniciarPalavras(){
     this.palavra = "";
     this.elegivel = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 38, 52, 53, 54];
     this.nivel = 1;
@@ -43,15 +47,19 @@ export class PraticaBraillePage {
   }
 
   sortearPalavra() {
-    let num = this.selecionarPalavra();
-    this.posi = this.elegivel[num];
-    console.log(this.elegivel.splice(num, 1)); 
-    console.log(this.elegivel);
-    console.log(num)
-    this.palavra = palavraBraille.exemplosImagem[this.posi].palavra;
-    this.imagem = palavraBraille.exemplosImagem[this.posi].imagem;
-    this.letrasEsc = this.sortearletrasEsconder();
-    this.montarSimbolos();
+    if (this.elegivel.length > 0) {
+      let num = this.selecionarPalavra();
+      this.posi = this.elegivel[num];
+      console.log(this.elegivel.splice(num, 1));
+      console.log(this.elegivel);
+      console.log(num)
+      this.palavra = palavraBraille.exemplosImagem[this.posi].palavra;
+      this.imagem = palavraBraille.exemplosImagem[this.posi].imagem;
+      this.letrasEsc = this.sortearletrasEsconder();
+      this.montarSimbolos();
+    }else{
+      this.iniciarPalavras();
+    }
   }
 
   sortearletrasEsconder(): Array<string> {
