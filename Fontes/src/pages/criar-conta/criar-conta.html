@@ -4,31 +4,30 @@
       Criar nova conta
     </ion-title>
   </ion-navbar>
-</ion-header> 
+</ion-header>
 
 
 <ion-content padding>
-  <form [formGroup]="form" novalidate>
-    <ion-list>
-			 
-      <ion-item>
-        <ion-label stacked>E-mail</ion-label>
-        <ion-input type="text" name="email" formControlName="email" required></ion-input>
-			</ion-item>
-     
 
-      <ion-item>
-        <ion-label stacked>Senha</ion-label>
-        <ion-input type="password" name="password" formControlName="password" required></ion-input> 	
-			</ion-item> 
+  <div class="container">
+    <div class="box">
+      <div>
+        <form [formGroup]="form" novalidate>
+          <ion-item>
+            <ion-label floating>E-mail</ion-label>
+            <ion-input type="text" name="email" formControlName="email" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>Senha</ion-label>
+            <ion-input type="password" name="password" formControlName="password" required></ion-input>
+          </ion-item>
 
-    </ion-list>
-
-    <button ion-button block color="primary" [disabled]="form.invalid" (click)="criarConta()">
-      Criar conta
-    </button>
-  </form>
+          <button ion-button block color="primary" [disabled]="form.invalid" (click)="criarConta()">
+            Criar conta
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 
 </ion-content>
-
- 

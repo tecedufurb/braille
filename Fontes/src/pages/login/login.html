@@ -5,32 +5,27 @@
 </ion-header>
 
 <ion-content>
-	<div class="logo">
-		<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">
+	<div class="container">
+		<div class="box">
+			<div class="logo">
+				<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">
+			</div>
+			<form [formGroup]="form" novalidate>
+				<ion-item>
+					<ion-label floating>E-mail</ion-label>
+					<ion-input type="text" name="email" formControlName="email" required></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Senha</ion-label>
+					<ion-input type="password" name="password" formControlName="password" required></ion-input>
+				</ion-item>
+				<ion-row responsive-sm>
+					<ion-col>
+						<button ion-button (click)="onLogin()" type="submit" block>Login</button>
+						<button (click)="criarConta()" ion-button block>Criar conta</button>
+					</ion-col>
+				</ion-row>
+			</form>
+		</div>
 	</div>
-
-	<form [formGroup]="form" novalidate>
-		<ion-list>
-
-			<ion-item>
-				<ion-label stacked>E-mail</ion-label>
-				<ion-input type="text" name="email" formControlName="email" required></ion-input>
-			</ion-item>  
-
-
-			<ion-item>
-				<ion-label stacked>Senha</ion-label>
-				<ion-input type="password" name="password" formControlName="password" required></ion-input>
-			</ion-item>
- 
-		</ion-list>
-
-		<ion-row responsive-sm>
-			<ion-col>
-				<button ion-button (click)="onLogin()" type="submit" block>Login</button>
-				<button (click)="criarContaUsuario()" ion-button block>Criar conta</button>
-			</ion-col>
-		</ion-row>
-	</form>
-
 </ion-content>

@@ -1,12 +1,20 @@
 page-sinais-braille {
     .imagem-btn{
         border-radius: 10px;
-        width: 16%;
+        width: 24%;
         height: 40%;
         margin: 2px;   
-    }    
-
-    .botao{
-        bottom: -102px;
+    }   
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+    }
+       .box {
+        width: 100%;
+        max-height: 328px;
+        max-width: 600px;
     }
 }

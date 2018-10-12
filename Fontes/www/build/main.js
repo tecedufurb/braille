@@ -699,7 +699,7 @@ var SinaisBraillePage = (function () {
     };
     SinaisBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sinais-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Sinais Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n  <h1 style="text-align: center;">{{serieDeSinais}}º Série de sinais</h1>\n\n\n\n    <div style="max-height: 260px; height: 240px; text-align: center; ">\n\n      <div >\n\n        <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series">\n\n        <img src={{simbolo.imagem}}></button>\n\n      </div>\n\n    </div>\n\n \n\n  <button ion-button style="float: left;" class="botao" (click)="serie(serieDeSinais-1)">Anterior</button>\n\n  <button ion-button style="float: right;" class="botao" (click)="serie(serieDeSinais+1)">Próximo</button>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/,
+            selector: 'page-sinais-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Sinais Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n  <h1 style="text-align: center;">{{serieDeSinais}}º Série de sinais</h1>\n\n\n\n    <div class="container" style="height: 70%; text-align: center; ">\n\n      <div class="box" >\n\n        <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series">\n\n        <img src={{simbolo.imagem}}></button>\n\n      </div>\n\n    </div>\n\n \n\n  <button ion-button style="float: left;" (click)="serie(serieDeSinais-1)">Anterior</button>\n\n  <button ion-button style="float: right;" (click)="serie(serieDeSinais+1)">Próximo</button>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], SinaisBraillePage);
@@ -1202,7 +1202,7 @@ var PraticaBraillePage = (function () {
     };
     PraticaBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pratica-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/'<!--\n\n  Generated template for the PraticaBraillePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prática Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div>\n\n    <div style="float: left; width: 45%;margin-left: 3%;height: 50%;">\n\n      <img style=" height: 240px;" src={{imagem}}>\n\n    </div>\n\n    <div class="cell-braille" style="height: 50%;">\n\n      <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille"></a>\n\n      <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille"></a>\n\n      <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille"></a>\n\n      <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille"></a>\n\n      <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille"></a>\n\n      <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille"></a>\n\n    </div>\n\n    <div style="display: -webkit-inline-box; width: 100%; justify-content: center; display: flex;">\n\n      <h1 style="text-align: center; font-size: 50px; font-family: \'Courier New\';">{{palavra}}</h1>\n\n    </div>\n\n    <div style="text-align: center;">\n\n      <img *ngFor="let imgBraille of simbolos" style="max-width: 30px;" src={{imgBraille}}>\n\n    </div>\n\n    <button (click)=\'validar()\' ion-button full>OK</button>\n\n    <button (click)=\'pular()\' ion-button full>Pular</button>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/,
+            selector: 'page-pratica-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/'<!--\n\n  Generated template for the PraticaBraillePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prática Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div>\n\n    <div style="float: left; width: 45%;margin-left: 3%;height: 50%;">\n\n      <!--alterar para width-->\n\n      <img style=" height: 80%;" src={{imagem}}>\n\n    </div>\n\n    <div class="cell-braille" style="height: 50%;">\n\n      <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille"></a>\n\n      <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille"></a>\n\n      <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille"></a>\n\n      <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille"></a>\n\n      <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille"></a>\n\n      <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille"></a>\n\n    </div>\n\n    <div style="display: -webkit-inline-box; width: 100%; justify-content: center; display: flex;">\n\n      <h1 style="text-align: center; font-size: 50px; font-family: \'Courier New\';">{{palavra}}</h1>\n\n    </div>\n\n    <div style="text-align: center;">\n\n      <img *ngFor="let imgBraille of simbolos" style="max-width: 30px;" src={{imgBraille}}>\n\n    </div>\n\n    <button (click)=\'validar()\' ion-button full>OK</button>\n\n    <button (click)=\'pular()\' ion-button full>Pular</button>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_3__utilBraille_utilBraille__["a" /* Utils */]
             ]
@@ -1457,105 +1457,9 @@ var TutorialPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriarContaPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_autenticacao_autenticacao__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_page_tabs_page__ = __webpack_require__(66);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var CriarContaPage = (function () {
-    function CriarContaPage(navCtrl, toastCtrl, authService, formBuilder, menuCtrl, userData) {
-        this.navCtrl = navCtrl;
-        this.toastCtrl = toastCtrl;
-        this.authService = authService;
-        this.formBuilder = formBuilder;
-        this.menuCtrl = menuCtrl;
-        this.userData = userData;
-        this.form = this.formBuilder.group({
-            email: [null, [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].email]],
-            password: [null, [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].minLength(6)]]
-        });
-    }
-    //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
-    CriarContaPage.prototype.ionViewWillEnter = function () {
-        this.menuCtrl.enable(false, 'loggedOutMenu');
-    };
-    CriarContaPage.prototype.ionViewWillLeave = function () {
-        this.menuCtrl.enable(true, 'loggedOutMenu');
-    };
-    CriarContaPage.prototype.criarConta = function () {
-        var _this = this;
-        var usuario = this.form.value;
-        if (this.form.valid) {
-            var toast_1 = this.toastCtrl.create({ duration: 3000, position: 'buttom' });
-            this.authService.criarUsuario(usuario)
-                .then(function (usuario) {
-                toast_1.setMessage('Usuário criado com sucesso.');
-                toast_1.present();
-                _this.userData.login(usuario.email);
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__tabs_page_tabs_page__["a" /* TabsPage */]);
-            })
-                .catch(function (error) {
-                if (error.code == 'auth/email-already-in-use') {
-                    toast_1.setMessage('O e-mail digitado já está em uso.');
-                }
-                else if (error.code == 'auth/invalid-email') {
-                    toast_1.setMessage('O e-mail digitado não é valido.');
-                }
-                else if (error.code == 'auth/operation-not-allowed') {
-                    toast_1.setMessage('Não está habilitado criar usuários.');
-                }
-                else if (error.code == 'auth/weak-password') {
-                    toast_1.setMessage('A senha digitada é muito fraca.');
-                }
-                else {
-                    toast_1.setMessage(error.code);
-                }
-                toast_1.present();
-            });
-        }
-    };
-    CriarContaPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-criar-conta',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\criar-conta\criar-conta.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Criar nova conta\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header> \n\n\n\n\n\n<ion-content padding>\n\n  <form [formGroup]="form" novalidate>\n\n    <ion-list>\n\n			 \n\n      <ion-item>\n\n        <ion-label stacked>E-mail</ion-label>\n\n        <ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n			</ion-item>\n\n     \n\n\n\n      <ion-item>\n\n        <ion-label stacked>Senha</ion-label>\n\n        <ion-input type="password" name="password" formControlName="password" required></ion-input> 	\n\n			</ion-item> \n\n\n\n    </ion-list>\n\n\n\n    <button ion-button block color="primary" [disabled]="form.invalid" (click)="criarConta()">\n\n      Criar conta\n\n    </button>\n\n  </form>\n\n\n\n</ion-content>\n\n\n\n '/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\criar-conta\criar-conta.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_autenticacao_autenticacao__["a" /* AutenticacaoProvider */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_user_data__["a" /* UserData */]])
-    ], CriarContaPage);
-    return CriarContaPage;
-}());
-
-//# sourceMappingURL=criar-conta.js.map
-
-/***/ }),
-
-/***/ 378:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(382);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1563,7 +1467,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 383:
+/***/ 382:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1572,21 +1476,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(420);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(419);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_database__ = __webpack_require__(359);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angularfire2_auth__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(718);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_about_about__ = __webpack_require__(368);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_page_tabs_page__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_tutorial_tutorial__ = __webpack_require__(376);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_conference_data__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login_module__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login_module__ = __webpack_require__(719);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_autenticacao_autenticacao__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_criar_conta_criar_conta_module__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_criar_conta_criar_conta_module__ = __webpack_require__(720);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_sinais_braille_sinais_braille_module__ = __webpack_require__(722);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_exemplo_braille_exemplo_braille_module__ = __webpack_require__(723);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_consulta_braille_consulta_braille_module__ = __webpack_require__(724);
@@ -1834,7 +1738,7 @@ var TabsPage = (function () {
 
 /***/ }),
 
-/***/ 719:
+/***/ 718:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1998,7 +1902,7 @@ var ConferenceApp = (function () {
 
 /***/ }),
 
-/***/ 720:
+/***/ 719:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2035,14 +1939,14 @@ var LoginPageModule = (function () {
 
 /***/ }),
 
-/***/ 721:
+/***/ 720:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriarContaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__criar_conta__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__criar_conta__ = __webpack_require__(721);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2069,6 +1973,102 @@ var CriarContaPageModule = (function () {
 }());
 
 //# sourceMappingURL=criar-conta.module.js.map
+
+/***/ }),
+
+/***/ 721:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriarContaPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_autenticacao_autenticacao__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_user_data__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_page_tabs_page__ = __webpack_require__(66);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var CriarContaPage = (function () {
+    function CriarContaPage(navCtrl, toastCtrl, authService, formBuilder, menuCtrl, userData) {
+        this.navCtrl = navCtrl;
+        this.toastCtrl = toastCtrl;
+        this.authService = authService;
+        this.formBuilder = formBuilder;
+        this.menuCtrl = menuCtrl;
+        this.userData = userData;
+        this.form = this.formBuilder.group({
+            email: [null, [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].email]],
+            password: [null, [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].minLength(6)]]
+        });
+    }
+    //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
+    CriarContaPage.prototype.ionViewWillEnter = function () {
+        this.menuCtrl.enable(false, 'loggedOutMenu');
+    };
+    CriarContaPage.prototype.ionViewWillLeave = function () {
+        this.menuCtrl.enable(true, 'loggedOutMenu');
+    };
+    CriarContaPage.prototype.criarConta = function () {
+        var _this = this;
+        var usuario = this.form.value;
+        if (this.form.valid) {
+            var toast_1 = this.toastCtrl.create({ duration: 3000, position: 'buttom' });
+            this.authService.criarUsuario(usuario)
+                .then(function (usuario) {
+                toast_1.setMessage('Usuário criado com sucesso.');
+                toast_1.present();
+                _this.userData.login(usuario.email);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__tabs_page_tabs_page__["a" /* TabsPage */]);
+            })
+                .catch(function (error) {
+                if (error.code == 'auth/email-already-in-use') {
+                    toast_1.setMessage('O e-mail digitado já está em uso.');
+                }
+                else if (error.code == 'auth/invalid-email') {
+                    toast_1.setMessage('O e-mail digitado não é valido.');
+                }
+                else if (error.code == 'auth/operation-not-allowed') {
+                    toast_1.setMessage('Não está habilitado criar usuários.');
+                }
+                else if (error.code == 'auth/weak-password') {
+                    toast_1.setMessage('A senha digitada é muito fraca.');
+                }
+                else {
+                    toast_1.setMessage(error.code);
+                }
+                toast_1.present();
+            });
+        }
+    };
+    CriarContaPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-criar-conta',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\criar-conta\criar-conta.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Criar nova conta\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <div class="container">\n\n    <div class="box">\n\n      <div>\n\n        <form [formGroup]="form" novalidate>\n\n          <ion-item>\n\n            <ion-label floating>E-mail</ion-label>\n\n            <ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n          </ion-item>\n\n          <ion-item>\n\n            <ion-label floating>Senha</ion-label>\n\n            <ion-input type="password" name="password" formControlName="password" required></ion-input>\n\n          </ion-item>\n\n\n\n          <button ion-button block color="primary" [disabled]="form.invalid" (click)="criarConta()">\n\n            Criar conta\n\n          </button>\n\n        </form>\n\n      </div>\n\n    </div>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\criar-conta\criar-conta.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_autenticacao_autenticacao__["a" /* AutenticacaoProvider */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_user_data__["a" /* UserData */]])
+    ], CriarContaPage);
+    return CriarContaPage;
+}());
+
+//# sourceMappingURL=criar-conta.js.map
 
 /***/ }),
 
@@ -2265,11 +2265,10 @@ var MaquinaBraillePageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__criar_conta_criar_conta__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_autenticacao_autenticacao__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utilBraille_utilBraille__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__tabs_page_tabs_page__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_autenticacao_autenticacao__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__ = __webpack_require__(66);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2282,7 +2281,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
+//import { CriarContaPage } from '../criar-conta/criar-conta';
 
 
 
@@ -2296,8 +2295,8 @@ var LoginPage = (function () {
         this.authService = authService;
         this.util = util;
         this.form = this.formBuilder.group({
-            email: [null, [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].email]],
-            password: [null, [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].minLength(6)]]
+            email: [null, [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].email]],
+            password: [null, [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(6)]]
         });
     }
     //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
@@ -2311,7 +2310,7 @@ var LoginPage = (function () {
             this.authService.logar(this.usuario).then(function () {
                 _this.userData.login(_this.usuario.email);
                 _this.util.showMensagem('Login realizado com sucesso...', "button");
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_7__tabs_page_tabs_page__["a" /* TabsPage */]);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__["a" /* TabsPage */]);
             }).catch(function (error) {
                 if (error.code == "auth/invalid-email") {
                     _this.util.showMensagem("Email inválido");
@@ -2332,21 +2331,54 @@ var LoginPage = (function () {
         }
     };
     LoginPage.prototype.criarContaUsuario = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__criar_conta_criar_conta__["a" /* CriarContaPage */]);
+        //this.navCtrl.push(CriarContaPage);
+    };
+    //Em vez de criar uma pagina para login e outra pra criar conta fazer tudo em uma só
+    LoginPage.prototype.criarConta = function () {
+        var _this = this;
+        var usuario = this.form.value;
+        if (this.form.valid) {
+            this.authService.criarUsuario(usuario)
+                .then(function (usuario) {
+                _this.util.showMensagem('Usuário criado com sucesso.');
+                _this.userData.login(usuario.email);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__["a" /* TabsPage */]);
+            })
+                .catch(function (error) {
+                if (error.code == 'auth/email-already-in-use') {
+                    _this.util.showMensagem('O e-mail digitado já está em uso.');
+                }
+                else if (error.code == 'auth/invalid-email') {
+                    _this.util.showMensagem('O e-mail digitado não é valido.');
+                }
+                else if (error.code == 'auth/operation-not-allowed') {
+                    _this.util.showMensagem('Não está habilitado criar usuários.');
+                }
+                else if (error.code == 'auth/weak-password') {
+                    _this.util.showMensagem('A senha digitada é muito fraca.');
+                }
+                else {
+                    _this.util.showMensagem(error.code);
+                }
+            });
+        }
+        else {
+            this.util.showMensagem('Insira uma usuário e senha para criar uma conta');
+        }
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-user',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/'<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>Login</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<div class="logo">\n\n		<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">\n\n	</div>\n\n\n\n	<form [formGroup]="form" novalidate>\n\n		<ion-list>\n\n\n\n			<ion-item>\n\n				<ion-label stacked>E-mail</ion-label>\n\n				<ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n			</ion-item>  \n\n\n\n\n\n			<ion-item>\n\n				<ion-label stacked>Senha</ion-label>\n\n				<ion-input type="password" name="password" formControlName="password" required></ion-input>\n\n			</ion-item>\n\n \n\n		</ion-list>\n\n\n\n		<ion-row responsive-sm>\n\n			<ion-col>\n\n				<button ion-button (click)="onLogin()" type="submit" block>Login</button>\n\n				<button (click)="criarContaUsuario()" ion-button block>Criar conta</button>\n\n			</ion-col>\n\n		</ion-row>\n\n	</form>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/,
+            selector: 'page-user',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/'<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>Login</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<div class="container">\n\n		<div class="box">\n\n			<div class="logo">\n\n				<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">\n\n			</div>\n\n			<form [formGroup]="form" novalidate>\n\n				<ion-item>\n\n					<ion-label floating>E-mail</ion-label>\n\n					<ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n				</ion-item>\n\n				<ion-item>\n\n					<ion-label floating>Senha</ion-label>\n\n					<ion-input type="password" name="password" formControlName="password" required></ion-input>\n\n				</ion-item>\n\n				<ion-row responsive-sm>\n\n					<ion-col>\n\n						<button ion-button (click)="onLogin()" type="submit" block>Login</button>\n\n						<button (click)="criarConta()" ion-button block>Criar conta</button>\n\n					</ion-col>\n\n				</ion-row>\n\n			</form>\n\n		</div>\n\n	</div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/,
             providers: [
-                __WEBPACK_IMPORTED_MODULE_6__utilBraille_utilBraille__["a" /* Utils */]
+                __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__["a" /* Utils */]
             ]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_user_data__["a" /* UserData */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_5__providers_autenticacao_autenticacao__["a" /* AutenticacaoProvider */],
-            __WEBPACK_IMPORTED_MODULE_6__utilBraille_utilBraille__["a" /* Utils */]])
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_autenticacao_autenticacao__["a" /* AutenticacaoProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__["a" /* Utils */]])
     ], LoginPage);
     return LoginPage;
 }());
@@ -2355,5 +2387,5 @@ var LoginPage = (function () {
 
 /***/ })
 
-},[378]);
+},[377]);
 //# sourceMappingURL=main.js.map
