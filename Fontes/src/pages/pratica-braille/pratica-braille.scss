@@ -7,6 +7,41 @@ page-pratica-braille {
       border: 0px;
     
     }
+    .celulas{
+      display: flex; 
+      width: 100%; 
+      justify-content: center; 
+      
+    }
+    .imagem{
+      float: left; 
+      width: 45%;
+      height: 50%;
+      max-height: 175px;
+      max-width: 250px; 
+     }
+    .palavra{
+      display: -webkit-inline-box; 
+      width: 100%; 
+      justify-content: center; 
+      display: flex;
+    }
+    .texto{
+      text-align: center; 
+      font-size: 45px; 
+      font-family: 'Courier New';
+    }
+    .sinais{
+      text-align: center;
+    }
+
+    .ponto{
+      height: 60px;
+    }
+    .sinais-img{
+      max-width: 25px;
+    }
+   
 
   
 }

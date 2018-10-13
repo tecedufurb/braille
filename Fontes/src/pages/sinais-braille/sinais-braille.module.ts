@@ -8,6 +8,6 @@ import { SinaisBraillePage } from './sinais-braille';
   ],
   imports: [
     IonicPageModule.forChild(SinaisBraillePage),
-  ],
+  ], 
 })
 export class SinaisBraillePageModule {}

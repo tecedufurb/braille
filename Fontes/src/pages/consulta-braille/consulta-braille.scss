@@ -5,4 +5,22 @@ page-consulta-braille {
         left: 0px;
         width: 100%;
     }
+
+    .fonte{
+        font-weight: bold; 
+        font-size: 200%;     
+    }
+
+    .celulas{
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: -webkit-center;
+        max-width: 500px;
+        width: 100%;
+    }
+    .grid{
+        align-items: center;
+    }
 }

@@ -39806,6 +39806,7 @@ ion-navbar.toolbar {
   float: left;
   height: 50%;
   border: 0px;
+  max-width: 270px;
 }
 
 [text-center] {
@@ -40008,6 +40009,38 @@ page-consulta-braille .textoPalavra {
   width: 100%;
 }
 
+page-consulta-braille .fonte {
+  font-weight: bold;
+  font-size: 200%;
+}
+
+page-consulta-braille .celulas {
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: -webkit-center;
+  max-width: 500px;
+  width: 100%;
+}
+
+page-consulta-braille .grid {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 page-criar-conta .container {
   height: 70%;
   display: -webkit-box;
@@ -40133,6 +40166,57 @@ page-pratica-braille .ImagemExemplo {
   float: left;
   font-family: 'Courier New';
   border: 0px;
+}
+
+page-pratica-braille .celulas {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-pratica-braille .imagem {
+  float: left;
+  width: 45%;
+  height: 50%;
+  max-height: 175px;
+  max-width: 250px;
+}
+
+page-pratica-braille .palavra {
+  display: -webkit-inline-box;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-pratica-braille .texto {
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Courier New';
+}
+
+page-pratica-braille .sinais {
+  text-align: center;
+}
+
+page-pratica-braille .ponto {
+  height: 60px;
+}
+
+page-pratica-braille .sinais-img {
+  max-width: 25px;
 }
 
 page-sinais-braille .imagem-btn {

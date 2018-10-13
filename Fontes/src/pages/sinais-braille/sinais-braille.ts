@@ -24,7 +24,7 @@ export class SinaisBraillePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
-    this.serie(1);
+    this.serie(1); 
   }
 
   ionViewDidLoad() {
