@@ -2,12 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { palavraBraille } from '../palavrasBraille';
 
-/**
- * Generated class for the ConsultaBraillePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -17,10 +11,9 @@ import { palavraBraille } from '../palavrasBraille';
 export class ConsultaBraillePage {
 
   texto: string;
-  txt2: string;
-  
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
+
   }
 
   ionViewDidLoad() {
@@ -53,7 +46,7 @@ export class ConsultaBraillePage {
     if (document.getElementById('c2p5').style.backgroundColor === "black") { pAtualC2 = pAtualC2 + '1'; } else { pAtualC2 = pAtualC2 + '0'; }
     if (document.getElementById('c2p6').style.backgroundColor === "black") { pAtualC2 = pAtualC2 + '1'; } else { pAtualC2 = pAtualC2 + '0'; }
 
-    this.txt2 = pAtualC1 + ' - ' + pAtualC2;
+
 
     // Identificando pontos braille.    
     if ((pAtualC1 === '000000') && (pAtualC2 === '000000')) {
@@ -62,7 +55,7 @@ export class ConsultaBraillePage {
       if ((palavraBraille.brailleSimples.indexOf(pAtualC2) < 0) && (pAtualC2 === '000000')) {
         this.texto = palavraBraille.correspontenteC[palavraBraille.brailleComposto.indexOf(pAtualC1)];
       } else if (palavraBraille.brailleSimples.indexOf(pAtualC2) >= 0) {
-       
+
         // Tratamento dos sinais compostos.
         if (pAtualC1 === '000101') { // Letra maíuscula
           this.texto = palavraBraille.correspondenteS[palavraBraille.brailleSimples.indexOf(pAtualC2)].toUpperCase();

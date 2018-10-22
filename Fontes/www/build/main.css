@@ -40159,6 +40159,25 @@ page-maquina-braille .ponto-braille {
   background: transparent;
   border-radius: 50%;
   border: 4px solid black;
+  float: left;
+  color: black;
+}
+
+page-maquina-braille .letras {
+  font-size: 40px;
+  display: inline-block;
+  min-width: 10px;
+}
+
+page-maquina-braille .sinais {
+  max-width: 25px;
+  display: inline-block;
+  min-width: 10px;
+}
+
+page-maquina-braille .caixaTexto {
+  overflow: scroll;
+  height: 38%;
 }
 
 page-pratica-braille .ImagemExemplo {

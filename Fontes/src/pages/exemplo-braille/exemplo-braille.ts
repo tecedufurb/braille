@@ -77,8 +77,7 @@ export class ExemploBraillePage {
         this.simbolos.push('./assets/img/sinais-braille-small/e.png');
         this.simbolos.push('./assets/img/sinais-braille-small/SE456-d.png');
         this.simbolos.push('./assets/img/sinais-braille-small/grau.png');
-      }
-      // if (this.imagem != ' ') {  
+      } 
       if (this.isMaiuscula(this.palavra[i]) && qtdMai < 2) {
         if (this.letra == 'maiúscula') 
           this.simbolos.splice(0, 0, './assets/img/sinais-braille-small/shift-d.png')
