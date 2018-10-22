@@ -110,6 +110,7 @@ export class MaquinaBraillePage {
       this.sinais.pop();
       this.palavra.pop();
     }
+    this.limpaMarcacao();
   }
 
 
