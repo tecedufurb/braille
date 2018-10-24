@@ -90,4 +90,5 @@ const autenticacaoFirebase = {
     AutenticacaoProvider
   ]
 })
-export class AppModule { }
+export class AppModule {
+}

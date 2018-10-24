@@ -147,6 +147,8 @@ export class palavraBraille {
     { letra: '8', img: './assets/img/sinais-braille-small/h.png', imgMarcado: './assets/img/sinais-braille-small/h-d.png' },
     { letra: '9', img: './assets/img/sinais-braille-small/i.png', imgMarcado: './assets/img/sinais-braille-small/i-d.png' },
     { letra: '0', img: './assets/img/sinais-braille-small/j.png', imgMarcado: './assets/img/sinais-braille-small/j-d.png' },
+    { letra: '!+', img: './assets/img/sinais-braille-small/exclamacao_adicao.png', imgMarcado: './assets/img/sinais-braille-small/exclamacao_adicao-d.png' },
+    { letra: '"x', img: './assets/img/sinais-braille-small/multiplicacao_aspa.png', imgMarcado: './assets/img/sinais-braille-small/multiplicacao_aspa-d.png' },
   ]
 
 
@@ -163,7 +165,16 @@ export class palavraBraille {
     'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
     'u', 'v', 'x', 'y', 'z', 'ç', 'é', 'á', 'è', 'ú',
     'â', 'ê', 'ô', '@', 'à', 'ï', 'ü', 'õ', 'w',
-    ',', ';', ':', '/', '?', '! (Exclamação) ou + (Adição)', '=', '" (aspas duplas) ou x (multiplicação)', '*', 'º',
+    ',', ';', ':', '÷', '?', '! (Exclamação) ou + (Adição)', '=', '" (aspas duplas) ou x (multiplicação)', '*', 'º',
+    'í', 'ã', 'ó', 'número', '.', '-',
+    '|', '$'];
+
+    //usado apenas os sinais sem os textos
+    static correspondenteSinais = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+    'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+    'u', 'v', 'x', 'y', 'z', 'ç', 'é', 'á', 'è', 'ú',
+    'â', 'ê', 'ô', '@', 'à', 'ï', 'ü', 'õ', 'w',
+    ',', ';', ':', '÷', '?', '!+', '=', '"x', '*', 'º',
     'í', 'ã', 'ó', 'número', '.', '-',
     '|', '$'];
 
@@ -176,6 +187,6 @@ export class palavraBraille {
 
   static correspondenteN = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 
-
+  
 
 }

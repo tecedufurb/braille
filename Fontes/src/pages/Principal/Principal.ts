@@ -27,10 +27,7 @@ export class PrincipalPage {
     public menu: MenuController,
     public fire: AngularFireDatabase,
 
-  ) {
-
-
-  }
+  ) { }
 
   ionViewDidLoad() {
     this.app.setTitle('Principal');
@@ -49,9 +46,9 @@ export class PrincipalPage {
     this.navCtrl.push(PraticaBraillePage);
   }
 
-  paginaMaquinaBraille(){
+  paginaMaquinaBraille() {
     this.navCtrl.push(MaquinaBraillePage);
   }
 
- 
+
 }

@@ -11,7 +11,7 @@ export class MaquinaBraillePage {
 
   palavra = new Array<String>();
   sinais = new Array<String>();
-
+  
   pAtualC1 = '000000';
   pAtualC2 = '000000';
   maiuscula: boolean;
@@ -20,10 +20,11 @@ export class MaquinaBraillePage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-     this.numero = false;
+    this.numero = false;
   }
 
   ionViewDidLoad() {
+        
     console.log('ionViewDidLoad MaquinaBraillePage');
   }
 
@@ -66,7 +67,7 @@ export class MaquinaBraillePage {
       this.numero = true;
       this.maiuscula = false;
       this.inserirSimbolo("nº");
-      this.palavra.push(" ");
+      this.palavra.push("");
     } else if (this.pAtualC1 === '000101') {//Maiuscula
       this.numero = false;
       if (this.maiuscula) {
@@ -74,7 +75,7 @@ export class MaquinaBraillePage {
       } else {
         this.maiuscula = true;
       }
-      this.palavra.push(" ");
+      this.palavra.push("");
       this.inserirSimbolo("maiúscula");
     } else if (palavraBraille.brailleSimples.indexOf(this.pAtualC1) >= 0) {
       if (this.numero) {
@@ -83,14 +84,19 @@ export class MaquinaBraillePage {
           this.inserirSimbolo(palavraBraille.correspondenteN[palavraBraille.brailleNumero.indexOf(this.pAtualC1)]);
           this.maiuscula = false;
           this.palavraMaiuscula = false;
+        } else {////Se não achar o número digita a letra correspondente
+          let l = palavraBraille.correspondenteSinais[palavraBraille.brailleSimples.indexOf(this.pAtualC1)];
+          this.palavra.push(l);
+          this.inserirSimbolo(l);
         }
+
       } else if (this.maiuscula || this.palavraMaiuscula) {
-        let l = palavraBraille.correspondenteS[palavraBraille.brailleSimples.indexOf(this.pAtualC1)];
+        let l = palavraBraille.correspondenteSinais[palavraBraille.brailleSimples.indexOf(this.pAtualC1)];
         this.palavra.push(l.toUpperCase());
         this.inserirSimbolo(l);
         this.maiuscula = false;
       } else {
-        let l = palavraBraille.correspondenteS[palavraBraille.brailleSimples.indexOf(this.pAtualC1)];
+        let l = palavraBraille.correspondenteSinais[palavraBraille.brailleSimples.indexOf(this.pAtualC1)];
         this.palavra.push(l);
         this.inserirSimbolo(l);
       }
@@ -98,20 +104,13 @@ export class MaquinaBraillePage {
     this.limpaMarcacao();
   }
 
-
   inserirSimbolo(letra: String) {
     this.sinais.push(palavraBraille.letrasSmall[palavraBraille.letrasSmall.findIndex(obj => obj.letra === letra)].img);
   }
 
   delete() {
-    if (this.numero || this.maiuscula || this.palavraMaiuscula) {
-      this.sinais.pop();
-    } else {
-      this.sinais.pop();
-      this.palavra.pop();
-    }
+    this.sinais.pop();
+    this.palavra.pop();
     this.limpaMarcacao();
   }
-
-
 }

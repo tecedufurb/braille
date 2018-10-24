@@ -1184,7 +1184,7 @@ var MaquinaBraillePage = (function () {
             this.numero = true;
             this.maiuscula = false;
             this.inserirSimbolo("nº");
-            this.palavra.push(" ");
+            this.palavra.push("");
         }
         else if (this.pAtualC1 === '000101') {
             this.numero = false;
@@ -1194,7 +1194,7 @@ var MaquinaBraillePage = (function () {
             else {
                 this.maiuscula = true;
             }
-            this.palavra.push(" ");
+            this.palavra.push("");
             this.inserirSimbolo("maiúscula");
         }
         else if (__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].brailleSimples.indexOf(this.pAtualC1) >= 0) {
@@ -1205,15 +1205,20 @@ var MaquinaBraillePage = (function () {
                     this.maiuscula = false;
                     this.palavraMaiuscula = false;
                 }
+                else {
+                    var l = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].correspondenteSinais[__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].brailleSimples.indexOf(this.pAtualC1)];
+                    this.palavra.push(l);
+                    this.inserirSimbolo(l);
+                }
             }
             else if (this.maiuscula || this.palavraMaiuscula) {
-                var l = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].correspondenteS[__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].brailleSimples.indexOf(this.pAtualC1)];
+                var l = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].correspondenteSinais[__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].brailleSimples.indexOf(this.pAtualC1)];
                 this.palavra.push(l.toUpperCase());
                 this.inserirSimbolo(l);
                 this.maiuscula = false;
             }
             else {
-                var l = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].correspondenteS[__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].brailleSimples.indexOf(this.pAtualC1)];
+                var l = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].correspondenteSinais[__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].brailleSimples.indexOf(this.pAtualC1)];
                 this.palavra.push(l);
                 this.inserirSimbolo(l);
             }
@@ -1224,13 +1229,9 @@ var MaquinaBraillePage = (function () {
         this.sinais.push(__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall[__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall.findIndex(function (obj) { return obj.letra === letra; })].img);
     };
     MaquinaBraillePage.prototype.delete = function () {
-        if (this.numero || this.maiuscula || this.palavraMaiuscula) {
-            this.sinais.pop();
-        }
-        else {
-            this.sinais.pop();
-            this.palavra.pop();
-        }
+        this.sinais.pop();
+        this.palavra.pop();
+        this.limpaMarcacao();
     };
     MaquinaBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -2283,6 +2284,8 @@ var palavraBraille = (function () {
         { letra: '8', img: './assets/img/sinais-braille-small/h.png', imgMarcado: './assets/img/sinais-braille-small/h-d.png' },
         { letra: '9', img: './assets/img/sinais-braille-small/i.png', imgMarcado: './assets/img/sinais-braille-small/i-d.png' },
         { letra: '0', img: './assets/img/sinais-braille-small/j.png', imgMarcado: './assets/img/sinais-braille-small/j-d.png' },
+        { letra: '!+', img: './assets/img/sinais-braille-small/exclamacao_adicao.png', imgMarcado: './assets/img/sinais-braille-small/exclamacao_adicao-d.png' },
+        { letra: '"x', img: './assets/img/sinais-braille-small/multiplicacao_aspa.png', imgMarcado: './assets/img/sinais-braille-small/multiplicacao_aspa-d.png' },
     ];
     palavraBraille.brailleSimples = ['100000', '110000', '100100', '100110', '100010', '110100', '110110', '110010', '010100', '010110',
         '101000', '111000', '101100', '101110', '101010', '111100', '111110', '111010', '011100', '011110',
@@ -2295,7 +2298,15 @@ var palavraBraille = (function () {
         'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
         'u', 'v', 'x', 'y', 'z', 'ç', 'é', 'á', 'è', 'ú',
         'â', 'ê', 'ô', '@', 'à', 'ï', 'ü', 'õ', 'w',
-        ',', ';', ':', '/', '?', '! (Exclamação) ou + (Adição)', '=', '" (aspas duplas) ou x (multiplicação)', '*', 'º',
+        ',', ';', ':', '÷', '?', '! (Exclamação) ou + (Adição)', '=', '" (aspas duplas) ou x (multiplicação)', '*', 'º',
+        'í', 'ã', 'ó', 'número', '.', '-',
+        '|', '$'];
+    //usado apenas os sinais sem os textos
+    palavraBraille.correspondenteSinais = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+        'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+        'u', 'v', 'x', 'y', 'z', 'ç', 'é', 'á', 'è', 'ú',
+        'â', 'ê', 'ô', '@', 'à', 'ï', 'ü', 'õ', 'w',
+        ',', ';', ':', '÷', '?', '!+', '=', '"x', '*', 'º',
         'í', 'ã', 'ó', 'número', '.', '-',
         '|', '$'];
     palavraBraille.brailleComposto = ['000101', '001111', '110001001000', '000001001110', '001001001001', '010101101010', '111011001000', '000001011111',
