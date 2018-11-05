@@ -18,7 +18,7 @@ export class TutorialPage {
 
   @ViewChild('slides') slides: Slides;
 
-  constructor(   
+  constructor(
     public navCtrl: NavController,
     public menu: MenuController,
     public storage: Storage
@@ -26,16 +26,16 @@ export class TutorialPage {
 
   startApp() {
 
-    this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
-      if (hasLoggedIn) {
-        this.navCtrl.setRoot(PrincipalPage).then(() => {
-          this.storage.set('hasSeenTutorial', 'true');  
-        })
-      } /*else {
-        this.navCtrl.setRoot(LoginPage)
+    //this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
+      // if (hasLoggedIn) {
+      this.navCtrl.setRoot(PrincipalPage).then(() => {
         this.storage.set('hasSeenTutorial', 'true');
-      }*/
-    });
+      })
+      /*} else {
+              this.navCtrl.setRoot(LoginPage)
+              this.storage.set('hasSeenTutorial', 'true');
+            }*/
+   // });
 
   }
 

@@ -1015,16 +1015,16 @@ var TutorialPage = (function () {
     }
     TutorialPage.prototype.startApp = function () {
         var _this = this;
-        this.storage.get('hasLoggedIn').then(function (hasLoggedIn) {
-            if (hasLoggedIn) {
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__Principal_Principal__["a" /* PrincipalPage */]).then(function () {
-                    _this.storage.set('hasSeenTutorial', 'true');
-                });
-            } /*else {
-              this.navCtrl.setRoot(LoginPage)
-              this.storage.set('hasSeenTutorial', 'true');
-            }*/
+        //this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
+        // if (hasLoggedIn) {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__Principal_Principal__["a" /* PrincipalPage */]).then(function () {
+            _this.storage.set('hasSeenTutorial', 'true');
         });
+        /*} else {
+                this.navCtrl.setRoot(LoginPage)
+                this.storage.set('hasSeenTutorial', 'true');
+              }*/
+        // });
     };
     TutorialPage.prototype.onSlideChangeStart = function (slider) {
         this.showSkip = !slider.isEnd();
@@ -1757,7 +1757,7 @@ var ConferenceApp = (function () {
             { title: 'Sinais', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_7__pages_sinais_braille_sinais_braille__["a" /* SinaisBraillePage */], icon: 'book' },
             { title: 'Consulta', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_9__pages_consulta_braille_consulta_braille__["a" /* ConsultaBraillePage */], icon: 'search' },
             { title: 'Prática', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_10__pages_pratica_braille_pratica_braille__["a" /* PraticaBraillePage */], icon: 'hand' },
-            { title: 'Máquina Braille', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_11__pages_maquina_braille_maquina_braille__["a" /* MaquinaBraillePage */], icon: 'create' },
+            { title: 'Máquina braille', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_11__pages_maquina_braille_maquina_braille__["a" /* MaquinaBraillePage */], icon: 'create' },
         ];
         // Check if the user has already seen the tutorial
         this.storage.get('hasSeenTutorial')
@@ -1862,15 +1862,20 @@ var ConferenceApp = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */])
     ], ConferenceApp.prototype, "nav", void 0);
     ConferenceApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/'<ion-split-pane>\n\n\n\n  <ion-menu id="loggedOutMenu" [content]="content">\n\n\n\n    <ion-header>\n\n      <ion-toolbar>\n\n        <ion-title>Menu</ion-title>\n\n      </ion-toolbar>\n\n    </ion-header>\n\n\n\n    <ion-content class="outer-content">\n\n\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Navegue\n\n        </ion-list-header>\n\n        <button ion-item menuClose (click)="paginaInicial()">\n\n          <ion-icon item-start name="home"></ion-icon>\n\n          Pagina inicial\n\n        </button>\n\n        <button ion-item menuClose *ngFor="let p of PaginasMenu" (click)="openPage(p)">\n\n          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>\n\n          {{p.title}}\n\n        </button>\n\n      </ion-list>\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Informações\n\n        </ion-list-header>\n\n        <button ion-item menuClose (click)="openTutorial()">\n\n          <ion-icon item-start name="help-circle"></ion-icon>\n\n          Abrir Tutorial\n\n        </button>\n\n        <button ion-item menuClose (click)="Informacoes()">\n\n          <ion-icon item-start name="information-circle"></ion-icon>\n\n          Informações\n\n        </button>\n\n      </ion-list>\n\n    </ion-content>\n\n\n\n  </ion-menu>\n\n  <!-- main navigation -->\n\n  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>\n\n\n\n</ion-split-pane>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__providers_user_data__["a" /* UserData */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__providers_user_data__["a" /* UserData */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__providers_conference_data__["a" /* ConferenceData */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_conference_data__["a" /* ConferenceData */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _h || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */],
+            __WEBPACK_IMPORTED_MODULE_6__providers_user_data__["a" /* UserData */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_conference_data__["a" /* ConferenceData */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], ConferenceApp);
     return ConferenceApp;
-    var _a, _b, _c, _d, _e, _f, _g, _h;
 }());
 
 //# sourceMappingURL=app.component.js.map

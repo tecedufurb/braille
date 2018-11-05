@@ -37,7 +37,7 @@ export class ConferenceApp {
     { title: 'Sinais', name: 'TabsPage', component: SinaisBraillePage, icon: 'book' },
     { title: 'Consulta', name: 'TabsPage', component: ConsultaBraillePage, icon: 'search' },
     { title: 'Prática', name: 'TabsPage', component: PraticaBraillePage, icon: 'hand' },
-    { title: 'Máquina Braille', name: 'TabsPage', component: MaquinaBraillePage, icon: 'create' },
+    { title: 'Máquina braille', name: 'TabsPage', component: MaquinaBraillePage, icon: 'create' },
     // { title: 'Sobre', name: 'TabsPage', component: TabsPage, tabComponent: TabsPage, index: 1, icon: 'information-circle' },
 
     // { title: 'Sair', name: 'Login', component: LoginPage, logsOut: true, icon: 'log-in' },
