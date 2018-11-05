@@ -28,9 +28,10 @@ import { PraticaBraillePageModule } from '../pages/pratica-braille/pratica-brail
 import { LoginPage } from '../pages/login/login';
 import { PrincipalPage } from '../pages/Principal/Principal';
 import { MaquinaBraillePageModule } from '../pages/maquina-braille/maquina-braille.module';
+import { InformacoesPageModule } from '../pages/informacoes/informacoes.module';
 
 
-const autenticacaoFirebase = {
+const autenticacaoFirebase = { 
   apiKey: "AIzaSyC_ZnM2X7xmXzONJMlpJhVaWg3mxFDGPs4",
   authDomain: "tagarela-braille.firebaseapp.com",
   databaseURL: "https://tagarela-braille.firebaseio.com",
@@ -70,7 +71,8 @@ const autenticacaoFirebase = {
     ExemploBraillePageModule,
     ConsultaBraillePageModule,
     PraticaBraillePageModule,
-    MaquinaBraillePageModule
+    MaquinaBraillePageModule,
+    InformacoesPageModule
     
   ],
   bootstrap: [IonicApp],

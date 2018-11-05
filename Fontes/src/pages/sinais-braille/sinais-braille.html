@@ -1,23 +1,20 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>Sinais Braille</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content>
 
   <h1 style="text-align: center;">{{serieDeSinais}}º Série de sinais</h1>
 
-    <div class="container" style="height: 70%; text-align: center; ">
-      <div class="box" >
-        <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series">
+  <div class="container" style="height: 70%; text-align: center; ">
+    <div class="box">
+      <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series">
         <img src={{simbolo.imagem}}></button>
-      </div>
-    </div> 
- 
+    </div>
+  </div>
+
   <button ion-button style="float: left;" (click)="serie(serieDeSinais-1)">Anterior</button>
   <button ion-button style="float: right;" (click)="serie(serieDeSinais+1)">Próximo</button>
 

@@ -1,5 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
-import { AlertController, App, List, ModalController, NavController, ToastController, LoadingController, MenuController } from 'ionic-angular';
+import { AlertController, App, List, 
+  ModalController, NavController, 
+  ToastController, LoadingController
+  , MenuController 
+} from 'ionic-angular';
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 import { SinaisBraillePage } from '../sinais-braille/sinais-braille';
@@ -31,7 +35,7 @@ export class PrincipalPage {
 
   ionViewDidLoad() {
     this.app.setTitle('Principal');
-    this.menu.enable(true, 'loggedOutMenu');
+    //this.menu.enable(true, 'loggedOutMenu');
   }
 
   paginaSinais() {

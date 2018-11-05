@@ -40110,6 +40110,16 @@ page-exemplo-braille .simboloBraille {
   margin: 2px;
 }
 
+page-informacoes .logo {
+  background-color: #43eb19;
+  margin: 10%;
+}
+
+page-informacoes .texto {
+  text-align: center;
+  margin: 10%;
+}
+
 page-user .logo {
   padding: 20px 0;
   min-height: 200px;

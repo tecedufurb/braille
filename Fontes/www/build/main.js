@@ -1,18 +1,18 @@
 webpackJsonp([0],{
 
-/***/ 159:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConferenceData; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_data__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -169,217 +169,14 @@ var ConferenceData = (function () {
 
 /***/ }),
 
-/***/ 160:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AutenticacaoProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(366);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/*
-  Generated class for the AutenticacaoProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var AutenticacaoProvider = (function () {
-    function AutenticacaoProvider(AngularFireAuth) {
-        this.AngularFireAuth = AngularFireAuth;
-        console.log('Hello AutenticacaoProvider Provider');
-    }
-    AutenticacaoProvider.prototype.criarUsuario = function (usuario) {
-        return this.AngularFireAuth.auth.createUserWithEmailAndPassword(usuario.email, usuario.password);
-    };
-    AutenticacaoProvider.prototype.logar = function (usuario) {
-        return this.AngularFireAuth.auth.signInWithEmailAndPassword(usuario.email, usuario.password);
-    };
-    AutenticacaoProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["a" /* AngularFireAuth */]])
-    ], AutenticacaoProvider);
-    return AutenticacaoProvider;
-}());
-
-//# sourceMappingURL=autenticacao.js.map
-
-/***/ }),
-
-/***/ 173:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 173;
-
-/***/ }),
-
-/***/ 219:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 219;
-
-/***/ }),
-
-/***/ 368:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AboutPage = (function () {
-    function AboutPage(popoverCtrl) {
-        this.popoverCtrl = popoverCtrl;
-        this.conferenceDate = '2047-05-17';
-    }
-    AboutPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Sobre</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div class="about-header">\n\n    <img src="assets/img/ica-slidebox-img-1.png" alt="ionic logo">\n\n  </div>\n\n  <div padding class="about-info" style="text-align:center;">\n\n    <h4><b>BRAILLE</b> App</h4>\n\n  \n\n    <p style="text-align: center;">\n\n      Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).\n\n    </p>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\about\about.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* PopoverController */]])
-    ], AboutPage);
-    return AboutPage;
-}());
-
-//# sourceMappingURL=about.js.map
-
-/***/ }),
-
-/***/ 369:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrincipalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_conference_data__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sinais_braille_sinais_braille__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__consulta_braille_consulta_braille__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pratica_braille_pratica_braille__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2_database__ = __webpack_require__(359);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__maquina_braille_maquina_braille__ = __webpack_require__(375);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-var PrincipalPage = (function () {
-    function PrincipalPage(alertCtrl, app, loadingCtrl, modalCtrl, navCtrl, toastCtrl, confData, user, menu, fire) {
-        this.alertCtrl = alertCtrl;
-        this.app = app;
-        this.loadingCtrl = loadingCtrl;
-        this.modalCtrl = modalCtrl;
-        this.navCtrl = navCtrl;
-        this.toastCtrl = toastCtrl;
-        this.confData = confData;
-        this.user = user;
-        this.menu = menu;
-        this.fire = fire;
-    }
-    PrincipalPage.prototype.ionViewDidLoad = function () {
-        this.app.setTitle('Principal');
-        this.menu.enable(true, 'loggedOutMenu');
-    };
-    PrincipalPage.prototype.paginaSinais = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__sinais_braille_sinais_braille__["a" /* SinaisBraillePage */]);
-    };
-    PrincipalPage.prototype.paginaConsulta = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__consulta_braille_consulta_braille__["a" /* ConsultaBraillePage */]);
-    };
-    PrincipalPage.prototype.paginaPratica = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__pratica_braille_pratica_braille__["a" /* PraticaBraillePage */]);
-    };
-    PrincipalPage.prototype.paginaMaquinaBraille = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_8__maquina_braille_maquina_braille__["a" /* MaquinaBraillePage */]);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('scheduleList', { read: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* List */] }),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* List */])
-    ], PrincipalPage.prototype, "scheduleList", void 0);
-    PrincipalPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-schedule',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\Principal\Principal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Braille app</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n  <div style="text-align: center;">\n\n    <br>\n\n    <div>\n\n      <h1>Tagarela:\n\n        <b>BRAILLE</b>\n\n      </h1>\n\n      <img src="./assets/img/ica-slidebox-img-1.png" style="height:20%;width:20%">\n\n    </div>\n\n    \n\n    <button (click)=\'paginaSinais()\' ion-button full>\n\n      Sinais\n\n    </button>\n\n    <button (click)=\'paginaConsulta()\' ion-button full>\n\n      Consulta\n\n    </button>\n\n    <button (click)=\'paginaPratica()\' ion-button full>\n\n      Prática\n\n    </button>\n\n    <button (click)=\'paginaMaquinaBraille()\' ion-button full>\n\n      Máquina Braille\n\n    </button>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\Principal\Principal.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_conference_data__["a" /* ConferenceData */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_user_data__["a" /* UserData */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_7_angularfire2_database__["a" /* AngularFireDatabase */]])
-    ], PrincipalPage);
-    return PrincipalPage;
-}());
-
-//# sourceMappingURL=Principal.js.map
-
-/***/ }),
-
-/***/ 370:
+/***/ 159:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SinaisBraillePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo_braille_exemplo_braille__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo_braille_exemplo_braille__ = __webpack_require__(373);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -516,7 +313,7 @@ var SinaisBraillePage = (function () {
     };
     SinaisBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sinais-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Sinais Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n  <h1 style="text-align: center;">{{serieDeSinais}}º Série de sinais</h1>\n\n\n\n    <div class="container" style="height: 70%; text-align: center; ">\n\n      <div class="box" >\n\n        <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series">\n\n        <img src={{simbolo.imagem}}></button>\n\n      </div>\n\n    </div> \n\n \n\n  <button ion-button style="float: left;" (click)="serie(serieDeSinais-1)">Anterior</button>\n\n  <button ion-button style="float: right;" (click)="serie(serieDeSinais+1)">Próximo</button>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/,
+            selector: 'page-sinais-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Sinais Braille</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n  <h1 style="text-align: center;">{{serieDeSinais}}º Série de sinais</h1>\n\n\n\n  <div class="container" style="height: 70%; text-align: center; ">\n\n    <div class="box">\n\n      <button class="imagem-btn" (click)="showExemplo(simbolo.sinal)" *ngFor="let simbolo of series">\n\n        <img src={{simbolo.imagem}}></button>\n\n    </div>\n\n  </div>\n\n\n\n  <button ion-button style="float: left;" (click)="serie(serieDeSinais-1)">Anterior</button>\n\n  <button ion-button style="float: right;" (click)="serie(serieDeSinais+1)">Próximo</button>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\sinais-braille\sinais-braille.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], SinaisBraillePage);
@@ -527,136 +324,7 @@ var SinaisBraillePage = (function () {
 
 /***/ }),
 
-/***/ 371:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExemploBraillePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__ = __webpack_require__(90);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var ExemploBraillePage = (function () {
-    function ExemploBraillePage(navCtrl, navParams) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.simbolos = new Array();
-        this.letra = navParams.get('letra');
-        this.mostrarExemplo(__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall.findIndex(function (obj) { return obj.letra === _this.letra; }));
-        this.simbolosBraille();
-        ;
-    }
-    ExemploBraillePage.prototype.ionViewDidLoad = function () {
-    };
-    ExemploBraillePage.prototype.mostrarExemplo = function (posicao) {
-        this.palavra = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[posicao].palavra;
-        this.imagem = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[posicao].imagem;
-        this.texto = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[posicao].texto;
-    };
-    ExemploBraillePage.prototype.simbolosBraille = function () {
-        var _this = this;
-        var i;
-        var qtdMai = 0;
-        for (i = 0; i < this.palavra.length; i++) {
-            //Se for numero então jogar o simbolo de numero antes...
-            if (!isNaN(Number(this.palavra[i])) && (this.palavra[i] != ' ')) {
-                if (i == 0) {
-                    ///Se a letra for nº então mostrar destacada
-                    if (this.letra == 'nº')
-                        this.simbolos.push('./assets/img/sinais-braille-small/shift-n-d.png');
-                    else
-                        this.simbolos.push('./assets/img/sinais-braille-small/shift-n.png');
-                }
-                else {
-                    if (this.palavra[i - 1] == ' ') {
-                        ///Se a letra for nº então mostrar destacada
-                        if (this.letra == 'nº')
-                            this.simbolos.push('./assets/img/sinais-braille-small/shift-n-d.png');
-                        else
-                            this.simbolos.push('./assets/img/sinais-braille-small/shift-n.png');
-                    }
-                }
-            }
-            if (this.letra == 'SE4') {
-                this.letra = 'Simbolo especial';
-                this.simbolos.push('./assets/img/sinais-braille-small/SE4.png');
-                this.simbolos.push('./assets/img/sinais-braille-small/p.png');
-            }
-            if (this.letra == 'SE45') {
-                this.letra = 'Simbolo especial';
-                this.simbolos.push('./assets/img/sinais-braille-small/SE45-d.png');
-                this.simbolos.push('./assets/img/sinais-braille-small/a.png');
-            }
-            if (this.letra == 'SE5') {
-                this.letra = 'Simbolo especial';
-                this.simbolos.push('./assets/img/sinais-braille-small/SE5-d.png');
-            }
-            if (this.letra == 'SE6') {
-                this.letra = 'Simbolo especial';
-            }
-            if (this.letra == 'SE456') {
-                this.letra = 'Simbolo especial';
-                this.simbolos.push('./assets/img/sinais-braille-small/shift-n.png');
-                this.simbolos.push('./assets/img/sinais-braille-small/e.png');
-                this.simbolos.push('./assets/img/sinais-braille-small/SE456-d.png');
-                this.simbolos.push('./assets/img/sinais-braille-small/grau.png');
-            }
-            if (this.isMaiuscula(this.palavra[i]) && qtdMai < 2) {
-                if (this.letra == 'maiúscula')
-                    this.simbolos.splice(0, 0, './assets/img/sinais-braille-small/shift-d.png');
-                else
-                    this.simbolos.splice(0, 0, './assets/img/sinais-braille-small/shift.png');
-                qtdMai++;
-            }
-            if (this.letra.toLowerCase() == this.palavra[i].toLowerCase()) {
-                console.log(this.palavra[i].toLowerCase());
-                this.simbolos.push(__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall.find(function (obj) { return obj.letra === _this.palavra[i].toLowerCase(); }).imgMarcado);
-            }
-            else {
-                this.simbolos.push(__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall.find(function (obj) { return obj.letra === _this.palavra[i].toLowerCase(); }).img);
-                //   }
-            }
-        }
-    };
-    ExemploBraillePage.prototype.isMaiuscula = function (letra) {
-        return (letra.charCodeAt(0) >= 65 && letra.charCodeAt(0) <= 90);
-    };
-    ExemploBraillePage.prototype.apenasMaiuscula = function (palavra) {
-        var retorno = true;
-        var i;
-        for (i = 0; i < this.palavra.length; i++) {
-            if (palavra.charCodeAt(i) >= 65 && palavra.charCodeAt(i) <= 90) {
-                return false;
-            }
-        }
-        return retorno;
-    };
-    ExemploBraillePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-exemplo-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\exemplo-braille\exemplo-braille.html"*/'<!--\n\n  Generated template for the ExemploBraillePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title style="text-align: center;">Exemplo "{{letra}}"</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding> \n\n<div style="text-align: -webkit-center;"><h1 class="texto" >{{letra}}</h1></div>\n\n<div style="text-align: center;"><img style="max-width: 150; max-height: 150px"  src={{imagem}}></div>\n\n<div style="display: flex; align-items: flex-end; justify-content: center;  font-weight: 900"><h1 class="texto">{{texto}}</h1></div>\n\n<div style="display: flex; align-items: flex-end; justify-content: center;" ><h1 class="palavra">{{palavra}}</h1></div>\n\n<div style="text-align: center;"><img class="simboloBraille" *ngFor="let braille of simbolos" src={{braille}}></div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\exemplo-braille\exemplo-braille.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], ExemploBraillePage);
-    return ExemploBraillePage;
-}());
-
-//# sourceMappingURL=exemplo-braille.js.map
-
-/***/ }),
-
-/***/ 372:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -823,7 +491,7 @@ var ConsultaBraillePage = (function () {
 
 /***/ }),
 
-/***/ 373:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1011,7 +679,7 @@ var PraticaBraillePage = (function () {
     };
     PraticaBraillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pratica-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/'<!--\n\n  Generated template for the PraticaBraillePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prática Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div>\n\n    <div class="celulas">\n\n      <div class="imagem">\n\n        <img style=" width: 80%;" src={{imagem}}>\n\n      </div>\n\n      <div class="cell-braille">\n\n        <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille ponto"></a>\n\n      </div>\n\n    </div> \n\n    <div >\n\n      <div class="palavra">\n\n        <h1 class="texto">{{palavra}}</h1>\n\n      </div>\n\n      <div class="sinais">\n\n        <img *ngFor="let imgBraille of simbolos" class="sinais-img" src={{imgBraille}}>\n\n      </div>\n\n    </div>\n\n    <button (click)=\'validar()\' ion-button full>OK</button>\n\n    <button (click)=\'pular()\' ion-button full>Pular</button>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/,
+            selector: 'page-pratica-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prática Braille</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div>\n\n    <div class="celulas">\n\n      <div class="imagem">\n\n        <img style=" width: 80%;" src={{imagem}}>\n\n      </div>\n\n      <div class="cell-braille">\n\n        <a id="c1p1" (click)="marcar(\'c1p1\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p4" (click)="marcar(\'c1p4\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p2" (click)="marcar(\'c1p2\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p5" (click)="marcar(\'c1p5\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p3" (click)="marcar(\'c1p3\')" class="btn-large point-braille ponto"></a>\n\n        <a id="c1p6" (click)="marcar(\'c1p6\')" class="btn-large point-braille ponto"></a>\n\n      </div>\n\n    </div> \n\n    <div >\n\n      <div class="palavra">\n\n        <h1 class="texto">{{palavra}}</h1>\n\n      </div>\n\n      <div class="sinais">\n\n        <img *ngFor="let imgBraille of simbolos" class="sinais-img" src={{imgBraille}}>\n\n      </div>\n\n    </div>\n\n    <button (click)=\'validar()\' ion-button full>OK</button>\n\n    <button (click)=\'pular()\' ion-button full>Pular</button>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\pratica-braille\pratica-braille.html"*/,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_3__utilBraille_utilBraille__["a" /* Utils */]
             ]
@@ -1028,63 +696,7 @@ var PraticaBraillePage = (function () {
 
 /***/ }),
 
-/***/ 374:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Utils; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var Utils = (function () {
-    function Utils(toastCtrl, loadingCtrl) {
-        this.toastCtrl = toastCtrl;
-        this.loadingCtrl = loadingCtrl;
-    }
-    Utils.prototype.showMensagem = function (message, pos, tempo) {
-        if (pos === void 0) { pos = "button"; }
-        if (tempo === void 0) { tempo = 3000; }
-        var toast = this.toastCtrl.create({
-            message: message,
-            duration: tempo,
-            position: pos
-        });
-        toast.present();
-    };
-    Utils.prototype.LoadingMensagem = function (imagem, texto, tempo) {
-        if (imagem === void 0) { imagem = ''; }
-        if (texto === void 0) { texto = 'Loading'; }
-        if (tempo === void 0) { tempo = 3000; }
-        var loading = this.loadingCtrl.create({
-            spinner: 'hide',
-            content: "\n            <div class=\"custom-spinner-container\">\n              <img border=\"0\" src=\"" + imagem + "\"> \n              " + texto + "\n            </div>",
-            duration: tempo
-        });
-        loading.present();
-    };
-    Utils = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["r" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["i" /* LoadingController */]])
-    ], Utils);
-    return Utils;
-}());
-
-//# sourceMappingURL=utilBraille.js.map
-
-/***/ }),
-
-/***/ 375:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1246,16 +858,15 @@ var MaquinaBraillePage = (function () {
 
 /***/ }),
 
-/***/ 376:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TutorialPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_page_tabs_page__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Principal_Principal__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1269,6 +880,131 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+var TabsPage = (function () {
+    function TabsPage(navParams) {
+        // set the root pages for each tab
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__Principal_Principal__["a" /* PrincipalPage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__about_about__["a" /* AboutPage */];
+        this.mySelectedIndex = navParams.data.tabIndex || 0;
+    }
+    TabsPage.prototype.mostrarInformacoes = function () {
+        this.Util.LoadingMensagem('', 'Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).', 1000);
+    };
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\tabs-page\tabs-page.html"*/'<ion-tabs [selectedIndex]="mySelectedIndex" name="conference">\n\n  <ion-tab [root]="tab1Root" tabTitle="Principal" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Sobre" tabIcon="information-circle"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\tabs-page\tabs-page.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs-page.js.map
+
+/***/ }),
+
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AutenticacaoProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(370);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/*
+  Generated class for the AutenticacaoProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var AutenticacaoProvider = (function () {
+    function AutenticacaoProvider(AngularFireAuth) {
+        this.AngularFireAuth = AngularFireAuth;
+        console.log('Hello AutenticacaoProvider Provider');
+    }
+    AutenticacaoProvider.prototype.criarUsuario = function (usuario) {
+        return this.AngularFireAuth.auth.createUserWithEmailAndPassword(usuario.email, usuario.password);
+    };
+    AutenticacaoProvider.prototype.logar = function (usuario) {
+        return this.AngularFireAuth.auth.signInWithEmailAndPassword(usuario.email, usuario.password);
+    };
+    AutenticacaoProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["a" /* AngularFireAuth */]])
+    ], AutenticacaoProvider);
+    return AutenticacaoProvider;
+}());
+
+//# sourceMappingURL=autenticacao.js.map
+
+/***/ }),
+
+/***/ 177:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 177;
+
+/***/ }),
+
+/***/ 223:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 223;
+
+/***/ }),
+
+/***/ 372:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TutorialPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Principal_Principal__ = __webpack_require__(89);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { LoginPage } from '../login/login';
+//import { TabsPage } from '../tabs-page/tabs-page';
 
 var TutorialPage = (function () {
     function TutorialPage(navCtrl, menu, storage) {
@@ -1281,14 +1017,13 @@ var TutorialPage = (function () {
         var _this = this;
         this.storage.get('hasLoggedIn').then(function (hasLoggedIn) {
             if (hasLoggedIn) {
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__tabs_page_tabs_page__["a" /* TabsPage */]).then(function () {
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__Principal_Principal__["a" /* PrincipalPage */]).then(function () {
                     _this.storage.set('hasSeenTutorial', 'true');
                 });
-            }
-            else {
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__login_login__["a" /* LoginPage */]);
-                _this.storage.set('hasSeenTutorial', 'true');
-            }
+            } /*else {
+              this.navCtrl.setRoot(LoginPage)
+              this.storage.set('hasSeenTutorial', 'true');
+            }*/
         });
     };
     TutorialPage.prototype.onSlideChangeStart = function (slider) {
@@ -1303,7 +1038,7 @@ var TutorialPage = (function () {
     };
     TutorialPage.prototype.ionViewDidLeave = function () {
         // enable the root left menu when leaving the tutorial page
-        //this.menu.enable(true);
+        this.menu.enable(true);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('slides'),
@@ -1324,13 +1059,409 @@ var TutorialPage = (function () {
 
 /***/ }),
 
+/***/ 373:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExemploBraillePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__ = __webpack_require__(90);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ExemploBraillePage = (function () {
+    function ExemploBraillePage(navCtrl, navParams) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.simbolos = new Array();
+        this.letra = navParams.get('letra');
+        this.mostrarExemplo(__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall.findIndex(function (obj) { return obj.letra === _this.letra; }));
+        this.simbolosBraille();
+        ;
+    }
+    ExemploBraillePage.prototype.ionViewDidLoad = function () {
+    };
+    ExemploBraillePage.prototype.mostrarExemplo = function (posicao) {
+        this.palavra = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[posicao].palavra;
+        this.imagem = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[posicao].imagem;
+        this.texto = __WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].exemplosImagem[posicao].texto;
+    };
+    ExemploBraillePage.prototype.simbolosBraille = function () {
+        var _this = this;
+        var i;
+        var qtdMai = 0;
+        for (i = 0; i < this.palavra.length; i++) {
+            //Se for numero então jogar o simbolo de numero antes...
+            if (!isNaN(Number(this.palavra[i])) && (this.palavra[i] != ' ')) {
+                if (i == 0) {
+                    ///Se a letra for nº então mostrar destacada
+                    if (this.letra == 'nº')
+                        this.simbolos.push('./assets/img/sinais-braille-small/shift-n-d.png');
+                    else
+                        this.simbolos.push('./assets/img/sinais-braille-small/shift-n.png');
+                }
+                else {
+                    if (this.palavra[i - 1] == ' ') {
+                        ///Se a letra for nº então mostrar destacada
+                        if (this.letra == 'nº')
+                            this.simbolos.push('./assets/img/sinais-braille-small/shift-n-d.png');
+                        else
+                            this.simbolos.push('./assets/img/sinais-braille-small/shift-n.png');
+                    }
+                }
+            }
+            if (this.letra == 'SE4') {
+                this.letra = 'Simbolo especial';
+                this.simbolos.push('./assets/img/sinais-braille-small/SE4.png');
+                this.simbolos.push('./assets/img/sinais-braille-small/p.png');
+            }
+            if (this.letra == 'SE45') {
+                this.letra = 'Simbolo especial';
+                this.simbolos.push('./assets/img/sinais-braille-small/SE45-d.png');
+                this.simbolos.push('./assets/img/sinais-braille-small/a.png');
+            }
+            if (this.letra == 'SE5') {
+                this.letra = 'Simbolo especial';
+                this.simbolos.push('./assets/img/sinais-braille-small/SE5-d.png');
+            }
+            if (this.letra == 'SE6') {
+                this.letra = 'Simbolo especial';
+            }
+            if (this.letra == 'SE456') {
+                this.letra = 'Simbolo especial';
+                this.simbolos.push('./assets/img/sinais-braille-small/shift-n.png');
+                this.simbolos.push('./assets/img/sinais-braille-small/e.png');
+                this.simbolos.push('./assets/img/sinais-braille-small/SE456-d.png');
+                this.simbolos.push('./assets/img/sinais-braille-small/grau.png');
+            }
+            if (this.isMaiuscula(this.palavra[i]) && qtdMai < 2) {
+                if (this.letra == 'maiúscula')
+                    this.simbolos.splice(0, 0, './assets/img/sinais-braille-small/shift-d.png');
+                else
+                    this.simbolos.splice(0, 0, './assets/img/sinais-braille-small/shift.png');
+                qtdMai++;
+            }
+            if (this.letra.toLowerCase() == this.palavra[i].toLowerCase()) {
+                console.log(this.palavra[i].toLowerCase());
+                this.simbolos.push(__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall.find(function (obj) { return obj.letra === _this.palavra[i].toLowerCase(); }).imgMarcado);
+            }
+            else {
+                this.simbolos.push(__WEBPACK_IMPORTED_MODULE_2__palavrasBraille__["a" /* palavraBraille */].letrasSmall.find(function (obj) { return obj.letra === _this.palavra[i].toLowerCase(); }).img);
+                //   }
+            }
+        }
+    };
+    ExemploBraillePage.prototype.isMaiuscula = function (letra) {
+        return (letra.charCodeAt(0) >= 65 && letra.charCodeAt(0) <= 90);
+    };
+    ExemploBraillePage.prototype.apenasMaiuscula = function (palavra) {
+        var retorno = true;
+        var i;
+        for (i = 0; i < this.palavra.length; i++) {
+            if (palavra.charCodeAt(i) >= 65 && palavra.charCodeAt(i) <= 90) {
+                return false;
+            }
+        }
+        return retorno;
+    };
+    ExemploBraillePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-exemplo-braille',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\exemplo-braille\exemplo-braille.html"*/'<!--\n\n  Generated template for the ExemploBraillePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title style="text-align: center;">Exemplo "{{letra}}"</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding> \n\n<div style="text-align: -webkit-center;"><h1 class="texto" >{{letra}}</h1></div>\n\n<div style="text-align: center;"><img style="max-width: 150; max-height: 150px"  src={{imagem}}></div>\n\n<div style="display: flex; align-items: flex-end; justify-content: center;  font-weight: 900"><h1 class="texto">{{texto}}</h1></div>\n\n<div style="display: flex; align-items: flex-end; justify-content: center;" ><h1 class="palavra">{{palavra}}</h1></div>\n\n<div style="text-align: center;"><img class="simboloBraille" *ngFor="let braille of simbolos" src={{braille}}></div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\exemplo-braille\exemplo-braille.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], ExemploBraillePage);
+    return ExemploBraillePage;
+}());
+
+//# sourceMappingURL=exemplo-braille.js.map
+
+/***/ }),
+
+/***/ 374:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Utils; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Utils = (function () {
+    function Utils(toastCtrl, loadingCtrl) {
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+    }
+    Utils.prototype.showMensagem = function (message, pos, tempo) {
+        if (pos === void 0) { pos = "button"; }
+        if (tempo === void 0) { tempo = 3000; }
+        var toast = this.toastCtrl.create({
+            message: message,
+            duration: tempo,
+            position: pos
+        });
+        toast.present();
+    };
+    Utils.prototype.LoadingMensagem = function (imagem, texto, tempo) {
+        if (imagem === void 0) { imagem = ''; }
+        if (texto === void 0) { texto = 'Loading'; }
+        if (tempo === void 0) { tempo = 3000; }
+        var loading = this.loadingCtrl.create({
+            spinner: 'hide',
+            content: "\n            <div class=\"custom-spinner-container\">\n              <img border=\"0\" src=\"" + imagem + "\"> \n              " + texto + "\n            </div>",
+            duration: tempo
+        });
+        loading.present();
+    };
+    Utils = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["r" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["i" /* LoadingController */]])
+    ], Utils);
+    return Utils;
+}());
+
+//# sourceMappingURL=utilBraille.js.map
+
+/***/ }),
+
+/***/ 375:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InformacoesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the InformacoesPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var InformacoesPage = (function () {
+    function InformacoesPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    InformacoesPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad InformacoesPage');
+    };
+    InformacoesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-informacoes',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\informacoes\informacoes.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>informações</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div class="logo">\n    <img src="../../assets/img/tecedu-logo.png" alt="logo tecedu">\n  </div>\n  <div class="texto">\n    <a href="descrição">Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).</a>\n  </div>\n  <div style="text-align: center">\n    <img src="../../assets/img/logo-furb.gif" alt="logo tecedu">\n  </div>\n  <div class="texto">\n    <a href="descrição">Fundação Universidade Regional de Blumenau.</a>\n  </div>\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\informacoes\informacoes.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], InformacoesPage);
+    return InformacoesPage;
+}());
+
+//# sourceMappingURL=informacoes.js.map
+
+/***/ }),
+
+/***/ 376:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutPage = (function () {
+    function AboutPage(popoverCtrl) {
+        this.popoverCtrl = popoverCtrl;
+        this.conferenceDate = '2047-05-17';
+    }
+    AboutPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-about',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Sobre</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div class="about-header">\n\n    <img src="assets/img/ica-slidebox-img-1.png" alt="ionic logo">\n\n  </div>\n\n  <div padding class="about-info" style="text-align:center;">\n\n    <h4><b>BRAILLE</b> App</h4>\n\n  \n\n    <p style="text-align: center;">\n\n      Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).\n\n    </p>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\about\about.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* PopoverController */]])
+    ], AboutPage);
+    return AboutPage;
+}());
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
 /***/ 377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_data__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_autenticacao_autenticacao__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__ = __webpack_require__(163);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { CriarContaPage } from '../criar-conta/criar-conta';
+
+
+
+
+var LoginPage = (function () {
+    function LoginPage(navCtrl, userData, menu, formBuilder, authService, util) {
+        this.navCtrl = navCtrl;
+        this.userData = userData;
+        this.menu = menu;
+        this.formBuilder = formBuilder;
+        this.authService = authService;
+        this.util = util;
+        this.form = this.formBuilder.group({
+            email: [null, [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].email]],
+            password: [null, [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(6)]]
+        });
+    }
+    //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
+    LoginPage.prototype.ionViewWillEnter = function () {
+        this.menu.enable(false, 'loggedOutMenu');
+    };
+    LoginPage.prototype.onLogin = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.usuario = this.form.value;
+            this.authService.logar(this.usuario).then(function () {
+                _this.userData.login(_this.usuario.email);
+                _this.util.showMensagem('Login realizado com sucesso...', "button");
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__["a" /* TabsPage */]);
+            }).catch(function (error) {
+                if (error.code == "auth/invalid-email") {
+                    _this.util.showMensagem("Email inválido");
+                }
+                else if (error.code == "auth/user-disabled") {
+                    _this.util.showMensagem("Usuário desativado");
+                }
+                else if (error.code == "auth/user-not-found") {
+                    _this.util.showMensagem("Email não cadastrado");
+                }
+                else if (error.code == "auth/wrong-password") {
+                    _this.util.showMensagem("Senha inválida");
+                }
+                else {
+                    _this.util.showMensagem("Erro ao fazer login");
+                }
+            });
+        }
+    };
+    LoginPage.prototype.criarContaUsuario = function () {
+        //this.navCtrl.push(CriarContaPage);
+    };
+    //Em vez de criar uma pagina para login e outra pra criar conta fazer tudo em uma só
+    LoginPage.prototype.criarConta = function () {
+        var _this = this;
+        var usuario = this.form.value;
+        if (this.form.valid) {
+            this.authService.criarUsuario(usuario)
+                .then(function (usuario) {
+                _this.util.showMensagem('Usuário criado com sucesso.');
+                _this.userData.login(usuario.email);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__["a" /* TabsPage */]);
+            })
+                .catch(function (error) {
+                if (error.code == 'auth/email-already-in-use') {
+                    _this.util.showMensagem('O e-mail digitado já está em uso.');
+                }
+                else if (error.code == 'auth/invalid-email') {
+                    _this.util.showMensagem('O e-mail digitado não é valido.');
+                }
+                else if (error.code == 'auth/operation-not-allowed') {
+                    _this.util.showMensagem('Não está habilitado criar usuários.');
+                }
+                else if (error.code == 'auth/weak-password') {
+                    _this.util.showMensagem('A senha digitada é muito fraca.');
+                }
+                else {
+                    _this.util.showMensagem(error.code);
+                }
+            });
+        }
+        else {
+            this.util.showMensagem('Insira uma usuário e senha para criar uma conta');
+        }
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-user',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/'<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>Login</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<div class="container">\n\n		<div class="box">\n\n			<div class="logo">\n\n				<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">\n\n			</div>\n\n			<form [formGroup]="form" novalidate>\n\n				<ion-item>\n\n					<ion-label floating>E-mail</ion-label>\n\n					<ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n				</ion-item>\n\n				<ion-item>\n\n					<ion-label floating>Senha</ion-label>\n\n					<ion-input type="password" name="password" formControlName="password" required></ion-input>\n\n				</ion-item>\n\n				<ion-row responsive-sm>\n\n					<ion-col>\n\n						<button ion-button (click)="onLogin()" type="submit" block>Login</button>\n\n						<button (click)="criarConta()" ion-button block>Criar conta</button>\n\n					</ion-col>\n\n				</ion-row>\n\n			</form>\n\n		</div>\n\n	</div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/,
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__["a" /* Utils */]
+            ]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_user_data__["a" /* UserData */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_autenticacao_autenticacao__["a" /* AutenticacaoProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__["a" /* Utils */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 378:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(383);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1338,43 +1469,45 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 382:
+/***/ 383:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(419);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_database__ = __webpack_require__(359);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angularfire2_auth__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(718);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_about_about__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_page_tabs_page__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_tutorial_tutorial__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_conference_data__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(420);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_database__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angularfire2_auth__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_about_about__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_page_tabs_page__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_tutorial_tutorial__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_conference_data__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login_module__ = __webpack_require__(719);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_autenticacao_autenticacao__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_criar_conta_criar_conta_module__ = __webpack_require__(720);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_sinais_braille_sinais_braille_module__ = __webpack_require__(722);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_exemplo_braille_exemplo_braille_module__ = __webpack_require__(723);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_consulta_braille_consulta_braille_module__ = __webpack_require__(724);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_pratica_braille_pratica_braille_module__ = __webpack_require__(725);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_login_login__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_Principal_Principal__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_maquina_braille_maquina_braille_module__ = __webpack_require__(726);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login_module__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_autenticacao_autenticacao__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_criar_conta_criar_conta_module__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_sinais_braille_sinais_braille_module__ = __webpack_require__(723);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_exemplo_braille_exemplo_braille_module__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_consulta_braille_consulta_braille_module__ = __webpack_require__(725);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_pratica_braille_pratica_braille_module__ = __webpack_require__(726);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_login_login__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_Principal_Principal__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_maquina_braille_maquina_braille_module__ = __webpack_require__(727);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_informacoes_informacoes_module__ = __webpack_require__(728);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1443,7 +1576,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_20__pages_exemplo_braille_exemplo_braille_module__["a" /* ExemploBraillePageModule */],
                 __WEBPACK_IMPORTED_MODULE_21__pages_consulta_braille_consulta_braille_module__["a" /* ConsultaBraillePageModule */],
                 __WEBPACK_IMPORTED_MODULE_22__pages_pratica_braille_pratica_braille_module__["a" /* PraticaBraillePageModule */],
-                __WEBPACK_IMPORTED_MODULE_25__pages_maquina_braille_maquina_braille_module__["a" /* MaquinaBraillePageModule */]
+                __WEBPACK_IMPORTED_MODULE_25__pages_maquina_braille_maquina_braille_module__["a" /* MaquinaBraillePageModule */],
+                __WEBPACK_IMPORTED_MODULE_26__pages_informacoes_informacoes_module__["a" /* InformacoesPageModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicApp */]],
             entryComponents: [
@@ -1477,7 +1611,7 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserData; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(80);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1565,64 +1699,24 @@ var UserData = (function () {
 
 /***/ }),
 
-/***/ 66:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Principal_Principal__ = __webpack_require__(369);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var TabsPage = (function () {
-    function TabsPage(navParams) {
-        // set the root pages for each tab
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__Principal_Principal__["a" /* PrincipalPage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__about_about__["a" /* AboutPage */];
-        this.mySelectedIndex = navParams.data.tabIndex || 0;
-    }
-    TabsPage.prototype.mostrarInformacoes = function () {
-        this.Util.LoadingMensagem('', 'Aplicativo desenvolvido pelo grupo TecEDU da Universidade Regional de Blumenau (FURB).', 1000);
-    };
-    TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\tabs-page\tabs-page.html"*/'<ion-tabs [selectedIndex]="mySelectedIndex" name="conference">\n\n  <ion-tab [root]="tab1Root" tabTitle="Principal" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Sobre" tabIcon="information-circle"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\tabs-page\tabs-page.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], TabsPage);
-    return TabsPage;
-}());
-
-//# sourceMappingURL=tabs-page.js.map
-
-/***/ }),
-
-/***/ 718:
+/***/ 719:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConferenceApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_page_tabs_page__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tutorial_tutorial__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_conference_data__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tutorial_tutorial__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_conference_data__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_user_data__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_sinais_braille_sinais_braille__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_Principal_Principal__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_consulta_braille_consulta_braille__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_pratica_braille_pratica_braille__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_maquina_braille_maquina_braille__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_informacoes_informacoes__ = __webpack_require__(375);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1632,6 +1726,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+
+
+//import { TabsPage } from '../pages/tabs-page/tabs-page';
 
 
 
@@ -1654,26 +1753,28 @@ var ConferenceApp = (function () {
         // List of pages that can be navigated to from the left menu
         // the left menu only works after login
         // the login page disables the left menu
-        this.appPages = [
-            { title: 'Principal', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_4__pages_tabs_page_tabs_page__["a" /* TabsPage */], tabComponent: __WEBPACK_IMPORTED_MODULE_4__pages_tabs_page_tabs_page__["a" /* TabsPage */], index: 0, icon: 'calendar' },
-            { title: 'Sobre', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_4__pages_tabs_page_tabs_page__["a" /* TabsPage */], tabComponent: __WEBPACK_IMPORTED_MODULE_4__pages_tabs_page_tabs_page__["a" /* TabsPage */], index: 1, icon: 'information-circle' },
-            { title: 'Sair', name: 'Login', component: __WEBPACK_IMPORTED_MODULE_8__pages_login_login__["a" /* LoginPage */], logsOut: true, icon: 'log-in' },
+        this.PaginasMenu = [
+            { title: 'Sinais', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_7__pages_sinais_braille_sinais_braille__["a" /* SinaisBraillePage */], icon: 'book' },
+            { title: 'Consulta', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_9__pages_consulta_braille_consulta_braille__["a" /* ConsultaBraillePage */], icon: 'search' },
+            { title: 'Prática', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_10__pages_pratica_braille_pratica_braille__["a" /* PraticaBraillePage */], icon: 'hand' },
+            { title: 'Máquina Braille', name: 'TabsPage', component: __WEBPACK_IMPORTED_MODULE_11__pages_maquina_braille_maquina_braille__["a" /* MaquinaBraillePage */], icon: 'create' },
         ];
         // Check if the user has already seen the tutorial
         this.storage.get('hasSeenTutorial')
             .then(function (hasSeenTutorial) {
             if (hasSeenTutorial) {
-                _this.storage.get('hasLoggedIn').then(function (hasLoggedIn) {
-                    if (hasLoggedIn) {
-                        _this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_page_tabs_page__["a" /* TabsPage */];
-                    }
-                    else {
-                        _this.rootPage = __WEBPACK_IMPORTED_MODULE_8__pages_login_login__["a" /* LoginPage */];
-                    }
-                });
+                //Retirado login
+                /*this.storage.get('hasLoggedIn').then((hasLoggedIn) => {
+                  if (hasLoggedIn) {
+                    this.rootPage = TabsPage;
+                  } else {
+                    this.rootPage = LoginPage;
+                  }
+                });*/
+                _this.rootPage = __WEBPACK_IMPORTED_MODULE_8__pages_Principal_Principal__["a" /* PrincipalPage */];
             }
             else {
-                _this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_tutorial_tutorial__["a" /* TutorialPage */];
+                _this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tutorial_tutorial__["a" /* TutorialPage */];
             }
             _this.platformReady();
         });
@@ -1687,32 +1788,35 @@ var ConferenceApp = (function () {
         this.listenToLoginEvents();
     }
     ConferenceApp.prototype.openPage = function (page) {
-        var params = {};
+        //let params = {};
+        this.nav.push(page.component);
         // the nav component was found using @ViewChild(Nav)
         // setRoot on the nav to remove previous pages and only have this page
         // we wouldn't want the back button to show in this scenario
-        if (page.index) {
-            params = { tabIndex: page.index };
-        }
+        /* if (page.index) {
+           params = { tabIndex: page.index };
+         } */
         // If we are already on tabs just change the selected tab
         // don't setRoot again, this maintains the history stack of the
         // tabs even if changing them from the menu
-        if (this.nav.getActiveChildNavs().length && page.index != undefined) {
-            this.nav.getActiveChildNavs()[0].select(page.index);
-        }
-        else {
-            // Set the root of the nav with params if it's a tab index
-            this.nav.setRoot(page.name, params).catch(function (err) {
-                console.log("Didn't set nav root: " + err);
-            });
-        }
-        if (page.logsOut === true) {
-            // Give the menu time to close before changing to logged out
-            this.userData.logout();
-        }
+        /* if (this.nav.getActiveChildNavs().length && page.index != undefined) {
+           this.nav.getActiveChildNavs()[0].select(page.index);
+         } else {
+           // Set the root of the nav with params if it's a tab index
+           this.nav.setRoot(page.name, params).catch((err: any) => {
+             console.log(`Didn't set nav root: ${err}`);
+           });
+         }*/
+        /* if (page.logsOut === true) {
+           // Give the menu time to close before changing to logged out
+           this.userData.logout();
+         }*/
+    };
+    ConferenceApp.prototype.paginaInicial = function () {
+        this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_8__pages_Principal_Principal__["a" /* PrincipalPage */]);
     };
     ConferenceApp.prototype.openTutorial = function () {
-        this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_5__pages_tutorial_tutorial__["a" /* TutorialPage */]);
+        this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_4__pages_tutorial_tutorial__["a" /* TutorialPage */]);
     };
     ConferenceApp.prototype.listenToLoginEvents = function () {
         var _this = this;
@@ -1727,8 +1831,13 @@ var ConferenceApp = (function () {
         });
     };
     ConferenceApp.prototype.enableMenu = function (loggedIn) {
-        this.menu.enable(loggedIn, 'loggedInMenu');
-        this.menu.enable(!loggedIn, 'loggedOutMenu');
+        loggedIn;
+        //Menu lateral 
+        //this.menu.enable(loggedIn, 'loggedInMenu');
+        //this.menu.enable(!loggedIn, 'loggedOutMenu');
+    };
+    ConferenceApp.prototype.Informacoes = function () {
+        this.nav.push(__WEBPACK_IMPORTED_MODULE_12__pages_informacoes_informacoes__["a" /* InformacoesPage */]);
     };
     ConferenceApp.prototype.platformReady = function () {
         var _this = this;
@@ -1741,7 +1850,7 @@ var ConferenceApp = (function () {
         var childNav = this.nav.getActiveChildNavs()[0];
         // Tabs are a special case because they have their own navigation
         if (childNav) {
-            if (childNav.getSelected() && childNav.getSelected().root === page.tabComponent) {
+            if (childNav.getSelected() && childNav.getSelected().root === page.component) {
                 return 'primary';
             }
             return;
@@ -1753,34 +1862,29 @@ var ConferenceApp = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */]) === "function" && _a || Object)
     ], ConferenceApp.prototype, "nav", void 0);
     ConferenceApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/'<ion-split-pane>\n\n\n\n  <ion-menu id="loggedOutMenu" [content]="content">\n\n\n\n    <ion-header>\n\n      <ion-toolbar>\n\n        <ion-title>Menu</ion-title>\n\n      </ion-toolbar>\n\n    </ion-header>\n\n\n\n    <ion-content class="outer-content">\n\n\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Navegue\n\n        </ion-list-header>\n\n        <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">\n\n          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>\n\n          {{p.title}}\n\n        </button>\n\n      </ion-list>\n\n\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Tutorial\n\n        </ion-list-header>\n\n        <button ion-item menuClose (click)="openTutorial()">\n\n          <ion-icon item-start name="help-circle"></ion-icon>\n\n          Abrir Tutorial\n\n        </button>\n\n      </ion-list>\n\n    </ion-content>\n\n\n\n  </ion-menu>\n\n  <!-- main navigation -->\n\n  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>\n\n\n\n</ion-split-pane>\n\n'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/'<ion-split-pane>\n\n\n\n  <ion-menu id="loggedOutMenu" [content]="content">\n\n\n\n    <ion-header>\n\n      <ion-toolbar>\n\n        <ion-title>Menu</ion-title>\n\n      </ion-toolbar>\n\n    </ion-header>\n\n\n\n    <ion-content class="outer-content">\n\n\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Navegue\n\n        </ion-list-header>\n\n        <button ion-item menuClose (click)="paginaInicial()">\n\n          <ion-icon item-start name="home"></ion-icon>\n\n          Pagina inicial\n\n        </button>\n\n        <button ion-item menuClose *ngFor="let p of PaginasMenu" (click)="openPage(p)">\n\n          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>\n\n          {{p.title}}\n\n        </button>\n\n      </ion-list>\n\n      <ion-list>\n\n        <ion-list-header>\n\n          Informações\n\n        </ion-list-header>\n\n        <button ion-item menuClose (click)="openTutorial()">\n\n          <ion-icon item-start name="help-circle"></ion-icon>\n\n          Abrir Tutorial\n\n        </button>\n\n        <button ion-item menuClose (click)="Informacoes()">\n\n          <ion-icon item-start name="information-circle"></ion-icon>\n\n          Informações\n\n        </button>\n\n      </ion-list>\n\n    </ion-content>\n\n\n\n  </ion-menu>\n\n  <!-- main navigation -->\n\n  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>\n\n\n\n</ion-split-pane>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\app\app.template.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* UserData */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_conference_data__["a" /* ConferenceData */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__providers_user_data__["a" /* UserData */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__providers_user_data__["a" /* UserData */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__providers_conference_data__["a" /* ConferenceData */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_conference_data__["a" /* ConferenceData */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _h || Object])
     ], ConferenceApp);
     return ConferenceApp;
+    var _a, _b, _c, _d, _e, _f, _g, _h;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 719:
+/***/ 720:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(377);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1810,14 +1914,14 @@ var LoginPageModule = (function () {
 
 /***/ }),
 
-/***/ 720:
+/***/ 721:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriarContaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__criar_conta__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__criar_conta__ = __webpack_require__(722);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1847,7 +1951,7 @@ var CriarContaPageModule = (function () {
 
 /***/ }),
 
-/***/ 721:
+/***/ 722:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1855,9 +1959,9 @@ var CriarContaPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_autenticacao_autenticacao__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_autenticacao_autenticacao__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_page_tabs_page__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_page_tabs_page__ = __webpack_require__(163);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1943,14 +2047,14 @@ var CriarContaPage = (function () {
 
 /***/ }),
 
-/***/ 722:
+/***/ 723:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SinaisBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sinais_braille__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sinais_braille__ = __webpack_require__(159);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1980,14 +2084,14 @@ var SinaisBraillePageModule = (function () {
 
 /***/ }),
 
-/***/ 723:
+/***/ 724:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExemploBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo_braille__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo_braille__ = __webpack_require__(373);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2017,14 +2121,14 @@ var ExemploBraillePageModule = (function () {
 
 /***/ }),
 
-/***/ 724:
+/***/ 725:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConsultaBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__consulta_braille__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__consulta_braille__ = __webpack_require__(160);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2054,14 +2158,14 @@ var ConsultaBraillePageModule = (function () {
 
 /***/ }),
 
-/***/ 725:
+/***/ 726:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PraticaBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pratica_braille__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pratica_braille__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2091,14 +2195,14 @@ var PraticaBraillePageModule = (function () {
 
 /***/ }),
 
-/***/ 726:
+/***/ 727:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaquinaBraillePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__maquina_braille__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__maquina_braille__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2125,6 +2229,130 @@ var MaquinaBraillePageModule = (function () {
 }());
 
 //# sourceMappingURL=maquina-braille.module.js.map
+
+/***/ }),
+
+/***/ 728:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InformacoesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__informacoes__ = __webpack_require__(375);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var InformacoesPageModule = (function () {
+    function InformacoesPageModule() {
+    }
+    InformacoesPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__informacoes__["a" /* InformacoesPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__informacoes__["a" /* InformacoesPage */]),
+            ],
+        })
+    ], InformacoesPageModule);
+    return InformacoesPageModule;
+}());
+
+//# sourceMappingURL=informacoes.module.js.map
+
+/***/ }),
+
+/***/ 89:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrincipalPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_conference_data__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_data__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sinais_braille_sinais_braille__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__consulta_braille_consulta_braille__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pratica_braille_pratica_braille__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2_database__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__maquina_braille_maquina_braille__ = __webpack_require__(162);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+var PrincipalPage = (function () {
+    function PrincipalPage(alertCtrl, app, loadingCtrl, modalCtrl, navCtrl, toastCtrl, confData, user, menu, fire) {
+        this.alertCtrl = alertCtrl;
+        this.app = app;
+        this.loadingCtrl = loadingCtrl;
+        this.modalCtrl = modalCtrl;
+        this.navCtrl = navCtrl;
+        this.toastCtrl = toastCtrl;
+        this.confData = confData;
+        this.user = user;
+        this.menu = menu;
+        this.fire = fire;
+    }
+    PrincipalPage.prototype.ionViewDidLoad = function () {
+        this.app.setTitle('Principal');
+        //this.menu.enable(true, 'loggedOutMenu');
+    };
+    PrincipalPage.prototype.paginaSinais = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__sinais_braille_sinais_braille__["a" /* SinaisBraillePage */]);
+    };
+    PrincipalPage.prototype.paginaConsulta = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__consulta_braille_consulta_braille__["a" /* ConsultaBraillePage */]);
+    };
+    PrincipalPage.prototype.paginaPratica = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__pratica_braille_pratica_braille__["a" /* PraticaBraillePage */]);
+    };
+    PrincipalPage.prototype.paginaMaquinaBraille = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_8__maquina_braille_maquina_braille__["a" /* MaquinaBraillePage */]);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('scheduleList', { read: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* List */] }),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* List */])
+    ], PrincipalPage.prototype, "scheduleList", void 0);
+    PrincipalPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-schedule',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\Principal\Principal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Braille app</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n  <div style="text-align: center;">\n\n    <br>\n\n    <div>\n\n      <h1>Tagarela:\n\n        <b>BRAILLE</b>\n\n      </h1>\n\n      <img src="./assets/img/ica-slidebox-img-1.png" style="height:20%;width:20%">\n\n    </div>\n\n    \n\n    <button (click)=\'paginaSinais()\' ion-button full>\n\n      Sinais\n\n    </button>\n\n    <button (click)=\'paginaConsulta()\' ion-button full>\n\n      Consulta\n\n    </button>\n\n    <button (click)=\'paginaPratica()\' ion-button full>\n\n      Prática\n\n    </button>\n\n    <button (click)=\'paginaMaquinaBraille()\' ion-button full>\n\n      Máquina Braille\n\n    </button>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\Principal\Principal.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_conference_data__["a" /* ConferenceData */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_user_data__["a" /* UserData */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_7_angularfire2_database__["a" /* AngularFireDatabase */]])
+    ], PrincipalPage);
+    return PrincipalPage;
+}());
+
+//# sourceMappingURL=Principal.js.map
 
 /***/ }),
 
@@ -2319,137 +2547,7 @@ var palavraBraille = (function () {
 
 //# sourceMappingURL=palavrasBraille.js.map
 
-/***/ }),
-
-/***/ 91:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_data__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_autenticacao_autenticacao__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__ = __webpack_require__(66);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-//import { CriarContaPage } from '../criar-conta/criar-conta';
-
-
-
-
-var LoginPage = (function () {
-    function LoginPage(navCtrl, userData, menu, formBuilder, authService, util) {
-        this.navCtrl = navCtrl;
-        this.userData = userData;
-        this.menu = menu;
-        this.formBuilder = formBuilder;
-        this.authService = authService;
-        this.util = util;
-        this.form = this.formBuilder.group({
-            email: [null, [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].email]],
-            password: [null, [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(6)]]
-        });
-    }
-    //Habilita e desabilita menu lateral, deixar comentado para não rpecisar criar usuario sempre
-    LoginPage.prototype.ionViewWillEnter = function () {
-        this.menu.enable(false, 'loggedOutMenu');
-    };
-    LoginPage.prototype.onLogin = function () {
-        var _this = this;
-        if (this.form.valid) {
-            this.usuario = this.form.value;
-            this.authService.logar(this.usuario).then(function () {
-                _this.userData.login(_this.usuario.email);
-                _this.util.showMensagem('Login realizado com sucesso...', "button");
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__["a" /* TabsPage */]);
-            }).catch(function (error) {
-                if (error.code == "auth/invalid-email") {
-                    _this.util.showMensagem("Email inválido");
-                }
-                else if (error.code == "auth/user-disabled") {
-                    _this.util.showMensagem("Usuário desativado");
-                }
-                else if (error.code == "auth/user-not-found") {
-                    _this.util.showMensagem("Email não cadastrado");
-                }
-                else if (error.code == "auth/wrong-password") {
-                    _this.util.showMensagem("Senha inválida");
-                }
-                else {
-                    _this.util.showMensagem("Erro ao fazer login");
-                }
-            });
-        }
-    };
-    LoginPage.prototype.criarContaUsuario = function () {
-        //this.navCtrl.push(CriarContaPage);
-    };
-    //Em vez de criar uma pagina para login e outra pra criar conta fazer tudo em uma só
-    LoginPage.prototype.criarConta = function () {
-        var _this = this;
-        var usuario = this.form.value;
-        if (this.form.valid) {
-            this.authService.criarUsuario(usuario)
-                .then(function (usuario) {
-                _this.util.showMensagem('Usuário criado com sucesso.');
-                _this.userData.login(usuario.email);
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__tabs_page_tabs_page__["a" /* TabsPage */]);
-            })
-                .catch(function (error) {
-                if (error.code == 'auth/email-already-in-use') {
-                    _this.util.showMensagem('O e-mail digitado já está em uso.');
-                }
-                else if (error.code == 'auth/invalid-email') {
-                    _this.util.showMensagem('O e-mail digitado não é valido.');
-                }
-                else if (error.code == 'auth/operation-not-allowed') {
-                    _this.util.showMensagem('Não está habilitado criar usuários.');
-                }
-                else if (error.code == 'auth/weak-password') {
-                    _this.util.showMensagem('A senha digitada é muito fraca.');
-                }
-                else {
-                    _this.util.showMensagem(error.code);
-                }
-            });
-        }
-        else {
-            this.util.showMensagem('Insira uma usuário e senha para criar uma conta');
-        }
-    };
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-user',template:/*ion-inline-start:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/'<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>Login</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<div class="container">\n\n		<div class="box">\n\n			<div class="logo">\n\n				<img src="assets/img/ica-slidebox-img-1.png" alt="Ionic logo">\n\n			</div>\n\n			<form [formGroup]="form" novalidate>\n\n				<ion-item>\n\n					<ion-label floating>E-mail</ion-label>\n\n					<ion-input type="text" name="email" formControlName="email" required></ion-input>\n\n				</ion-item>\n\n				<ion-item>\n\n					<ion-label floating>Senha</ion-label>\n\n					<ion-input type="password" name="password" formControlName="password" required></ion-input>\n\n				</ion-item>\n\n				<ion-row responsive-sm>\n\n					<ion-col>\n\n						<button ion-button (click)="onLogin()" type="submit" block>Login</button>\n\n						<button (click)="criarConta()" ion-button block>Criar conta</button>\n\n					</ion-col>\n\n				</ion-row>\n\n			</form>\n\n		</div>\n\n	</div>\n\n</ion-content>'/*ion-inline-end:"D:\GitHub\braille\Fontes\src\pages\login\login.html"*/,
-            providers: [
-                __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__["a" /* Utils */]
-            ]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_user_data__["a" /* UserData */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_autenticacao_autenticacao__["a" /* AutenticacaoProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__utilBraille_utilBraille__["a" /* Utils */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
 /***/ })
 
-},[377]);
+},[378]);
 //# sourceMappingURL=main.js.map

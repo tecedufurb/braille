@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-
 import { NavParams } from 'ionic-angular';
-
 import { AboutPage } from '../about/about';
 import { Utils } from '../utilBraille/utilBraille';
 import { PrincipalPage } from '../Principal/Principal';

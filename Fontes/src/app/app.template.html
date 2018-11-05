@@ -14,19 +14,26 @@
         <ion-list-header>
           Navegue
         </ion-list-header>
-        <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
+        <button ion-item menuClose (click)="paginaInicial()">
+          <ion-icon item-start name="home"></ion-icon>
+          Pagina inicial
+        </button>
+        <button ion-item menuClose *ngFor="let p of PaginasMenu" (click)="openPage(p)">
           <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
           {{p.title}}
         </button>
       </ion-list>
-
       <ion-list>
         <ion-list-header>
-          Tutorial
+          Informações
         </ion-list-header>
         <button ion-item menuClose (click)="openTutorial()">
           <ion-icon item-start name="help-circle"></ion-icon>
           Abrir Tutorial
+        </button>
+        <button ion-item menuClose (click)="Informacoes()">
+          <ion-icon item-start name="information-circle"></ion-icon>
+          Informações
         </button>
       </ion-list>
     </ion-content>
