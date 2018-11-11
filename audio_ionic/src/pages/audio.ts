@@ -22,7 +22,7 @@ export class audio {
     public constructor(public nativAudio: NativeAudio) {
         var i;
         for (i = 0; i < this.notasMusicais.length; i++) {
-            this.nativAudio.preloadComplex(this.notasMusicais[i].nota, '../../assets/audio/' + this.notasMusicais[i].audio, 1, 1, 0).then((ok) => {
+            this.nativAudio.preloadComplex(this.notasMusicais[i].nota, 'assets/audio/' + this.notasMusicais[i].audio, 1, 1, 0).then((ok) => {
                 console.log('Nota: ' + this.notasMusicais[i].nota);
             }).catch(erro => {
                 console.log('Erro audio : ' + erro);
