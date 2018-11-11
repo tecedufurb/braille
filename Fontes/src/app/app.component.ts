@@ -34,7 +34,7 @@ export class ConferenceApp {
   // the login page disables the left menu
 
   PaginasMenu: PageInterface[] = [
-    { title: 'Sinais', name: 'TabsPage', component: SinaisBraillePage, icon: 'book' },
+    { title: 'Sinais', name: 'TabsPage', component: SinaisBraillePage, icon: 'ios-book' },
     { title: 'Consulta', name: 'TabsPage', component: ConsultaBraillePage, icon: 'search' },
     { title: 'Prática', name: 'TabsPage', component: PraticaBraillePage, icon: 'hand' },
     { title: 'Máquina braille', name: 'TabsPage', component: MaquinaBraillePage, icon: 'create' },

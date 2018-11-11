@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { palavraBraille } from '../palavrasBraille';
 import { Utils } from '../utilBraille/utilBraille';
-
+import { Audio } from '../../pages/utilBraille/audio';
 
 @IonicPage()
 @Component({
   selector: 'page-pratica-braille',
   templateUrl: 'pratica-braille.html',
   providers: [
-    Utils
+    Utils, Audio
   ]
 })
 export class PraticaBraillePage {
@@ -27,12 +27,14 @@ export class PraticaBraillePage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public toastCtrl: ToastController,
-    public util: Utils) {
+    public util: Utils,
+    private audio: Audio) {
 
   }
 
   ionViewDidLoad() {
     this.iniciarPalavras();
+    this.audio.tocar('pratica',100)
   }
 
   iniciarPalavras(){

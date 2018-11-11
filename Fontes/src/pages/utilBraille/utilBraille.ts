@@ -8,7 +8,8 @@ export class Utils {
 
     constructor(
         public toastCtrl: ToastController,
-        public loadingCtrl: LoadingController) {
+        public loadingCtrl: LoadingController
+        ) {
 
     }
 
@@ -32,5 +33,8 @@ export class Utils {
             duration: tempo
         });
         loading.present();
-    }    
+    }
+
+
+    
 }

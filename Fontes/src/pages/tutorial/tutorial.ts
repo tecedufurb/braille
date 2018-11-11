@@ -1,8 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-
 import { MenuController, NavController, Slides } from 'ionic-angular';
-
 import { Storage } from '@ionic/storage';
+import { Audio } from "../../pages/utilBraille/audio"
 
 //import { LoginPage } from '../login/login';
 //import { TabsPage } from '../tabs-page/tabs-page';
@@ -10,7 +9,10 @@ import { PrincipalPage } from '../Principal/Principal';
 
 @Component({
   selector: 'page-tutorial',
-  templateUrl: 'tutorial.html'
+  templateUrl: 'tutorial.html',
+  providers: [
+    Audio
+  ]
 })
 
 export class TutorialPage {
@@ -21,8 +23,13 @@ export class TutorialPage {
   constructor(
     public navCtrl: NavController,
     public menu: MenuController,
-    public storage: Storage
-  ) { }
+    public storage: Storage,
+    private audio: Audio
+  ) { 
+
+    this.audio.tocar("bemvindo",100)
+
+  }
 
   startApp() {
 

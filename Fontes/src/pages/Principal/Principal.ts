@@ -1,8 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
-import { AlertController, App, List, 
-  ModalController, NavController, 
+import {
+  AlertController, App, List,
+  ModalController, NavController,
   ToastController, LoadingController
-  , MenuController 
+  , MenuController
 } from 'ionic-angular';
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
@@ -14,7 +15,7 @@ import { MaquinaBraillePage } from '../maquina-braille/maquina-braille';
 
 @Component({
   selector: 'page-schedule',
-  templateUrl: 'Principal.html'
+  templateUrl: 'Principal.html',
 })
 export class PrincipalPage {
   @ViewChild('scheduleList', { read: List }) scheduleList: List;
@@ -29,13 +30,12 @@ export class PrincipalPage {
     public confData: ConferenceData,
     public user: UserData,
     public menu: MenuController,
-    public fire: AngularFireDatabase,
+    public fire: AngularFireDatabase
+  ) {
 
-  ) { }
+  }
 
   ionViewDidLoad() {
-    this.app.setTitle('Principal');
-    //this.menu.enable(true, 'loggedOutMenu');
   }
 
   paginaSinais() {

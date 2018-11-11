@@ -11,6 +11,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { AngularFireAuthModule} from 'angularfire2/auth';
+import { NativeAudio } from '@ionic-native/native-audio';
 
 import { ConferenceApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
@@ -29,6 +30,7 @@ import { LoginPage } from '../pages/login/login';
 import { PrincipalPage } from '../pages/Principal/Principal';
 import { MaquinaBraillePageModule } from '../pages/maquina-braille/maquina-braille.module';
 import { InformacoesPageModule } from '../pages/informacoes/informacoes.module';
+import { IonicAudioModule, defaultAudioProviderFactory } from 'ionic-audio';
 
 
 const autenticacaoFirebase = { 
@@ -72,7 +74,8 @@ const autenticacaoFirebase = {
     ConsultaBraillePageModule,
     PraticaBraillePageModule,
     MaquinaBraillePageModule,
-    InformacoesPageModule
+    InformacoesPageModule,
+    IonicAudioModule.forRoot(defaultAudioProviderFactory)
     
   ],
   bootstrap: [IonicApp],
@@ -89,7 +92,8 @@ const autenticacaoFirebase = {
     UserData,
     InAppBrowser,
     SplashScreen,
-    AutenticacaoProvider
+    AutenticacaoProvider,
+    NativeAudio
   ]
 })
 export class AppModule {

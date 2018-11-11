@@ -39784,6 +39784,1617 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+audio-track ion-thumbnail > img {
+  top: 0;
+  position: absolute;
+}
+
+.md audio-track ion-thumbnail > img {
+  margin-top: 8px;
+}
+
+.md audio-track ion-thumbnail > img .item-md {
+  padding-left: 16px;
+  padding-right: 0;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: none;
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md audio-track ion-thumbnail > img .item-md.activated {
+  background-color: #f1f1f1;
+}
+
+.md audio-track ion-thumbnail > img .item-md[no-lines] {
+  border-width: 0;
+}
+
+.md audio-track ion-thumbnail > img .item-md h1 {
+  margin: 0 0 2px;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.md audio-track ion-thumbnail > img .item-md h2 {
+  margin: 2px 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.md audio-track ion-thumbnail > img .item-md h3,
+.md audio-track ion-thumbnail > img .item-md h4,
+.md audio-track ion-thumbnail > img .item-md h5,
+.md audio-track ion-thumbnail > img .item-md h6 {
+  margin: 2px 0;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.md audio-track ion-thumbnail > img .item-md p {
+  margin: 0 0 2px;
+  overflow: inherit;
+  font-size: 1.4rem;
+  line-height: normal;
+  text-overflow: inherit;
+  color: #666;
+}
+
+.md audio-track ion-thumbnail > img .item-md.item-block .item-inner {
+  padding-right: 8px;
+  border-bottom: 1px solid #dedede;
+}
+
+.md audio-track ion-thumbnail > img .item-md [item-left],
+.md audio-track ion-thumbnail > img .item-md [item-right],
+.md audio-track ion-thumbnail > img .item-md [item-start],
+.md audio-track ion-thumbnail > img .item-md [item-end] {
+  margin: 9px 8px 9px 0;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-left],
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-right],
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-start],
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-end] {
+  margin-left: 0;
+  margin-top: 11px;
+  margin-bottom: 10px;
+}
+
+.md audio-track ion-thumbnail > img .item-md .item-button {
+  padding: 0 0.6em;
+  height: 25px;
+  font-size: 1.2rem;
+}
+
+.md audio-track ion-thumbnail > img .item-md .item-button[icon-only] ion-icon,
+.md audio-track ion-thumbnail > img .item-md .item-button[icon-only] {
+  padding: 0 1px;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-left] + .item-inner,
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-left] + .item-input,
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-start] + .item-inner,
+.md audio-track ion-thumbnail > img .item-md ion-icon[item-start] + .item-input {
+  margin-left: 24px;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-avatar[item-left],
+.md audio-track ion-thumbnail > img .item-md ion-thumbnail[item-left],
+.md audio-track ion-thumbnail > img .item-md ion-avatar[item-start],
+.md audio-track ion-thumbnail > img .item-md ion-thumbnail[item-start] {
+  margin: 8px 16px 8px 0;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-avatar[item-right],
+.md audio-track ion-thumbnail > img .item-md ion-thumbnail[item-right],
+.md audio-track ion-thumbnail > img .item-md ion-avatar[item-end],
+.md audio-track ion-thumbnail > img .item-md ion-thumbnail[item-end] {
+  margin: 8px;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-avatar {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-avatar ion-img,
+.md audio-track ion-thumbnail > img .item-md ion-avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-thumbnail {
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-thumbnail ion-img,
+.md audio-track ion-thumbnail > img .item-md ion-thumbnail img {
+  width: 80px;
+  height: 80px;
+}
+
+.md audio-track ion-thumbnail > img ion-item-group .item-md:first-child .item-inner {
+  border-top-width: 0;
+}
+
+.md audio-track ion-thumbnail > img ion-item-group .item-md:last-child .item-inner,
+.md audio-track ion-thumbnail > img ion-item-group .item-md .item-wrapper:last-child .item-inner {
+  border: 0;
+}
+
+.md audio-track ion-thumbnail > img .item-divider-md {
+  padding-left: 16px;
+  border-bottom: 1px solid #dedede;
+  font-size: 1.4rem;
+  color: #858585;
+  background-color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-primary {
+  color: #dcf441;
+}
+
+.md audio-track ion-thumbnail > img .item-md-primary,
+.md audio-track ion-thumbnail > img .item-divider-md-primary {
+  color: #000;
+  background-color: #dcf441;
+}
+
+.md audio-track ion-thumbnail > img .item-md-primary p,
+.md audio-track ion-thumbnail > img .item-divider-md-primary p {
+  color: #000;
+}
+
+.md audio-track ion-thumbnail > img .item-md-primary.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-primary.activated {
+  background-color: #cae03c;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-secondary {
+  color: #32db64;
+}
+
+.md audio-track ion-thumbnail > img .item-md-secondary,
+.md audio-track ion-thumbnail > img .item-divider-md-secondary {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.md audio-track ion-thumbnail > img .item-md-secondary p,
+.md audio-track ion-thumbnail > img .item-divider-md-secondary p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-secondary.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-secondary.activated {
+  background-color: #2ec95c;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-danger {
+  color: #f53d3d;
+}
+
+.md audio-track ion-thumbnail > img .item-md-danger,
+.md audio-track ion-thumbnail > img .item-divider-md-danger {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.md audio-track ion-thumbnail > img .item-md-danger p,
+.md audio-track ion-thumbnail > img .item-divider-md-danger p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-danger.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-danger.activated {
+  background-color: #e13838;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-light {
+  color: #f4f4f4;
+}
+
+.md audio-track ion-thumbnail > img .item-md-light,
+.md audio-track ion-thumbnail > img .item-divider-md-light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.md audio-track ion-thumbnail > img .item-md-light p,
+.md audio-track ion-thumbnail > img .item-divider-md-light p {
+  color: #000;
+}
+
+.md audio-track ion-thumbnail > img .item-md-light.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-light.activated {
+  background-color: #e0e0e0;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-dark {
+  color: #222;
+}
+
+.md audio-track ion-thumbnail > img .item-md-dark,
+.md audio-track ion-thumbnail > img .item-divider-md-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.md audio-track ion-thumbnail > img .item-md-dark p,
+.md audio-track ion-thumbnail > img .item-divider-md-dark p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-dark.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-dark.activated {
+  background-color: #343434;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-favorite {
+  color: #69BB7B;
+}
+
+.md audio-track ion-thumbnail > img .item-md-favorite,
+.md audio-track ion-thumbnail > img .item-divider-md-favorite {
+  color: #fff;
+  background-color: #69BB7B;
+}
+
+.md audio-track ion-thumbnail > img .item-md-favorite p,
+.md audio-track ion-thumbnail > img .item-divider-md-favorite p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-favorite.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-favorite.activated {
+  background-color: #61ac71;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-twitter {
+  color: #1da1f4;
+}
+
+.md audio-track ion-thumbnail > img .item-md-twitter,
+.md audio-track ion-thumbnail > img .item-divider-md-twitter {
+  color: #fff;
+  background-color: #1da1f4;
+}
+
+.md audio-track ion-thumbnail > img .item-md-twitter p,
+.md audio-track ion-thumbnail > img .item-divider-md-twitter p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-twitter.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-twitter.activated {
+  background-color: #1b94e0;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-google {
+  color: #dc4a38;
+}
+
+.md audio-track ion-thumbnail > img .item-md-google,
+.md audio-track ion-thumbnail > img .item-divider-md-google {
+  color: #fff;
+  background-color: #dc4a38;
+}
+
+.md audio-track ion-thumbnail > img .item-md-google p,
+.md audio-track ion-thumbnail > img .item-divider-md-google p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-google.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-google.activated {
+  background-color: #ca4434;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-vimeo {
+  color: #23b6ea;
+}
+
+.md audio-track ion-thumbnail > img .item-md-vimeo,
+.md audio-track ion-thumbnail > img .item-divider-md-vimeo {
+  color: #fff;
+  background-color: #23b6ea;
+}
+
+.md audio-track ion-thumbnail > img .item-md-vimeo p,
+.md audio-track ion-thumbnail > img .item-divider-md-vimeo p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-vimeo.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-vimeo.activated {
+  background-color: #20a7d7;
+}
+
+.md audio-track ion-thumbnail > img .item-md .text-md-facebook {
+  color: #3b5998;
+}
+
+.md audio-track ion-thumbnail > img .item-md-facebook,
+.md audio-track ion-thumbnail > img .item-divider-md-facebook {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.md audio-track ion-thumbnail > img .item-md-facebook p,
+.md audio-track ion-thumbnail > img .item-divider-md-facebook p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md-facebook.activated,
+.md audio-track ion-thumbnail > img .item-divider-md-facebook.activated {
+  background-color: #4b66a0;
+}
+
+.md audio-track ion-thumbnail > img .list-md ion-item-sliding {
+  background-color: #fff;
+}
+
+.md audio-track ion-thumbnail > img .item-md ion-reorder {
+  font-size: 1.5em;
+  opacity: .3;
+}
+
+.ios audio-track ion-thumbnail > img {
+  margin-top: 8px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios {
+  padding-left: 16px;
+  padding-left: 16px;
+  border-radius: 0;
+  position: relative;
+  font-size: 1.7rem;
+  color: #000;
+  background-color: #fff;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+@media screen and (orientation: landscape) {
+  .ios audio-track ion-thumbnail > img .item-ios {
+    padding-left: calc(constant(safe-area-inset-left) + 16px);
+    padding-left: calc(env(safe-area-inset-left) + 16px);
+  }
+}
+
+.ios audio-track ion-thumbnail > img .item-ios.activated {
+  background-color: #d9d9d9;
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios h1 {
+  margin: 0 0 2px;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios h2 {
+  margin: 0 0 2px;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios h3,
+.ios audio-track ion-thumbnail > img .item-ios h4,
+.ios audio-track ion-thumbnail > img .item-ios h5,
+.ios audio-track ion-thumbnail > img .item-ios h6 {
+  margin: 0 0 3px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios p {
+  overflow: inherit;
+  font-size: 1.4rem;
+  line-height: normal;
+  text-overflow: inherit;
+  color: #8e9093;
+  margin: 0 0 2px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios h2:last-child,
+.ios audio-track ion-thumbnail > img .item-ios h3:last-child,
+.ios audio-track ion-thumbnail > img .item-ios h4:last-child,
+.ios audio-track ion-thumbnail > img .item-ios h5:last-child,
+.ios audio-track ion-thumbnail > img .item-ios h6:last-child,
+.ios audio-track ion-thumbnail > img .item-ios p:last-child {
+  margin-bottom: 0;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios.item-block .item-inner {
+  padding-right: 8px;
+  padding-right: 8px;
+  border-bottom: 0.55px solid #c8c7cc;
+}
+
+@media screen and (orientation: landscape) {
+  .ios audio-track ion-thumbnail > img .item-ios.item-block .item-inner {
+    padding-right: calc(constant(safe-area-inset-right) + 8px);
+    padding-right: calc(env(safe-area-inset-right) + 8px);
+  }
+}
+
+.ios audio-track ion-thumbnail > img .item-ios [item-left],
+.ios audio-track ion-thumbnail > img .item-ios [item-start] {
+  margin: 8px 16px 8px 0;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios [item-right],
+.ios audio-track ion-thumbnail > img .item-ios [item-end] {
+  margin: 8px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios ion-icon[item-left],
+.ios audio-track ion-thumbnail > img .item-ios ion-icon[item-right],
+.ios audio-track ion-thumbnail > img .item-ios ion-icon[item-start],
+.ios audio-track ion-thumbnail > img .item-ios ion-icon[item-end] {
+  margin-left: 0;
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .item-button {
+  padding: 0 0.5em;
+  height: 24px;
+  font-size: 1.3rem;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .item-button[icon-only] ion-icon,
+.ios audio-track ion-thumbnail > img .item-ios .item-button[icon-only] {
+  padding: 0 1px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios ion-avatar[item-left],
+.ios audio-track ion-thumbnail > img .item-ios ion-thumbnail[item-left],
+.ios audio-track ion-thumbnail > img .item-ios ion-avatar[item-start],
+.ios audio-track ion-thumbnail > img .item-ios ion-thumbnail[item-start] {
+  margin: 8px 16px 8px 0;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios ion-avatar[item-right],
+.ios audio-track ion-thumbnail > img .item-ios ion-thumbnail[item-right],
+.ios audio-track ion-thumbnail > img .item-ios ion-avatar[item-end],
+.ios audio-track ion-thumbnail > img .item-ios ion-thumbnail[item-end] {
+  margin: 8px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios ion-avatar {
+  min-width: 36px;
+  min-height: 36px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios ion-avatar ion-img,
+.ios audio-track ion-thumbnail > img .item-ios ion-avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios ion-thumbnail {
+  min-width: 56px;
+  min-height: 56px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios ion-thumbnail ion-img,
+.ios audio-track ion-thumbnail > img .item-ios ion-thumbnail img {
+  width: 56px;
+  height: 56px;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios[detail-push] .item-inner,
+.ios audio-track ion-thumbnail > img button.item-ios:not([detail-none]) .item-inner,
+.ios audio-track ion-thumbnail > img a.item-ios:not([detail-none]) .item-inner {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2012%2020'><path%20d='M2,20l-2-2l8-8L0,2l2-2l10,10L2,20z'%20fill='%23c8c7cc'/></svg>");
+  padding-right: 32px;
+  background-position: right 14px center;
+  background-position: right calc(14px + constant(safe-area-inset-right)) center;
+  background-position: right calc(14px + env(safe-area-inset-right)) center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+
+.ios audio-track ion-thumbnail > img ion-item-group .item-ios:first-child .item-inner {
+  border-top-width: 0;
+}
+
+.ios audio-track ion-thumbnail > img ion-item-group .item-ios:last-child .item-inner,
+.ios audio-track ion-thumbnail > img ion-item-group .item-wrapper:last-child .item-ios .item-inner {
+  border: 0;
+}
+
+.ios audio-track ion-thumbnail > img .item-divider-ios {
+  padding-left: 16px;
+  padding-left: 16px;
+  color: #222;
+  background-color: #f7f7f7;
+}
+
+@media screen and (orientation: landscape) {
+  .ios audio-track ion-thumbnail > img .item-divider-ios {
+    padding-left: calc(constant(safe-area-inset-left) + 16px);
+    padding-left: calc(env(safe-area-inset-left) + 16px);
+  }
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-primary {
+  color: #dcf441;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-primary,
+.ios audio-track ion-thumbnail > img .item-divider-ios-primary {
+  color: #000;
+  background-color: #dcf441;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-primary p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-primary p {
+  color: #000;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-primary.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-primary.activated {
+  background-color: #cae03c;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-secondary {
+  color: #32db64;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-secondary,
+.ios audio-track ion-thumbnail > img .item-divider-ios-secondary {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-secondary p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-secondary p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-secondary.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-secondary.activated {
+  background-color: #2ec95c;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-danger {
+  color: #f53d3d;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-danger,
+.ios audio-track ion-thumbnail > img .item-divider-ios-danger {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-danger p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-danger p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-danger.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-danger.activated {
+  background-color: #e13838;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-light {
+  color: #f4f4f4;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-light,
+.ios audio-track ion-thumbnail > img .item-divider-ios-light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-light p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-light p {
+  color: #000;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-light.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-light.activated {
+  background-color: #e0e0e0;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-dark {
+  color: #222;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-dark,
+.ios audio-track ion-thumbnail > img .item-divider-ios-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-dark p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-dark p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-dark.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-dark.activated {
+  background-color: #343434;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-favorite {
+  color: #69BB7B;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-favorite,
+.ios audio-track ion-thumbnail > img .item-divider-ios-favorite {
+  color: #fff;
+  background-color: #69BB7B;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-favorite p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-favorite p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-favorite.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-favorite.activated {
+  background-color: #61ac71;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-twitter {
+  color: #1da1f4;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-twitter,
+.ios audio-track ion-thumbnail > img .item-divider-ios-twitter {
+  color: #fff;
+  background-color: #1da1f4;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-twitter p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-twitter p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-twitter.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-twitter.activated {
+  background-color: #1b94e0;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-google {
+  color: #dc4a38;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-google,
+.ios audio-track ion-thumbnail > img .item-divider-ios-google {
+  color: #fff;
+  background-color: #dc4a38;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-google p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-google p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-google.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-google.activated {
+  background-color: #ca4434;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-vimeo {
+  color: #23b6ea;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-vimeo,
+.ios audio-track ion-thumbnail > img .item-divider-ios-vimeo {
+  color: #fff;
+  background-color: #23b6ea;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-vimeo p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-vimeo p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-vimeo.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-vimeo.activated {
+  background-color: #20a7d7;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios .text-ios-facebook {
+  color: #3b5998;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-facebook,
+.ios audio-track ion-thumbnail > img .item-divider-ios-facebook {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-facebook p,
+.ios audio-track ion-thumbnail > img .item-divider-ios-facebook p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail > img .item-ios-facebook.activated,
+.ios audio-track ion-thumbnail > img .item-divider-ios-facebook.activated {
+  background-color: #4b66a0;
+}
+
+.ios audio-track ion-thumbnail > img .list-ios ion-item-sliding {
+  background-color: #fff;
+}
+
+audio-track ion-thumbnail audio-track-play {
+  position: absolute;
+  top: 0rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.md audio-track ion-thumbnail audio-track-play {
+  min-width: 80px;
+  min-height: 80px;
+  margin: 8px 16px 8px 0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md {
+  padding-left: 16px;
+  padding-right: 0;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: none;
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md.activated {
+  background-color: #f1f1f1;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md[no-lines] {
+  border-width: 0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md h1 {
+  margin: 0 0 2px;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md h2 {
+  margin: 2px 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md h3,
+.md audio-track ion-thumbnail audio-track-play .item-md h4,
+.md audio-track ion-thumbnail audio-track-play .item-md h5,
+.md audio-track ion-thumbnail audio-track-play .item-md h6 {
+  margin: 2px 0;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md p {
+  margin: 0 0 2px;
+  overflow: inherit;
+  font-size: 1.4rem;
+  line-height: normal;
+  text-overflow: inherit;
+  color: #666;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md.item-block .item-inner {
+  padding-right: 8px;
+  border-bottom: 1px solid #dedede;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md [item-left],
+.md audio-track ion-thumbnail audio-track-play .item-md [item-right],
+.md audio-track ion-thumbnail audio-track-play .item-md [item-start],
+.md audio-track ion-thumbnail audio-track-play .item-md [item-end] {
+  margin: 9px 8px 9px 0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-left],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-right],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-start],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-end] {
+  margin-left: 0;
+  margin-top: 11px;
+  margin-bottom: 10px;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .item-button {
+  padding: 0 0.6em;
+  height: 25px;
+  font-size: 1.2rem;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .item-button[icon-only] ion-icon,
+.md audio-track ion-thumbnail audio-track-play .item-md .item-button[icon-only] {
+  padding: 0 1px;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-left] + .item-inner,
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-left] + .item-input,
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-start] + .item-inner,
+.md audio-track ion-thumbnail audio-track-play .item-md ion-icon[item-start] + .item-input {
+  margin-left: 24px;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-avatar[item-left],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-thumbnail[item-left],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-avatar[item-start],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-thumbnail[item-start] {
+  margin: 8px 16px 8px 0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-avatar[item-right],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-thumbnail[item-right],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-avatar[item-end],
+.md audio-track ion-thumbnail audio-track-play .item-md ion-thumbnail[item-end] {
+  margin: 8px;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-avatar {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-avatar ion-img,
+.md audio-track ion-thumbnail audio-track-play .item-md ion-avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-thumbnail {
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-thumbnail ion-img,
+.md audio-track ion-thumbnail audio-track-play .item-md ion-thumbnail img {
+  width: 80px;
+  height: 80px;
+}
+
+.md audio-track ion-thumbnail audio-track-play ion-item-group .item-md:first-child .item-inner {
+  border-top-width: 0;
+}
+
+.md audio-track ion-thumbnail audio-track-play ion-item-group .item-md:last-child .item-inner,
+.md audio-track ion-thumbnail audio-track-play ion-item-group .item-md .item-wrapper:last-child .item-inner {
+  border: 0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-divider-md {
+  padding-left: 16px;
+  border-bottom: 1px solid #dedede;
+  font-size: 1.4rem;
+  color: #858585;
+  background-color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-primary {
+  color: #dcf441;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-primary,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-primary {
+  color: #000;
+  background-color: #dcf441;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-primary p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-primary p {
+  color: #000;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-primary.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-primary.activated {
+  background-color: #cae03c;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-secondary {
+  color: #32db64;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-secondary,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-secondary {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-secondary p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-secondary p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-secondary.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-secondary.activated {
+  background-color: #2ec95c;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-danger {
+  color: #f53d3d;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-danger,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-danger {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-danger p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-danger p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-danger.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-danger.activated {
+  background-color: #e13838;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-light {
+  color: #f4f4f4;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-light,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-light p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-light p {
+  color: #000;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-light.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-light.activated {
+  background-color: #e0e0e0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-dark {
+  color: #222;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-dark,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-dark p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-dark p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-dark.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-dark.activated {
+  background-color: #343434;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-favorite {
+  color: #69BB7B;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-favorite,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-favorite {
+  color: #fff;
+  background-color: #69BB7B;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-favorite p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-favorite p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-favorite.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-favorite.activated {
+  background-color: #61ac71;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-twitter {
+  color: #1da1f4;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-twitter,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-twitter {
+  color: #fff;
+  background-color: #1da1f4;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-twitter p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-twitter p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-twitter.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-twitter.activated {
+  background-color: #1b94e0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-google {
+  color: #dc4a38;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-google,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-google {
+  color: #fff;
+  background-color: #dc4a38;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-google p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-google p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-google.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-google.activated {
+  background-color: #ca4434;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-vimeo {
+  color: #23b6ea;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-vimeo,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-vimeo {
+  color: #fff;
+  background-color: #23b6ea;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-vimeo p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-vimeo p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-vimeo.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-vimeo.activated {
+  background-color: #20a7d7;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md .text-md-facebook {
+  color: #3b5998;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-facebook,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-facebook {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-facebook p,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-facebook p {
+  color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md-facebook.activated,
+.md audio-track ion-thumbnail audio-track-play .item-divider-md-facebook.activated {
+  background-color: #4b66a0;
+}
+
+.md audio-track ion-thumbnail audio-track-play .list-md ion-item-sliding {
+  background-color: #fff;
+}
+
+.md audio-track ion-thumbnail audio-track-play .item-md ion-reorder {
+  font-size: 1.5em;
+  opacity: .3;
+}
+
+.ios audio-track ion-thumbnail audio-track-play {
+  min-width: 56px;
+  min-height: 56px;
+  margin: 8px 16px 8px 0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios {
+  padding-left: 16px;
+  padding-left: 16px;
+  border-radius: 0;
+  position: relative;
+  font-size: 1.7rem;
+  color: #000;
+  background-color: #fff;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+@media screen and (orientation: landscape) {
+  .ios audio-track ion-thumbnail audio-track-play .item-ios {
+    padding-left: calc(constant(safe-area-inset-left) + 16px);
+    padding-left: calc(env(safe-area-inset-left) + 16px);
+  }
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios.activated {
+  background-color: #d9d9d9;
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios h1 {
+  margin: 0 0 2px;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios h2 {
+  margin: 0 0 2px;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios h3,
+.ios audio-track ion-thumbnail audio-track-play .item-ios h4,
+.ios audio-track ion-thumbnail audio-track-play .item-ios h5,
+.ios audio-track ion-thumbnail audio-track-play .item-ios h6 {
+  margin: 0 0 3px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios p {
+  overflow: inherit;
+  font-size: 1.4rem;
+  line-height: normal;
+  text-overflow: inherit;
+  color: #8e9093;
+  margin: 0 0 2px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios h2:last-child,
+.ios audio-track ion-thumbnail audio-track-play .item-ios h3:last-child,
+.ios audio-track ion-thumbnail audio-track-play .item-ios h4:last-child,
+.ios audio-track ion-thumbnail audio-track-play .item-ios h5:last-child,
+.ios audio-track ion-thumbnail audio-track-play .item-ios h6:last-child,
+.ios audio-track ion-thumbnail audio-track-play .item-ios p:last-child {
+  margin-bottom: 0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios.item-block .item-inner {
+  padding-right: 8px;
+  padding-right: 8px;
+  border-bottom: 0.55px solid #c8c7cc;
+}
+
+@media screen and (orientation: landscape) {
+  .ios audio-track ion-thumbnail audio-track-play .item-ios.item-block .item-inner {
+    padding-right: calc(constant(safe-area-inset-right) + 8px);
+    padding-right: calc(env(safe-area-inset-right) + 8px);
+  }
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios [item-left],
+.ios audio-track ion-thumbnail audio-track-play .item-ios [item-start] {
+  margin: 8px 16px 8px 0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios [item-right],
+.ios audio-track ion-thumbnail audio-track-play .item-ios [item-end] {
+  margin: 8px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-icon[item-left],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-icon[item-right],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-icon[item-start],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-icon[item-end] {
+  margin-left: 0;
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .item-button {
+  padding: 0 0.5em;
+  height: 24px;
+  font-size: 1.3rem;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .item-button[icon-only] ion-icon,
+.ios audio-track ion-thumbnail audio-track-play .item-ios .item-button[icon-only] {
+  padding: 0 1px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-avatar[item-left],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-thumbnail[item-left],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-avatar[item-start],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-thumbnail[item-start] {
+  margin: 8px 16px 8px 0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-avatar[item-right],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-thumbnail[item-right],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-avatar[item-end],
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-thumbnail[item-end] {
+  margin: 8px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-avatar {
+  min-width: 36px;
+  min-height: 36px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-avatar ion-img,
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-thumbnail {
+  min-width: 56px;
+  min-height: 56px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-thumbnail ion-img,
+.ios audio-track ion-thumbnail audio-track-play .item-ios ion-thumbnail img {
+  width: 56px;
+  height: 56px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios[detail-push] .item-inner,
+.ios audio-track ion-thumbnail audio-track-play button.item-ios:not([detail-none]) .item-inner,
+.ios audio-track ion-thumbnail audio-track-play a.item-ios:not([detail-none]) .item-inner {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2012%2020'><path%20d='M2,20l-2-2l8-8L0,2l2-2l10,10L2,20z'%20fill='%23c8c7cc'/></svg>");
+  padding-right: 32px;
+  background-position: right 14px center;
+  background-position: right calc(14px + constant(safe-area-inset-right)) center;
+  background-position: right calc(14px + env(safe-area-inset-right)) center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+
+.ios audio-track ion-thumbnail audio-track-play ion-item-group .item-ios:first-child .item-inner {
+  border-top-width: 0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play ion-item-group .item-ios:last-child .item-inner,
+.ios audio-track ion-thumbnail audio-track-play ion-item-group .item-wrapper:last-child .item-ios .item-inner {
+  border: 0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios {
+  padding-left: 16px;
+  padding-left: 16px;
+  color: #222;
+  background-color: #f7f7f7;
+}
+
+@media screen and (orientation: landscape) {
+  .ios audio-track ion-thumbnail audio-track-play .item-divider-ios {
+    padding-left: calc(constant(safe-area-inset-left) + 16px);
+    padding-left: calc(env(safe-area-inset-left) + 16px);
+  }
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-primary {
+  color: #dcf441;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-primary,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-primary {
+  color: #000;
+  background-color: #dcf441;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-primary p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-primary p {
+  color: #000;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-primary.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-primary.activated {
+  background-color: #cae03c;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-secondary {
+  color: #32db64;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-secondary,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-secondary {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-secondary p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-secondary p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-secondary.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-secondary.activated {
+  background-color: #2ec95c;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-danger {
+  color: #f53d3d;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-danger,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-danger {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-danger p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-danger p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-danger.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-danger.activated {
+  background-color: #e13838;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-light {
+  color: #f4f4f4;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-light,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-light p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-light p {
+  color: #000;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-light.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-light.activated {
+  background-color: #e0e0e0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-dark {
+  color: #222;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-dark,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-dark p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-dark p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-dark.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-dark.activated {
+  background-color: #343434;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-favorite {
+  color: #69BB7B;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-favorite,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-favorite {
+  color: #fff;
+  background-color: #69BB7B;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-favorite p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-favorite p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-favorite.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-favorite.activated {
+  background-color: #61ac71;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-twitter {
+  color: #1da1f4;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-twitter,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-twitter {
+  color: #fff;
+  background-color: #1da1f4;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-twitter p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-twitter p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-twitter.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-twitter.activated {
+  background-color: #1b94e0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-google {
+  color: #dc4a38;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-google,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-google {
+  color: #fff;
+  background-color: #dc4a38;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-google p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-google p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-google.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-google.activated {
+  background-color: #ca4434;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-vimeo {
+  color: #23b6ea;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-vimeo,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-vimeo {
+  color: #fff;
+  background-color: #23b6ea;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-vimeo p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-vimeo p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-vimeo.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-vimeo.activated {
+  background-color: #20a7d7;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios .text-ios-facebook {
+  color: #3b5998;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-facebook,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-facebook {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-facebook p,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-facebook p {
+  color: #fff;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .item-ios-facebook.activated,
+.ios audio-track ion-thumbnail audio-track-play .item-divider-ios-facebook.activated {
+  background-color: #4b66a0;
+}
+
+.ios audio-track ion-thumbnail audio-track-play .list-ios ion-item-sliding {
+  background-color: #fff;
+}
+
+audio-track ion-thumbnail audio-track-play button {
+  width: 100% !important;
+  height: inherit !important;
+  margin: 0 !important;
+}
+
+audio-track ion-thumbnail audio-track-play button.light {
+  background: #222;
+  color: #f4f4f4;
+  opacity: .8;
+}
+
+audio-track ion-thumbnail audio-track-play button.dark {
+  color: #222;
+  opacity: .6;
+}
+
+audio-track ion-thumbnail audio-track-play button ion-icon {
+  font-size: 2em !important;
+}
+
+audio-track-progress em {
+  font-size: .8em;
+}
+
+audio-track-progress-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+audio-track-progress-bar ion-range.range-ios {
+  padding: 0;
+}
+
+audio-track-progress-bar ion-range.range-md {
+  padding: 0;
+}
+
+audio-track-progress-bar input[type=range] {
+  -webkit-appearance: none;
+  width: 99%;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+audio-track-progress-bar input[type=range]:focus {
+  outline: none;
+}
+
+audio-track-progress-bar input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #222;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+}
+
+audio-track-progress-bar input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #222;
+}
+
+audio-track-progress-bar input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: 2.2px 2.2px 8.9px #333333, 0px 0px 2.2px #404040;
+  box-shadow: 2.2px 2.2px 8.9px #333333, 0px 0px 2.2px #404040;
+  border: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f4f4f4;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12.5px;
+}
+
+audio-track-progress-bar input[type=range]::-webkit-slider-thumb:focus, audio-track-progress-bar input[type=range]::-webkit-slider-thumb:active {
+  background: #dcf441;
+}
+
+audio-track-progress-bar time {
+  font-size: .8em;
+  min-width: 40px;
+  text-align: center;
+}
+
 .btn-large {
   float: left;
   height: 3rem;

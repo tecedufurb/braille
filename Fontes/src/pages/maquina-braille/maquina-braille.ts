@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { palavraBraille } from '../palavrasBraille';
-
+import { Audio } from '../../pages/utilBraille/audio';
 @IonicPage()
 @Component({
   selector: 'page-maquina-braille',
   templateUrl: 'maquina-braille.html',
+  providers: [
+    Audio
+  ]
 })
 export class MaquinaBraillePage {
 
@@ -19,13 +22,15 @@ export class MaquinaBraillePage {
   numero: boolean;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private audio: Audio) {
     this.numero = false;
   }
 
   ionViewDidLoad() {
-        
-    console.log('ionViewDidLoad MaquinaBraillePage');
+     this.audio.tocar("maquinabraille",100)
   }
 
 

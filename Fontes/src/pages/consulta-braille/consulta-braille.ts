@@ -1,23 +1,30 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { palavraBraille } from '../palavrasBraille';
+import { Audio } from '../utilBraille/audio';
 
 
 @IonicPage()
 @Component({
   selector: 'page-consulta-braille',
   templateUrl: 'consulta-braille.html',
+  providers: [
+    Audio
+  ]
 })
 export class ConsultaBraillePage {
 
   texto: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private audio: Audio) {
 
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ConsultaBraillePage');
+    this.audio.tocar("consulta",100)
   }
 
   marcar(posicao: string) {
