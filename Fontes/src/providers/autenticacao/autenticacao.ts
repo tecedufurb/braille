@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
-import { usuario } from './usuario';
+//import { Observable } from 'rxjs/Observable';
+//import { AngularFireAuth } from 'angularfire2/auth';
+//import * as firebase from 'firebase/app';
+//import { usuario } from './usuario';
 
 
 /*
@@ -14,18 +14,17 @@ import { usuario } from './usuario';
 @Injectable()
 export class AutenticacaoProvider {
 
-  usuario: Observable<firebase.User>;
+  //usuario: Observable<firebase.User>;
 
-  constructor(private AngularFireAuth: AngularFireAuth) {
-    console.log('Hello AutenticacaoProvider Provider');
+  constructor(/*private AngularFireAuth: AngularFireAuth*/) {
   }
 
-  criarUsuario(usuario: usuario) {
+  /*criarUsuario(usuario: usuario) {
     return this.AngularFireAuth.auth.createUserWithEmailAndPassword(usuario.email,usuario.password);
-  }
+  }*/
 
-  logar(usuario: usuario): Promise<boolean> {
+  /*logar(usuario: usuario): Promise<boolean> {
     return this.AngularFireAuth.auth.signInWithEmailAndPassword(usuario.email, usuario.password);
-  }
+  }*/
 
 }

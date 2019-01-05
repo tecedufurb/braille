@@ -14,7 +14,7 @@ export class MaquinaBraillePage {
 
   palavra = new Array<String>();
   sinais = new Array<String>();
-  
+
   pAtualC1 = '000000';
   pAtualC2 = '000000';
   maiuscula: boolean;
@@ -23,14 +23,14 @@ export class MaquinaBraillePage {
 
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     private audio: Audio) {
     this.numero = false;
   }
 
   ionViewDidLoad() {
-     this.audio.tocar("maquinabraille",100)
+    this.audio.tocar("maquinabraille", 100)
   }
 
 
@@ -61,7 +61,6 @@ export class MaquinaBraillePage {
   }
 
   inserirLetra() {
-    console.log(this.pAtualC1);
     if (this.pAtualC1 === '000000') {//Espaço
       this.numero = false;
       this.maiuscula = false;

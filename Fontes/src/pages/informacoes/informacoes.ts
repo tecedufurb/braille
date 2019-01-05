@@ -19,7 +19,6 @@ export class InformacoesPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad InformacoesPage');
   }
 
 }

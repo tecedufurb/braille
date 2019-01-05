@@ -1,5 +1,6 @@
 import { NativeAudio } from '@ionic-native/native-audio';
 import { Injectable } from '@angular/core';
+import { Platform } from 'ionic-angular';
 
 @Injectable()
 export class Audio {
@@ -20,20 +21,24 @@ export class Audio {
         { frase: 'maquinabraille', audio: 'Maquina braille.mp3' }
     ];
 
-    public constructor(public nativAudio: NativeAudio) {
+    public constructor(public nativAudio: NativeAudio, public plt: Platform) {
         var i;
-        for (i = 0; i < this.frase.length; i++) {
-            this.nativAudio.preloadSimple(this.frase[i].frase, 'assets/audio/' + this.frase[i].audio).then(() => {
-                console.log('inserido audio: ' + this.frase[i].frase);
-            }).catch(erro => {
-                console.log(erro);
-            });
+        if (!this.plt.is('core')  && !this.plt.is('mobileweb')) {
+            console.log('plat: '+this.plt.platforms())
+            for (i = 0; i < this.frase.length; i++) {
+                this.nativAudio.preloadSimple(this.frase[i].frase, 'assets/audio/' + this.frase[i].audio).then(() => {
+                    console.log('inserido audio: ' + this.frase[i].frase);
+                }).catch(erro => {
+                    console.log(erro);
+                });
+            }
         }
     }
 
 
     public tocar(frase: string, time: number) {
-        setTimeout(() => { this.nativAudio.play(frase) }, time)
+        if (!this.plt.is('core')  && !this.plt.is('mobileweb'))
+            setTimeout(() => { this.nativAudio.play(frase) }, time)
 
     }
 

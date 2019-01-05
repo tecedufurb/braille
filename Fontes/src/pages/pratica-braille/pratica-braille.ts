@@ -52,9 +52,6 @@ export class PraticaBraillePage {
     if (this.elegivel.length > 0) {
       let num = this.selecionarPalavra();
       this.posi = this.elegivel[num];
-      console.log(this.elegivel.splice(num, 1));
-      console.log(this.elegivel);
-      console.log(num)
       this.palavra = palavraBraille.exemplosImagem[this.posi].palavra;
       this.imagem = palavraBraille.exemplosImagem[this.posi].imagem;
       this.letrasEsc = this.sortearletrasEsconder();

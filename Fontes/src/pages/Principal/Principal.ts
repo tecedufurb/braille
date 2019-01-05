@@ -10,7 +10,7 @@ import { UserData } from '../../providers/user-data';
 import { SinaisBraillePage } from '../sinais-braille/sinais-braille';
 import { ConsultaBraillePage } from '../consulta-braille/consulta-braille';
 import { PraticaBraillePage } from '../pratica-braille/pratica-braille';
-import { AngularFireDatabase } from 'angularfire2/database';
+//import { AngularFireDatabase } from 'angularfire2/database';
 import { MaquinaBraillePage } from '../maquina-braille/maquina-braille';
 
 @Component({
@@ -30,7 +30,7 @@ export class PrincipalPage {
     public confData: ConferenceData,
     public user: UserData,
     public menu: MenuController,
-    public fire: AngularFireDatabase
+    //public fire: AngularFireDatabase
   ) {
 
   }

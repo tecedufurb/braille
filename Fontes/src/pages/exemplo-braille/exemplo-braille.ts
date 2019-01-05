@@ -86,11 +86,9 @@ export class ExemploBraillePage {
         qtdMai++;
       }
       if (this.letra.toLowerCase() == this.palavra[i].toLowerCase()) {
-        console.log(this.palavra[i].toLowerCase());
         this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === this.palavra[i].toLowerCase()).imgMarcado);
       } else {
         this.simbolos.push(palavraBraille.letrasSmall.find(obj => obj.letra === this.palavra[i].toLowerCase()).img);
-        //   }
       }
     }
   }

@@ -8,9 +8,10 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { IonicStorageModule } from '@ionic/storage';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule} from 'angularfire2/database';
-import { AngularFireAuthModule} from 'angularfire2/auth';
+//import { AngularFireModule } from 'angularfire2';
+//import { AngularFireDatabaseModule} from 'angularfire2/database';
+//import { AngularFireAuthModule} from 'angularfire2/auth';
+//import { AutenticacaoProvider } from '../providers/autenticacao/autenticacao';
 import { NativeAudio } from '@ionic-native/native-audio';
 
 import { ConferenceApp } from './app.component';
@@ -20,7 +21,6 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { LoginPageModule } from '../pages/login/login.module';
-import { AutenticacaoProvider } from '../providers/autenticacao/autenticacao';
 import { CriarContaPageModule } from '../pages/criar-conta/criar-conta.module';
 import { SinaisBraillePageModule } from '../pages/sinais-braille/sinais-braille.module';
 import { ExemploBraillePageModule } from '../pages/exemplo-braille/exemplo-braille.module';
@@ -33,14 +33,10 @@ import { InformacoesPageModule } from '../pages/informacoes/informacoes.module';
 import { IonicAudioModule, defaultAudioProviderFactory } from 'ionic-audio';
 
 
-const autenticacaoFirebase = { 
-  apiKey: "AIzaSyC_ZnM2X7xmXzONJMlpJhVaWg3mxFDGPs4",
-  authDomain: "tagarela-braille.firebaseapp.com",
-  databaseURL: "https://tagarela-braille.firebaseio.com",
-  projectId: "tagarela-braille",
-  storageBucket: "tagarela-braille.appspot.com",
-  messagingSenderId: "1019835797721"
-};
+//const autenticacaoFirebase = { 
+  ///Usar configuração do google firebase
+  ///
+//};
 
 
 @NgModule({
@@ -64,9 +60,9 @@ const autenticacaoFirebase = {
       ]
     }),
     IonicStorageModule.forRoot(),
-    AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(autenticacaoFirebase),
-    AngularFireAuthModule,
+    //AngularFireDatabaseModule,
+    //AngularFireModule.initializeApp(autenticacaoFirebase),
+    //AngularFireAuthModule,
     LoginPageModule,
     CriarContaPageModule,
     SinaisBraillePageModule,
@@ -92,7 +88,7 @@ const autenticacaoFirebase = {
     UserData,
     InAppBrowser,
     SplashScreen,
-    AutenticacaoProvider,
+    //AutenticacaoProvider,
     NativeAudio
   ]
 })

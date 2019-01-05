@@ -3,10 +3,10 @@ import { NavController, MenuController } from 'ionic-angular';
 import { UserData } from '../../providers/user-data';
 //import { CriarContaPage } from '../criar-conta/criar-conta';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AutenticacaoProvider } from '../../providers/autenticacao/autenticacao';
+//import { AutenticacaoProvider } from '../../providers/autenticacao/autenticacao';
 import { usuario } from '../../providers/autenticacao/usuario';
 import { Utils } from '../utilBraille/utilBraille';
-import { TabsPage } from '../tabs-page/tabs-page';
+//import { TabsPage } from '../tabs-page/tabs-page';
 
 
 @Component({
@@ -26,7 +26,7 @@ export class LoginPage {
     public userData: UserData,
     private menu: MenuController,
     private formBuilder: FormBuilder,
-    private authService: AutenticacaoProvider,
+    //private authService: AutenticacaoProvider,
     public util: Utils
   ) {
     this.form = this.formBuilder.group({
@@ -43,7 +43,7 @@ export class LoginPage {
   }
 
   onLogin() {
-    if (this.form.valid) {
+   /* if (this.form.valid) {
       this.usuario = this.form.value;
       this.authService.logar(this.usuario).then(() => {
         this.userData.login(this.usuario.email);
@@ -64,7 +64,7 @@ export class LoginPage {
         }
 
       });
-    }
+    }*/
 
   }
   criarContaUsuario() {
@@ -73,7 +73,7 @@ export class LoginPage {
   }
 //Em vez de criar uma pagina para login e outra pra criar conta fazer tudo em uma só
   criarConta() {
-    let usuario = this.form.value;
+  /*  let usuario = this.form.value;
     if (this.form.valid) {
       this.authService.criarUsuario(usuario)
         .then((usuario: any) => {
@@ -96,6 +96,6 @@ export class LoginPage {
         });
     }else{
       this.util.showMensagem('Insira uma usuário e senha para criar uma conta');
-    }
+    }*/
   }
 }

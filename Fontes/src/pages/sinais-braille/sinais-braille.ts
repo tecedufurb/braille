@@ -30,7 +30,6 @@ export class SinaisBraillePage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SinaisBraillePage');
     this.audio.tocar("sinaisbraille", 100)
 
   }

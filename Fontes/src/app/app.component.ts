@@ -87,6 +87,7 @@ export class ConferenceApp {
 
   openPage(page: PageInterface) {
     //let params = {};
+    this.nav.popToRoot();
     this.nav.push(page.component);
 
     // the nav component was found using @ViewChild(Nav)
